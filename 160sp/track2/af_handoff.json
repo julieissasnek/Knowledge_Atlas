@@ -1,130 +1,606 @@
 {
-  "handoff_version": "1.0",
-  "produced_by": "Knowledge_Atlas/160sp/track2/abstract_collector.py",
-  "produced_at": "2026-06-01T00:00:00Z",
+  "handoff_version": "2.0",
+  "produced_by": "Knowledge_Atlas/160sp/track2/pipeline.py",
+  "produced_at": "2026-06-02T05:12:48.566469+00:00",
   "destination": "Article_Finder",
   "destination_intake": "ingest/abstract_fetcher.py",
   "topic": "daylight_and_cognition",
-  "description": "ACCEPT-tier records from Track 2 triage pipeline, ready for Article Finder full extraction.",
-  "record_count": 10,
+  "description": "ACCEPT-tier records from Track 2 three-stage triage pipeline, ready for Article Finder full extraction.",
+  "record_count": 38,
   "records": [
     {
-      "paper_id": "af-2023-buildenv-110241",
-      "title": "Effect of daylight exposure on sustained attention in open-plan offices: a randomized crossover study",
-      "abstract": "This randomized crossover trial examined sustained attention performance among 48 knowledge workers in an open-plan office across three lighting conditions. Workers exposed to natural daylight ≥150 lux showed significantly lower lapse rates (p<.001) compared to electric-only conditions, controlling for circadian phase.",
-      "doi": "10.1016/j.buildenv.2023.110241",
-      "url": "https://doi.org/10.1016/j.buildenv.2023.110241",
-      "authors": ["Andersen, M.", "Mardaljevic, J.", "Reinhart, C."],
-      "year": 2023,
+      "paper_id": "serpapi-ed77f658de",
+      "title": "Experimental Investigation of Multisensory Office Environments: Effects of Daylight Timing, Natural Scent, and Outdoor View on Cognitive Performance",
+      "abstract": "Well-being in the built environment is a topic that features frequently in building standards and certification schemes, in scholarly articles and in the general press. However, despite this surge in attention, there are still many questions on how to effectively design, measure, and nurture well-being in the built environment. Bringing together experts from academia and the building industry, this paper aims to demonstrate that the promotion of well-being requires a departure from conventional agendas. The ten questions and answers have been arranged to offer a range of perspectives on the principles and strategies that can better sustain the consideration of well-being in the design and operation of the built environment. Placing a specific focus on some of the key physical factors (e.g., light, temperature, sound, and air quality) of indoor environmental quality (IEQ) that strongly influence occupant perception of built spaces, attention is also given to the value of multi-sensory variability, to how to monitor and communicate well-being outcomes in support of organizational and operational strategies, and to future research needs and their translation into building practice and standards. Seen as a whole, a new framework emerges, accentuating the integration of diverse new competencies required to support the design and operation of built environments that respond to the multifaceted physical, physiological, and psychological needs of their occupants.",
+      "doi": "",
+      "url": "https://search.proquest.com/openview/e64ea95bb5ea6d3fa6b0445c0a531b06/1?pq-origsite=gscholar&cbl=18750&diss=y",
+      "authors": [
+        "SHF Al Marzouqi"
+      ],
+      "year": 2026,
+      "source_gap": "GAP-PNU-001",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "openalex"
+    },
+    {
+      "paper_id": "serpapi-8260e2a4a3",
+      "title": "Exploring the impact of external shading system on cognitive task performance, alertness and visual comfort in a daylit workplace environment",
+      "abstract": "The authors examined the effect of external shading system on cognitive performance, alertness and visual comfort of visual display terminal (VDT) users under two realistic office lighting settings in this study. Daylight was the source of illumination being considered as the most significant and preferred one. A total of 26 participants performed visual and cognitive demanding tasks as well as providing subjective alertness, performance and visual evaluations in a full-scale mock-up VDT workstation. Two trials (with and without shading system) were executed during one experimental session. Results revealed that the use of a shading system improves the performance of a user on colour-naming task requiring sustained attention, while no differential effects were observed on tasks involving other cognitive skills such as search velocity and vigilance. Within-subject performance differences were more pronounced during morning hours. Higher performance was reported in some cognitive tests when the subjective sensation of visual discomfort was lower.",
+      "doi": "",
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/1420326X19864414",
+      "authors": [
+        "F Leccese",
+        "G Salvadori",
+        "M Öner"
+      ],
+      "year": 2020,
       "source_gap": "GAP-PNU-001",
       "triage_decision": "ACCEPT",
       "abstract_source": "semantic_scholar"
     },
     {
-      "paper_id": "af-2022-jenvp-1477153",
-      "title": "Daylighting quality metrics and worker cognitive performance: a longitudinal field study",
-      "abstract": "Nine-month field study of 120 knowledge workers correlating continuous illuminance monitoring with weekly cognitive assessments. Spatial daylight autonomy above 50% associated with 12% faster executive function performance.",
-      "doi": "10.1177/1477153523098312",
-      "url": "https://doi.org/10.1177/1477153523098312",
-      "authors": ["Viola, A.", "James, L.", "Schlangen, L."],
-      "year": 2022,
+      "paper_id": "serpapi-ea9bcfdaf3",
+      "title": "The impact of nonvisual effects of daylight on building occupants: Implications on lighting standards and human centric lighting design",
+      "abstract": "Light is necessary for vision; it enables us to sense and perceive our surroundings and in many direct and indirect ways, via eye and skin, affects our physiological and psychological health. The use of light in built environments has comfort, behavioural, economic and environmental consequences. Daylight has many particular benefits including excellent visual performance, permitting good eyesight, effective entrainment of the circadian system as well as a number of acute non-image forming effects and the important role of vitamin D production. Some human responses to daylight seem to be well defined whilst others require more research to be adequately understood. This paper presents an overview of current knowledge on how the characteristics of daylight play a role in fulfilling these and other functions often better than electric lighting as conventionally delivered.",
+      "doi": "",
+      "url": "https://figshare.swinburne.edu.au/articles/thesis/The_impact_of_nonvisual_effects_of_daylight_on_building_occupants_Implications_on_lighting_standards_and_human_centric_lighting_design/26402764",
+      "authors": [
+        "A Lo"
+      ],
+      "year": 2024,
       "source_gap": "GAP-PNU-001",
       "triage_decision": "ACCEPT",
-      "abstract_source": "semantic_scholar"
+      "abstract_source": "openalex"
     },
     {
-      "paper_id": "af-2023-ijerph-54312",
-      "title": "Biophilic classroom design and student cognitive engagement: a quasi-experimental study in higher education",
-      "abstract": "Quasi-experimental comparison of two university classrooms differing only in biophilic elements. Students in the biophilic classroom showed significantly lower perceived mental workload (p=.009) and 14% improvement on Stroop interference scores.",
-      "doi": "10.3390/ijerph20054312",
-      "url": "https://doi.org/10.3390/ijerph20054312",
-      "authors": ["Largo-Wight, E.", "Chen, W.W.", "Dodd, V."],
+      "paper_id": "serpapi-730675d5c2",
+      "title": "… of Indoor Thermal–Humidity and Lighting Environments on Cognitive Performance and Work Efficiency of Knowledge Workers in Open-Plan Offices: An Empirical …",
+      "abstract": "… on working memory, executive control, and sustained attention, and their work efficiency directly … To facilitate communication and collaboration while optimizing spatial costs, open-plan …",
+      "doi": "",
+      "url": "https://creativeng.org/article/view/723",
+      "authors": [
+        "L Weber",
+        "J Fische",
+        "G Ferrari"
+      ],
+      "year": 2025,
+      "source_gap": "GAP-PNU-001",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "snippet"
+    },
+    {
+      "paper_id": "serpapi-5016646f83",
+      "title": "Biophilic classroom environments on stress and cognitive performance: A randomized crossover study in virtual reality (VR)",
+      "abstract": "The emerging Metaverse will likely increase time expenditure in indoor virtual environments, which could impact human health and well-being. The biophilia hypothesis suggests that humans have an innate tendency to seek connections with the natural world and there is increasing evidence that biophilic design such as the incorporation of green plants can yield health benefits. Recently, virtual reality (VR) has been used to regulate stress and improve overall wellness, particularly by incorporating natural settings. In this randomized crossover study, we designed five virtual classroom scenes with different biophilic elements and turbidity in VR and investigated whether the visual stimulations can affect the stress levels and cognitive functions of 30 young adults from a university in China. We measured their physiological indicators of stress reaction by wearable biomonitoring sensors (blood pressure (BP), heart rate (HR), heart rate variability (HRV), and skin conductance level (SCL)), conducted verbal cognitive tests on attention and creativity, and evaluated subjective/perceived (self-reported) stress levels and connection with nature. Albeit our results suggested no significant change in physiological stress reactions or cognitive functions induced by the biophilic and turbid interventions in VR, the addition of biophilic elements in the Metaverse could benefit students’ health due to significantly decreased perceived stress levels and increased connections with nature.",
+      "doi": "",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0291355",
+      "authors": [
+        "J You",
+        "X Wen",
+        "L Liu",
+        "J Yin",
+        "JS Ji"
+      ],
       "year": 2023,
       "source_gap": "GAP-PNU-002",
       "triage_decision": "ACCEPT",
       "abstract_source": "crossref"
     },
     {
-      "paper_id": "af-2022-leaqua-101552",
-      "title": "The effect of correlated colour temperature on reading fluency in secondary classrooms",
-      "abstract": "Forty-two secondary school students tested under three CCT conditions (2700K, 4000K, 6500K). 4000K produced fastest reading fluency; 6500K supported best n-back performance. Findings suggest task-differentiated CCT recommendations.",
-      "doi": "10.1016/j.leaqua.2022.101552",
-      "url": "https://doi.org/10.1016/j.leaqua.2022.101552",
-      "authors": ["Sloane, P.", "Veitch, J.A.", "Newsham, G."],
-      "year": 2022,
-      "source_gap": "GAP-PNU-003",
+      "paper_id": "serpapi-a9af7af282",
+      "title": "Enhancing cognitive performance and physiological benefit in workspaces through patterns of biophilic design: a restorative approach",
+      "abstract": "Contact with nature is believed to enhance mental health through the process of human psychological restoration. However, prolonged indoor living limits individuals’ exposure to nature, potentially hindering the timely alleviation of stress and fatigue induced by work. While biophilic design is recognized as a potential solution, its impact on the restoration process has not been extensively studied, particularly in relation to its various design patterns. Therefore, it is important to determine the restorative effects of different patterns of biophilic design and their combination in order to guide the practical application of biophilic design. In this study, the effects of two typical biophilic design patterns and their combination on attention restoration were measured using subjective scales, cognitive tasks, and functional near-infrared spectroscopy (fNIRS) in a simulated real workspace. The results suggest a significant enhancement in the restorative impact on cognitive performance and physiological benefits when combining two biophilic design patterns, while a single design pattern does not yield the same effect. These findings contribute to a better understanding and improvement of workspaces, enhancing users’ experience and well-being.",
+      "doi": "",
+      "url": "https://www.mdpi.com/2075-5309/14/10/3293",
+      "authors": [
+        "P Zhang",
+        "Z Yu",
+        "G Hou",
+        "P Shu",
+        "Y Bo",
+        "Y Shi",
+        "R Nie"
+      ],
+      "year": 2024,
+      "source_gap": "GAP-PNU-002",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "crossref"
+    },
+    {
+      "paper_id": "serpapi-e29093441d",
+      "title": "Physiological and cognitive performance of exposure to biophilic indoor environment",
+      "abstract": "Biophilic intervention strategies that incorporate plants, light, and organic elements are increasingly recognized for supporting well-being in confined environments. This systematic review analyzes health outcomes associated with edible greens and biophilic elements across 124 studies drawn from PubMed and Scopus, following PRISMA guidelines. The evidence demonstrates that greenery in confined settings-such as hospitals, eldercare, and space habitats-reduces stress, improves mood, and accelerates recovery, consistent with Stress Reduction Theory (SRT) and Attention Restoration Theory (ART). In space analogs, plant-based modules support cognitive function and improve habitat experience by producing food and oxygen. Despite these benefits, a few challenges remain: infection control, spatial constraints, and operational limitations can hinder adoption. Nonetheless, tailored biophilic systems represent a promising path to enhance health and resilience in both terrestrial and space-based care environments. This review synthesizes findings from both terrestrial and extraterrestrial environments to evaluate the effectiveness of edible plant-based biophilic interventions. Evidence from clinical studies and long-duration missions suggests that incorporating edible vegetation into confined environments enhances psychological resilience, supports nutritional intake, and contributes to overall well-being. The presence of living plant systems has been shown to reduce stress, enhance mood, and foster a sense of connectedness to nature in contexts where natural stimuli are otherwise absent. Together, these results support the role of edible greens as practical, scalable components for designing sustainable, health-promoting environments in both Earth-based and space-based habitats. We examined the role of biophilic interventions, particularly the incorporation of edible greens, in promoting health within confined environments. Biophilic interventions incorporate natural forms, materials, edible plants, and natural light into architectural designs and indoor settings to enhance both physical and mental well-being (Body and Mind Care). Research in clinical settings and space missions has focused on the outcomes associated with human-plant interactions and the development of bio-regenerative plant modules that support sustainable living. These systems grow plants in controlled environments, enabling food production and the regeneration of essential life-support resources, such as oxygen and clean air. They aim to support crew health through food production, air purification, and psychological benefits, particularly during long-duration missions. We conducted a systematic review, searching databases including PubMed and Scopus, and selected 124 studies based on the PRISMA criteria to analyze the impact of these interventions in eldercare, hospitals, isolation-wards, and spaceflight. Incorporating natural elements into confined habitats yields notable psychological and physiological benefits. In healthcare and indoor environments, the presence of greenery consistently reduces stress, elevates mood, and improves patients' perception of their surroundings, often contributing to faster recovery. These effects are not limited to hospitals and eldercare settings. In remote and extreme environments, such as polar research stations and space missions, plant interaction can alleviate cognitive fatigue, reduce monotony, and strengthen team cohesion. Integrating edible greens and biophilic elements into confined settings-such as hospitals, eldercare facilities, and space habitats-offers measurable benefits for psychological resilience, reduced physiological stress, and improved cognitive performance. These systems serve dual purposes: therapeutic exposure to nature and support for nutritional or regenerative goals. In hospitals and long-term care, interventions like healing gardens or nature-themed spaces have been shown to reduce anxiety, pain perception, and cortisol levels, while enhancing mood and focus (Beukeboom et.al., 2012; Detweiler et al., 2012). However, high-risk environments like ICUs and operating rooms face practical barriers, including infection control, equipment sensitivity, and space limitations. Similarly, in analog and orbital habitats such as HERA or the ISS, biophilic integration is constrained by power, volume, microbial safety, and crew workload. Despite these constraints, evidence supports the feasibility of modular, low-risk systems-including sealed plant modules, artificial daylighting, and virtual green exposure-tailored to operational demands. As confined living environments become more common across clinical and off-world contexts, biophilic strategies present an adaptable, scalable framework for enhancing well-being, with minimal disruption to safety or efficiency.",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132318300064",
+      "authors": [
+        "J Yin",
+        "S Zhu",
+        "P MacNaughton",
+        "JG Allen"
+      ],
+      "year": 2018,
+      "source_gap": "GAP-PNU-002",
       "triage_decision": "ACCEPT",
       "abstract_source": "pubmed"
     },
     {
-      "paper_id": "af-2021-enbuild-111489",
-      "title": "Window-to-floor ratio and glare probability in knowledge-worker offices: a Monte Carlo simulation study",
-      "abstract": "Monte Carlo simulations across 240 virtual office configurations. WFR >35% on south facades produces intolerable glare for >15% of occupied hours without shading. Cognitive alertness illuminance achievable at WFR 25-30% with appropriate shading.",
-      "doi": "10.1016/j.enbuild.2021.111489",
-      "url": "https://doi.org/10.1016/j.enbuild.2021.111489",
-      "authors": ["Nabil, A.", "Mardaljevic, J."],
+      "paper_id": "serpapi-71b43c1793",
+      "title": "Protective and restorative effects of biophilic design in high school indoor environments on stress and cognitive function",
+      "abstract": "Mental health is a significant concern for teenagers. Given that about 80% of Chinese high school students spend the majority of their time indoors on campus, school environments present opportunities not just for learning but also for reducing students’ stress and promoting their well‐being. Previous research has shown that direct interactions with natural elements such as green plants have restorative effects, but limited attention has been given to indirect interactions with nature. We investigated the impact of three design forms—nonbiophilic, curved, and biomimicry—within school corridors and classrooms on Chinese high school students’ stress and cognitive functions. We employed a combination of subjective assessments and objective measurements to examine the protective and restorative impacts of these three design forms and utilized virtual 3D models in order to control confounding environmental variables during a visual experience. Through virtual reality simulations involving 96 participants, we collected physiological responses, including skin conductance level, heart rate, indicators of heart rate variability, and cognitive responses, including creativity and attention test scores, to evaluate participants’ changes in stress levels and cognitive performance. Our results indicated that indirect exposure to nature, particularly curved forms, facilitates greater cognitive improvement and stress reduction, whereas nonbiophilic forms offer enhanced stress protection benefits. Therefore, learning environments with nonbiophilic design may be more suitable for tasks that induce stress, such as classes and examinations. Learning environments that feature curved biophilic forms may be better suited for promoting relaxation, creativity, and attention.",
+      "doi": "",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1155/ina/8696488",
+      "authors": [
+        "L Mengqi",
+        "Y Jie",
+        "X Leiqing"
+      ],
+      "year": 2025,
+      "source_gap": "GAP-PNU-002",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "crossref"
+    },
+    {
+      "paper_id": "serpapi-315b7aa47d",
+      "title": "Impact of biophilic design on college student perception of mental health and environmental benefits: A dose-response study",
+      "abstract": "We examined a dose-response relationship of plants placed in a university classroom with college students’ self-reported cognitive performance, mental and psychosomatic health, …",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132324011600",
+      "authors": [
+        "K Li",
+        "A Perrault",
+        "WA DeYoung",
+        "E Cameron"
+      ],
+      "year": 2025,
+      "source_gap": "GAP-PNU-002",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "snippet"
+    },
+    {
+      "paper_id": "serpapi-15de0b0eae",
+      "title": "Effects of correlated colour temperature of LED light on visual sensation, perception, and cognitive performance in a classroom lighting environment",
+      "abstract": "Illuminance levels have been standardized and regulated for many purposes. However, the effects of correlated colour temperature of lighting have received little attention in the field. This study investigated the effects of correlated colour temperature of lighting on the brightness sensation, lighting perception, and cognitive performance of 60 students under ambient light emitting diodes (LED) lighting conditions (CCT: 3000 K, 4000 K, and 5700 K; illuminance: 650 lx and 1050 lx) in an actual university classroom. An increase in correlated colour temperature (CCT) led to an increase in brightness sensation. However, increased CCT did not linearly increase lighting comfort. A CCT of 4000 K was considered as the optimum for lighting comfort in educational settings. But in comparison to comfort, higher levels of perceptual properties, satisfaction and acceptance were not affected by CCT from 3000 K to 5700 K. Scores on the working memory test were significantly affected by CCT and illuminance level in men only. The effects of gender appeared in glare sensation and the working memory test. Women were sensitive to glare sensation and had a lower mean score in the working memory test than men. Optimal CCT is more beneficial than increased illuminance in moderately ambient indoor lighting, as it provides better lighting comfort. Further research can look at the long-term effects of CCT on lighting perception depending on brain processing levels and more diverse and in-depth cognitive performance.",
+      "doi": "",
+      "url": "https://www.mdpi.com/2071-1050/12/10/4051",
+      "authors": [
+        "W Yang",
+        "JY Jeon"
+      ],
+      "year": 2020,
+      "source_gap": "GAP-PNU-003",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "crossref"
+    },
+    {
+      "paper_id": "serpapi-285dd5e735",
+      "title": "Effect of correlated colour temperature on students' alertness, reading speed and comprehension",
+      "abstract": "This research investigated the effect of speed reading on students’ reading comprehension. The writer used quantitative as the research method and used the quasi experiment as a research design. The writer used experimental class to imply the speed reading method and control group for the other technique in teaching reading. For collecting the data the writer gave the pre – test for experimental and control group, then administrated the treatment for experiment class , finally the researcher administrated the post – test to find out the improvement of speed reading method for the student . Based on the writer interpretation it is concluded that hypothesis is accepted.it is suggested that the teacher should imply the speed reading method in teaching reading because research finding proved that speed reading gave more improvement in reading comprehension that the other technique in teaching reading and the speed reading method was more interesting than conventional method.",
+      "doi": "",
+      "url": "https://etheses.whiterose.ac.uk/id/eprint/36395/",
+      "authors": [
+        "AAM Alkhabra"
+      ],
+      "year": 2024,
+      "source_gap": "GAP-PNU-003",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "crossref"
+    },
+    {
+      "paper_id": "serpapi-4a98487c5b",
+      "title": "Cold and warm coloured classrooms. Effects on students' attention and memory measured through psychological and neurophysiological responses",
+      "abstract": "… that the colour hue of classroom walls influences student … that warm and cold hue coloured classroom walls have on the … colour settings in a virtual classroom. Their performance was …",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132321001360",
+      "authors": [
+        "C Llinares",
+        "JL Higuera-Trujillo",
+        "J Serra"
+      ],
       "year": 2021,
+      "source_gap": "GAP-PNU-003",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "snippet"
+    },
+    {
+      "paper_id": "serpapi-b94847933f",
+      "title": "Window Orientation, Glare, and Visual Comfort in Offices",
+      "abstract": "This study explores the relationship between glare and visual comfort in office environments in relation to daylight conditions in office spaces. The research combines three approaches: field measurements of illumination, user surveys to assess visual comfort, and 3D daylight simulations using Rhino and DIVA software, which studied 21 participants (13 men and 8 women) working in 14 office rooms with window orientations. The results show that users' perceptions of glare and satisfaction with lighting conditions are affected by the location of the desk relative to the windows and their orientation. Southeast and southwest-facing rooms had the highest levels of glare (DGP &gt; 0.35), especially when desks were perpendicular to the windows. In contrast, northeast and northwest-facing rooms had better light balance and higher visual comfort. A statistically significant correlation was found between measured and perceived glare (r = 0.63, p &lt; 0.05), confirming the alignment between objective and subjective evaluations. Gender differences were observed, with female participants showing a higher sensitivity to glare. The study found that full-height windows that occupy 20–40% of the facade provide the most daylight and maintain the visual connection to the outside when combined with appropriate desk placement and glare control. To increase workplace satisfaction, this study emphasizes the use of daylight simulation tools with user-based assessments during the design phase.",
+      "doi": "",
+      "url": "https://solarlits.com/jd/13-167",
+      "authors": [
+        "M Karimimoshaver",
+        "F Derakhshan"
+      ],
+      "year": 2026,
+      "source_gap": "GAP-PNU-004",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "crossref"
+    },
+    {
+      "paper_id": "serpapi-dac73f0214",
+      "title": "Integrating monitors into circadian lighting strategies for offices",
+      "abstract": "• Monitors impact integrative lighting differently based on observer location. • Monitors enhance circadian alignment by 20% near windows, 8% in intermediate zones. • Compliance in deep zones (13 m) requires monitors to be on. • With daylight, monitors enable electric light dimming, reducing required illuminance. • Minimum wall melanopic reflectance is 25% near windows and intermediate, but 42% in deep zones.",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352710225012884",
+      "authors": [
+        "AT Dianagri",
+        "O Gocer",
+        "W Hu"
+      ],
+      "year": 2025,
       "source_gap": "GAP-PNU-004",
       "triage_decision": "ACCEPT",
       "abstract_source": "openalex"
     },
     {
-      "paper_id": "af-2023-envbeh-1194210",
-      "title": "Indoor plants and cognitive restoration in office workers: a preregistered field experiment",
-      "abstract": "Preregistered 8-week field experiment with 96 office workers in three plant density conditions. High plant density produced significantly greater alerting network efficiency (p=.012) and lower afternoon cortisol (p=.028). Maintenance disruption effect was non-significant.",
-      "doi": "10.1177/00139165231194210",
-      "url": "https://doi.org/10.1177/00139165231194210",
-      "authors": ["Bringslimark, T.", "Hartig, T.", "Patil, G.G."],
+      "paper_id": "serpapi-15fc7dcc33",
+      "title": "The impact of evaluated daylight to the total light ratio on the comfort level in office buildings",
+      "abstract": "One of the main challenges in visual comfort assessment is controlling daylight in indoor spaces. The effect of daylight’s contribution to total light is one of the variables influencing how people perceive illumination in an indoor environment. This study investigates the optimal day-light-to-total light ratio that delivers the most satisfaction with the lighting environment. Therefore, a subjective survey of 509 questionnaires and field measurements in six office buildings in Tehran with a total of 257 rooms was conducted to assess lighting quality (daylight and artificial light). Furthermore, the effects of building characteristics and seasons on the acceptable range of daylight ratio are investigated. The results reveal that occupants prefer daylight to total light ratio ranging between 0.56 and 0.8. In contrast, occupants reported that a ratio less than 0.4 was unacceptable. It was also found that the optimum daylight-to-total light ratio is influenced by the season and the building characteristics.",
+      "doi": "",
+      "url": "https://www.mdpi.com/2075-5309/12/12/2161?utm_campaign=releaseissue_buildingsutm_medium=emailutm_source=releaseissueutm_term=titlelink217",
+      "authors": [
+        "M Fakhari",
+        "R Fayaz",
+        "R Lollini"
+      ],
+      "year": 2022,
+      "source_gap": "GAP-PNU-004",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "crossref"
+    },
+    {
+      "paper_id": "serpapi-0868b20723",
+      "title": "Affective and cognitive restoration: comparing the restorative role of indoor plants and guided meditation",
+      "abstract": "This study investigated whether indoor plants were as effective as a guided meditation for enabling psychological recovery after fatigue induced by the abbreviated vigilance task. Sixty students were randomly assigned to an indoor plant, guided meditation, or control rest-break condition. The psychological processes most in need of recovery were identified as cognitive and affective restoration. Measures of affect, stress, and working memory were taken before and after the vigilance task, and again after a rest intervention. The vigilance task-induced fatigue as shown by a significant vigilance decrement and also significantly lowered positive affect and cognitive engagement, and significantly increased distress across all three conditions. After exposure to the break interventions, distress significantly decreased for participants in the indoor plant break condition while distress significantly decreased and engagement significantly increased in the guided meditation break condition. Indoor plants and guided meditation had a small, but significant positive impact on affective restoration and no significant impact on cognitive restoration. <b>Practitioner summary:</b> Indoor plants are a cost-effective green ergonomics intervention in offices. This study found that a rest break with indoor plants was as effective as a rest break with guided meditation for affective restoration after fatigue from a vigilance task.AbbreviationsARTattention restoration theoryLCDliquid crystal displayPANASpositive and negative affect scheduleDSSQS: dundee stress state questionnaire - short versionBDSbackward digit spanANOVAanalysis of varianceCIconfidence intervalMmean.",
+      "doi": "",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/00140139.2021.2003873",
+      "authors": [
+        "P Archary",
+        "A Thatcher"
+      ],
+      "year": 2022,
+      "source_gap": "GAP-PNU-005",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "pubmed"
+    },
+    {
+      "paper_id": "serpapi-f3120d7982",
+      "title": "Do indoor plants improve performance outcomes?: using the attention restoration theory",
+      "abstract": "Biophilic intervention strategies that incorporate plants, light, and organic elements are increasingly recognized for supporting well-being in confined environments. This systematic review analyzes health outcomes associated with edible greens and biophilic elements across 124 studies drawn from PubMed and Scopus, following PRISMA guidelines. The evidence demonstrates that greenery in confined settings-such as hospitals, eldercare, and space habitats-reduces stress, improves mood, and accelerates recovery, consistent with Stress Reduction Theory (SRT) and Attention Restoration Theory (ART). In space analogs, plant-based modules support cognitive function and improve habitat experience by producing food and oxygen. Despite these benefits, a few challenges remain: infection control, spatial constraints, and operational limitations can hinder adoption. Nonetheless, tailored biophilic systems represent a promising path to enhance health and resilience in both terrestrial and space-based care environments. This review synthesizes findings from both terrestrial and extraterrestrial environments to evaluate the effectiveness of edible plant-based biophilic interventions. Evidence from clinical studies and long-duration missions suggests that incorporating edible vegetation into confined environments enhances psychological resilience, supports nutritional intake, and contributes to overall well-being. The presence of living plant systems has been shown to reduce stress, enhance mood, and foster a sense of connectedness to nature in contexts where natural stimuli are otherwise absent. Together, these results support the role of edible greens as practical, scalable components for designing sustainable, health-promoting environments in both Earth-based and space-based habitats. We examined the role of biophilic interventions, particularly the incorporation of edible greens, in promoting health within confined environments. Biophilic interventions incorporate natural forms, materials, edible plants, and natural light into architectural designs and indoor settings to enhance both physical and mental well-being (Body and Mind Care). Research in clinical settings and space missions has focused on the outcomes associated with human-plant interactions and the development of bio-regenerative plant modules that support sustainable living. These systems grow plants in controlled environments, enabling food production and the regeneration of essential life-support resources, such as oxygen and clean air. They aim to support crew health through food production, air purification, and psychological benefits, particularly during long-duration missions. We conducted a systematic review, searching databases including PubMed and Scopus, and selected 124 studies based on the PRISMA criteria to analyze the impact of these interventions in eldercare, hospitals, isolation-wards, and spaceflight. Incorporating natural elements into confined habitats yields notable psychological and physiological benefits. In healthcare and indoor environments, the presence of greenery consistently reduces stress, elevates mood, and improves patients' perception of their surroundings, often contributing to faster recovery. These effects are not limited to hospitals and eldercare settings. In remote and extreme environments, such as polar research stations and space missions, plant interaction can alleviate cognitive fatigue, reduce monotony, and strengthen team cohesion. Integrating edible greens and biophilic elements into confined settings-such as hospitals, eldercare facilities, and space habitats-offers measurable benefits for psychological resilience, reduced physiological stress, and improved cognitive performance. These systems serve dual purposes: therapeutic exposure to nature and support for nutritional or regenerative goals. In hospitals and long-term care, interventions like healing gardens or nature-themed spaces have been shown to reduce anxiety, pain perception, and cortisol levels, while enhancing mood and focus (Beukeboom et.al., 2012; Detweiler et al., 2012). However, high-risk environments like ICUs and operating rooms face practical barriers, including infection control, equipment sensitivity, and space limitations. Similarly, in analog and orbital habitats such as HERA or the ISS, biophilic integration is constrained by power, volume, microbial safety, and crew workload. Despite these constraints, evidence supports the feasibility of modular, low-risk systems-including sealed plant modules, artificial daylighting, and virtual green exposure-tailored to operational demands. As confined living environments become more common across clinical and off-world contexts, biophilic strategies present an adaptable, scalable framework for enhancing well-being, with minimal disruption to safety or efficiency.",
+      "doi": "",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-96068-5_65",
+      "authors": [
+        "K Adamson",
+        "A Thatcher"
+      ],
+      "year": 2018,
+      "source_gap": "GAP-PNU-005",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "pubmed"
+    },
+    {
+      "paper_id": "serpapi-8099b8ad5e",
+      "title": "Indoor Plants, Burnout Mitigation and the Wellness of Healthcare Workers",
+      "abstract": "… Interviews found that participants associated indoor plants … , cognitive restoration, mindfulness, and cohesive workspaces. The addition of indoor plants appeared to enhance workplace …",
+      "doi": "",
+      "url": "https://ecommons.cornell.edu/bitstreams/929d7bc4-77ed-4f99-82cc-d5c16784c347/download",
+      "authors": [
+        "C Green"
+      ],
       "year": 2023,
       "source_gap": "GAP-PNU-005",
       "triage_decision": "ACCEPT",
-      "abstract_source": "semantic_scholar"
+      "abstract_source": "snippet"
     },
     {
-      "paper_id": "af-2022-nnr-583",
-      "title": "Dynamic lighting and cognitive fatigue in hospital nursing staff",
-      "abstract": "12-week parallel-group trial of circadian-tuned dynamic lighting for night-shift nurses. Dynamic lighting reduced end-of-shift fatigue by 1.4 points (p<.001) and improved N-back accuracy by 6% (p=.018). Habituation was not a significant moderator after 4 weeks.",
-      "doi": "10.1097/NNR.0000000000000583",
-      "url": "https://doi.org/10.1097/NNR.0000000000000583",
-      "authors": ["Iskra-Golec, I.", "Smith, L.", "Wilczek-Ruzyczka, E."],
-      "year": 2022,
+      "paper_id": "serpapi-a7a343eed1",
+      "title": "Effect of dynamic light application on cognitive performance and well-being of intensive care nurses",
+      "abstract": "Exposure to bright light has alerting effects. In nurses, alertness may be decreased because of shift work and high work pressure, potentially reducing work performance and increasing the risk for medical errors.",
+      "doi": "",
+      "url": "https://aacnjournals.org/ajcconline/article-abstract/27/3/245/4207",
+      "authors": [
+        "KS Simons",
+        "ERK Boeijen",
+        "MC Mertens",
+        "P Rood"
+      ],
+      "year": 2018,
       "source_gap": "GAP-PNU-006",
       "triage_decision": "ACCEPT",
       "abstract_source": "pubmed"
     },
     {
-      "paper_id": "af-2021-jenvp-101563",
-      "title": "Outdoor view content and attentional restoration in home-office workers during COVID-19 lockdown",
-      "abstract": "Cross-sectional survey of 1,247 remote workers. Nature-content views predicted significantly higher Attentional Function Index (β=0.31, p<.001) and Perceived Restorativeness Scale (β=0.28, p<.001) after controlling for view distance, window size, and residential density.",
-      "doi": "10.1016/j.jenvp.2021.101563",
-      "url": "https://doi.org/10.1016/j.jenvp.2021.101563",
-      "authors": ["Sop Shin, W.", "Kim, B.J.", "Lee, S."],
-      "year": 2021,
-      "source_gap": "GAP-PNU-007",
+      "paper_id": "serpapi-74bb4afd62",
+      "title": "Lighting for Well-Being: A Human-Building Interaction Approach for Enhancing Intensive Care Environments",
+      "abstract": "… performance and alertness. Balancing these competing needs makes hospital lighting design … Implementing dynamic lighting strategies that vary both intensity and colour temperature …",
+      "doi": "",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-16863-4_1",
+      "authors": [
+        "V Garcia-Hansen",
+        "F Rodriguez",
+        "R Ong",
+        "I Linders"
+      ],
+      "year": 2026,
+      "source_gap": "GAP-PNU-006",
       "triage_decision": "ACCEPT",
-      "abstract_source": "semantic_scholar"
+      "abstract_source": "snippet"
     },
     {
-      "paper_id": "af-2020-enbuild-110432",
-      "title": "Thermal preference and cognitive comfort in mixed-mode buildings: seasonal acclimatisation effects",
-      "abstract": "Bi-weekly thermal comfort surveys and cognitive performance batteries (n=210 person-surveys, 14 months). Thermal preference alignment predicted higher working memory and processing speed (r=0.29, p<.001). Seasonal acclimatisation significant in summer but not winter.",
-      "doi": "10.1016/j.enbuild.2020.110432",
-      "url": "https://doi.org/10.1016/j.enbuild.2020.110432",
-      "authors": ["Xiong, J.", "Lian, Z.", "Zhou, X."],
-      "year": 2020,
-      "source_gap": "GAP-PNU-008",
+      "paper_id": "serpapi-8308099386",
+      "title": "The impact of dynamic lighting on sleep timing and duration for hospitalised patients",
+      "abstract": "ABSTRACT\n                  \n                    Poor sleep is common in hospitalised patients due to multiple factors, including disruption of the circadian rhythm. Few studies have examined programmable artificial lighting systems in hospital patient rooms, and few have achieved meaningful improvement in sleep. We sought to determine how novel dynamic lighting affects sleep timing and duration compared to standard hospital lighting. Patients were admitted to rooms on a cardiology unit with customised intervention or standard lighting. The lighting system delivered blue‐enriched light during the day, a melanopic stimulus twice daily and blue‐depleted light in the evening. Sleep/wake probability was measured in 30‐s epochs using mattress sensors to capture sleep timing and nocturnal sleep duration. Subjective sleep duration and alertness were assessed with sleep diaries and the Karolinska Sleepiness Scale (KSS), respectively. A total of 87 patients were enrolled. Subjects experiencing customised lighting demonstrated significantly advanced rest/wake activity phase by 160 min and overall greater sleep probability. Overnight sleep duration (11 p.m.–7 a.m.) was 66 min greater in the lighting condition (266 vs. 200 min,\n                    p\n                     &lt; 0.05). Patients in the intervention group reported higher levels of alertness during the morning (KSS score 3.8 vs. 4.9,\n                    p\n                     = 0.01) and evening (5.4 vs. 7.1,\n                    p\n                     = 0.01). A lighting system programmed to entrain the circadian rhythm and provide a daytime melanopic stimulus on a hospital unit was associated with advanced circadian phase, increased nocturnal sleep duration and increased perceived morning and evening alertness. These results suggest that dynamic lighting systems have the potential to improve sleep for hospitalised patients.",
+      "doi": "",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jsr.70041",
+      "authors": [
+        "AS Dunn",
+        "BR Fastman",
+        "A Weinberg"
+      ],
+      "year": 2025,
+      "source_gap": "GAP-PNU-006",
       "triage_decision": "ACCEPT",
       "abstract_source": "crossref"
     },
     {
-      "paper_id": "af-2021-jasa-3786",
-      "title": "Reverberation time and reading comprehension in open-plan primary classrooms",
-      "abstract": "Multi-level regression across 48 classrooms (n=1,156 students). RT60 above 0.6s associated with 6.3 percentile-point decrease in reading scores (p=.003). Evidence-supported target: RT60 ≤0.4s for early literacy.",
-      "doi": "10.1121/10.0003786",
-      "url": "https://doi.org/10.1121/10.0003786",
-      "authors": ["Sato, H.", "Bradley, J.S."],
+      "paper_id": "serpapi-00ff217d64",
+      "title": "Lighting for Well-Being: A Human-Building Interaction Approach for Enhancing Intensive Care",
+      "abstract": "… performance and alertness. Balancing these competing needs makes hospital lighting design … Implementing dynamic lighting strategies that vary both intensity and colour temperature …",
+      "doi": "",
+      "url": "https://books.google.com/books?hl=en&lr=&id=IZXWEQAAQBAJ&oi=fnd&pg=PA3&dq=%22dynamic+lighting%22+AND+(%22cognitive+fatigue%22+OR+%22alertness%22)+AND+(%22hospital%22+OR+%22healthcare%22)&ots=-AqRh82Hpv&sig=2hwsNbA047cOrmWZcvaFF7ZQX_M",
+      "authors": [
+        "V Garcia-Hansen",
+        "F Rodriguez",
+        "R Ong"
+      ],
+      "year": null,
+      "source_gap": "GAP-PNU-006",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "snippet"
+    },
+    {
+      "paper_id": "serpapi-c6a59cbd93",
+      "title": "An Analysis of the Workplace Environment and Its Impact on Employee Health, Satisfaction, and Productivity in Jordan.",
+      "abstract": "The purpose of this research is to investigate the impact of indoor environmental quality, behavioral, and functional factors on employee productivity and satisfaction in both open and closed office designs, as well as their relationship with building features and indoor environmental parameters. Literature review, questionnaire survey, and measurement of the indoor environment, were all used to collect data for this study. Statistical analysis was carried out using the SAS JMP program. It was found that employees in closed offices have higher levels of satisfaction with their indoor environment and behavioral aspects of their workplace, whereas employees in open workplaces have higher levels of satisfaction with their functional components and indoor air quality. As the study further reveals, Jordanian employees generally prefer working in closed offices since they provide privacy, which directly affects their satisfaction and productivity. Overall, the study emphasizes how occupant health, satisfaction, well-being, and productivity are affected by their office environment. When designing and selecting office spaces that prioritize employee satisfaction and productivity, architects and business owners can gain valuable insights from this study.",
+      "doi": "",
+      "url": "https://cspub-fce-submission.org/index.php/fce/article/view/249",
+      "authors": [
+        "J Mahasneh",
+        "H Ali",
+        "RA Saad"
+      ],
+      "year": 2024,
+      "source_gap": "GAP-PNU-007",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "openalex"
+    },
+    {
+      "paper_id": "serpapi-49fe362a43",
+      "title": "Investigation of the appropriate reverberation time for lower-grade elementary school classrooms using speech intelligibility tests",
+      "abstract": "Because speech recognition performance is significantly lower at the age of nine or younger, the acoustic performance standards of classrooms for young children should be investigated. This study derives the appropriate reverberation time for lower-grade elementary school classrooms in Korea. A virtual sound field was created by computer modeling using normalized classrooms of Korean elementary schools. A total of five classrooms with reverberation times from 0.6 s to 1.2 s were produced by varying the sound absorption coefficient of the ceiling. Auralized sounds were produced by synthesizing anechoic sounds of words in a virtual sound field. Speech intelligibility tests were undertaken with 20 young students, aged nine. As a result, it was concluded that the reverberation time suitable for lower-grade classrooms of elementary schools should be below 0.6 s because test scores were significantly lower when RT was longer than this value.",
+      "doi": "",
+      "url": "https://www.mdpi.com/2075-5309/12/6/808",
+      "authors": [
+        "AH Jo",
+        "CJ Park",
+        "CH Haan"
+      ],
+      "year": 2022,
+      "source_gap": "GAP-PNU-009",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "crossref"
+    },
+    {
+      "paper_id": "serpapi-38b799ee6b",
+      "title": "Initial study on the reverberation time standard for the Korean middle and high school classrooms using speech intelligibility tests",
+      "abstract": "The most important function of the classroom is to transmit educational information from teachers to students more accurately and clearly. The acoustical environment of the classroom thus has an important effect on the improvement of students’ learning ability. To provide an appropriate acoustical environment for learning to students, it is necessary to create an acoustical performance standard for classrooms and a guideline for designing classrooms. However, in Korea, there is not an acoustical standard for classrooms; thus, it is difficult to control and manage appropriate acoustical performance when designing and building classrooms. The present study aims to suggest acoustic performance standards for classrooms that are suitable for the Korean language. In order to perform this study, standard classrooms were created by standardizing architectural dimensions of 17 middle and high school classrooms in Cheong-ju. Speech intelligibility tests were conducted using three different languages including Korean, English, and Chinese. Twenty native speakers for each language were used as subjects for the speech intelligibility tests. Finally, auralized sound sources were created with five different conditions of reverberation time (0.47~1.22 s) by changing indoor sound absorption of a real classroom. Listening tests were undertaken by 52 Korean adults with normal hearing, using the auralized sound source. The results proved that the most appropriate reverberation time for learning was above 0.76 s. Based on the research findings, the ideal acoustical performance standard for classrooms in Korea is as follows: background noise is below 35 dBA, and reverberation time is below 0.80 s. It is also necessary that indoor sound absorption should be above 20% without sound absorption on side walls in order to satisfy with the acoustical performance standard.",
+      "doi": "",
+      "url": "https://www.mdpi.com/2075-5309/11/8/354",
+      "authors": [
+        "CJ Park",
+        "CH Haan"
+      ],
       "year": 2021,
       "source_gap": "GAP-PNU-009",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "crossref"
+    },
+    {
+      "paper_id": "serpapi-5309a6c184",
+      "title": "Optimum Reverberation Time of Classrooms for Incomplete Hearing People Using Speech Intelligibility Tests",
+      "abstract": "Because speech recognition performance is significantly lower at the age of nine or younger, and age over 65. The acoustic performance standards of classrooms for these people, incomplete hearing people, should be investigated separately. This study derives the appropriate reverberation time of classrooms for both lower-grade elementary school pupils and elderly in Korea. A virtual sound field was created by computer modeling using normalized classrooms of Korean elementary schools. A total of five classrooms with reverberation times from 0.6 s to 1.2 s were produced by varying the sound absorption coefficient of the ceiling. Auralized sounds were produced by synthesizing anechoic sounds of words in a virtual sound field. Speech intelligibility tests were undertaken with 20 young pupils and 50 elderly people. As a result, it was concluded that the reverberation time suitable for lower-grade classrooms of elementary schools should be below 0.6 s because test scores were significantly lower when RT was longer than this value. Also reverberation time below 0.8s was suggested for the learning space for elderly people.",
+      "doi": "",
+      "url": "https://www.researchgate.net/profile/Chan-Haan/publication/378834988_Optimum_Reverberation_Time_of_Classrooms_for_Incomplete_Hearing_People_Using_Speech_Intelligibility_Tests/links/6600fca7a4857c7962764b5c/Optimum-Reverberation-Time-of-Classrooms-for-Incomplete-Hearing-People-Using-Speech-Intelligibility-Tests.pdf",
+      "authors": [
+        "CH Haan"
+      ],
+      "year": 2024,
+      "source_gap": "GAP-PNU-009",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "openalex"
+    },
+    {
+      "paper_id": "serpapi-3b20ebfabf",
+      "title": "Daylighting Performance Assessment: A Review of Methodologies",
+      "abstract": "This review assesses various methodologies in evaluating daylighting performance, highlighting their strengths and limitations. Key methods include computer-aided simulations, field measurements, physical scaled modelling, and mathematical calculations. Computer-aided simulations offer detailed and accurate predictions but require specialised skills, resources, and validation for accuracy. Field measurements provide empirical real-time data, though they are resource-intensive and need more time. Physical scaled models offer tangible insights but may lack precision, while mathematical calculations are quick and accessible yet often simplified and applicable to small tasks. However, designers can enhance the efficacy of daylighting assessments by integrating multiple methods, investing in training and tools, prioritising real-world testing, and adapting strategies to local contexts. Continuous monitoring and holistic design approaches are essential for optimising natural light use, improving energy efficiency, and ensuring occupant comfort in sustainable building environments. The review provides a valuable guide for researchers, architects, and engineers in selecting and combining appropriate methodologies for practical daylighting performance assessment.",
+      "doi": "",
+      "url": "https://pathofscience.org/index.php/ps/article/view/3422",
+      "authors": [
+        "MI Ayoosu",
+        "AL Utsaha",
+        "KE Gabriel",
+        "AMM Vishigh"
+      ],
+      "year": 2025,
+      "source_gap": "GAP-PNU-011",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "crossref"
+    },
+    {
+      "paper_id": "serpapi-7d4f9c3008",
+      "title": "Daylighting, occupant behavior, and cultural context in Algerian collective housing: A post-occupancy evaluation in Annaba",
+      "abstract": "… This study fills this gap through a post-occupancy evaluation (POE) of eight multi-family residential buildings in the Wed El-Fourcha neighborhood of Annaba. The primary objective is to …",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352710225013993",
+      "authors": [
+        "S Makhlouf",
+        "M Cheraitia",
+        "D Alkama"
+      ],
+      "year": 2025,
+      "source_gap": "GAP-PNU-011",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "snippet"
+    },
+    {
+      "paper_id": "serpapi-4cdac688c8",
+      "title": "An investigation of the daylighting simulation techniques and sky modeling practices for occupant centric evaluations",
+      "abstract": "Occupant centric performance approaches in daylighting studies promote design decisions that support human visual comfort, productivity, and visual preferences, along with more …",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132316303626",
+      "authors": [
+        "M Inanici",
+        "A Hashemloo"
+      ],
+      "year": 2017,
+      "source_gap": "GAP-PNU-011",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "snippet"
+    },
+    {
+      "paper_id": "serpapi-373fbd4fa2",
+      "title": "Assessing daylight performance in use: A comparison between long-term daylight measurements and simulations",
+      "abstract": "Climate-Based Daylight Modelling (CBDM) methods have been validated against long-term measurements in laboratory settings and found to exhibit errors small enough to make such assessments useful for daylight performance prediction. However, real occupied spaces are affected by a higher number of uncertainties than laboratory or controlled conditions. This study aims at validating CBDM methods against measurements collected in an occupied classroom space, where a monitoring system based on High Dynamic Range Imaging was installed. Four vertical regions were identified on two of the room’s walls, and mean illuminance was calculated for these regions at every time step, both from HDR images and from simulated results. Two simulation methods were evaluated: the 2-phase and the 4-component methods. Sun and sky conditions for the simulations were derived from simultaneous monitored irradiation measurements. Both simulation methods led to moderate over-prediction of HDR-derived results, when considering instantaneous illuminance means and when looking at long-term metrics (cumulative irradiation and Useful Daylight Illuminance). Wall regions exposed to more direct sky- and sunlight were characterised by smaller systematic errors (rMBE = 4%) but similar variance (r2 = 0.83) than regions situated at the back of the room (rMBE = 17–34% and rMAE = 27–37%). Further studies are needed to identify and separate the sources of such errors.",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0378778822001608",
+      "authors": [
+        "E Brembilla",
+        "NC Drosou",
+        "J Mardaljevic"
+      ],
+      "year": 2022,
+      "source_gap": "GAP-PNU-011",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "openalex"
+    },
+    {
+      "paper_id": "serpapi-fa6170d937",
+      "title": "Lighting in multi-user office environments: improving employee wellbeing through personal control",
+      "abstract": "Spending a large majority of our time indoors makes the indoor environmental conditions important determinants of our satisfaction and wellbeing.Over the last decades, lighting has established itself as a recognized influencer of people's wellbeing in living and working environments.While poor design can cause discomfort, the right implementations can elevate satisfaction, improve mood, and influence performance.Recent years, a shift in approaches to office design could be observed.Employers are increasingly realizing that people represent not only their highest cost but also their greatest asset.This resulted in workplace design as a means to attract talent, retain high-value employees, and enhance organizational performance.The office as functional workspace has started giving way to spaces designed to engage and inspire.An engaging workplace fosters creativity, encourages innovation, and, maybe most importantly, increases commitment.These insights have boosted the application of open office environments.The shared character of the open office does, however, create challenges to cater to the individual's wellbeing in these multi-user spaces.In this thesis, research is presented exploring how wellbeing in the modern open plan office can be improved, by offering satisfying lighting environments through personal control (Chapter 2).Wellbeing is herein assessed through the users' satisfaction with environmental conditions, t heir mood, and the occurrence of conflict between users.In a series of studies, strategies for improvement of the personal control proposition are explored, being user profiling (Chapter 3), the influence of wall brightness (Chapter 4), and noticeable and acceptable dimming of lighting (Chapter 5).Users can greatly benefit from experiencing their individual preferred lighting, with additional benefits for personally controlling it.In the first study of this thesis, presented in Chapter 2, personal control of the general lighting system was evaluated in a longitudinal field study in an open office environment.In the study, reference conditions without control, as well as control conditions with consensus control were evaluated.The study showed that consensus control in an open office improves the satisfaction of individual users with the quantity and quality of light, compared to the reference situation with a fixed average work plane illuminance.When offered controls, the average preferred illuminance values were lower than the values currently recommended by standards.Even though the controllable light was shared, the consensus among users did result in an improved lighting environment for the majority of the users and did not introduce a negative effect on the environmental satisfaction or the mood of the office users.1 Chapter 1 1.2.3. Mood and emotionsLight triggers a wide range of non-visual effects regarding biological functioning and behaviour (Cajochen, 2007).Employees' mood is one of these, and a frequently reported emotional parameter explored for being influenced by lighting.In lighting studies, mood surveys often make use of adjective checklists (Diener & Emmons, 1984;Matthews, Jones, & Chamberlain, 1990;Thayer, 1989).Mood can be influenced by people's emotions, and is in some studies also assessed using emotional state surveys (aan het Rot, Moskowitz, & Young, 2008;Fleischer et al., 2001;Russel & Mehrabian, 1977). Sleep and alertnessBesides affecting mood, reduced daytime light exposure has also been shown to affect sleep quality in office workers (Figueiro et al., 2017).Numerous studies can be found using sleep parameters to assess wellbeing, as well as performance of users, of which a cross section will be discussed here.Sleep has aDifferent studies report effects of lighting on users' performance.Some link these effects to sleep or alertness parameters, as discussed in the previous section, and some report effects on cognitive task performance, creativity, or collaboration.Already in an early study, Van Ooyen et al. (1987) reported improved task concentration, with increased wall luminance, which created a room rated to be more stimulating.Through linked mechanism analyses, Veitch et al. (2008) suggested paths linking preferred lighting to task performance, through motivation.In a study performed by Linhart and Scartezzini (2011), two energy efficient lighting scenarios, were evaluated for approximately two hours in the evening, using a horizontal illuminance of 232 lx and 352 lx with comparable visual comfort.The performance of the paper-based task was better in the scenario with horizontal illuminance of 352 lx.The two lighting scenarios did not show a significant difference in the measures of computer-based task performance or alertness ratings.Mnch and colleagues (2012) found in their study that light exposure of six hours during the afternoon to have an impact on cognitive task performance in the early evening.They showed better cognitive performance in dim light during the early evening after an exposure to daylight in the afternoon of approximately 1000 lx at the subjects' eve level, compared to electrical light exposure of on average 176 lx at eye level (3700K).Better cognitive performance also significantly correlated to lower sleepiness in the evening.In the study of Smolders et al.(2012) morning and afternoon sessions were tested, during which participants were exposed to conditions",
+      "doi": "",
+      "url": "https://research.tue.nl/files/125218573/20190606_Vleuten_Chraibi.pdf",
+      "authors": [
+        "S van der Vleuten-Chraibi"
+      ],
+      "year": 2019,
+      "source_gap": "GAP-PNU-012",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "openalex"
+    },
+    {
+      "paper_id": "serpapi-5aa311d5bd",
+      "title": "The impacts of real-time knowledge based personal lighting control on energy consumption, user satisfaction and task performance in offices",
+      "abstract": "Current building design and engineering practices emphasizing on energy conservation can be improved further by developing methods focusing on building occupants’ needs and interests in conservation. Specifically, the resulting energy effective building performance improvements cannot reach the desired goals, if the resulting indoor environmental conditions do not meet thermal, visual and air quality needs of the occupants. To meet both energy conservation and human performance requirements simultaneously requires to give the occupants information regarding indoor environmental qualities and energy implications of possible individual decisions. This requires that building control components and systems must enable occupants to understand how the building operates and how their own actions meet both their needs and the energy and environmental goals of the building project. The goal of the research and experiments of this dissertation is to explore if real-time information regarding visual comfort requirements to meet a variety of tasks and to simultaneously conserve energy, improves occupant behavior to meet both objectives. Two workplaces in Robert L. Preger Intelligent Workplace were equipped to test the performance of 60 invited participants in conducting computer based tasks and a paper based task, under three difference lighting controls: 1) Centralized lighting control with no user choice 2) User control of - blind positions for daylight shading - ceiling based lighting fixture luminance output level - task lighting: on/off 3) User control the three components (as listed under point 2 above), with provided simultaneous information regarding energy and related CO2 emissions implications, appropriate light levels meeting tasks requirements, and best choices in order to meet both task requirements and energy conservation goals/objectives. The main findings of the experiments are that real-time information (listed under point 3 above) enables users to meet the visual quality requirements for both computer tasks and the paper task, and to conserve significant amounts of electricity for lighting. Furthermore, the 60 invited participants were asked to identify the importance of the four types of provided information tested in point 3 above. While individual users identified the importance of different information categories, the overall assessment were considered to be significant.",
+      "doi": "",
+      "url": "https://kilthub.cmu.edu/ndownloader/files/12258569",
+      "authors": [
+        "Y Gu"
+      ],
+      "year": 2011,
+      "source_gap": "GAP-PNU-012",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "openalex"
+    },
+    {
+      "paper_id": "serpapi-1ca1bf6d2a",
+      "title": "Daylight and View Quality in Offices: Developing Multifactor Evolutionary Simulation Methods to Achieve Occupant Well-Being: A Case Study of Commercial Buildings …",
+      "abstract": "… LEED and WELL Building Standard in their view quality credit. • Daylight quality was limited to glare, spatial daylight autonomy … This study applied LEED assessment criteria, which state …",
+      "doi": "",
+      "url": "https://search.proquest.com/openview/f100048c44b2edf5f72f6170758bd91f/1?pq-origsite=gscholar&cbl=2026366&diss=y",
+      "authors": [
+        "MSM Abdelrahman"
+      ],
+      "year": 2024,
+      "source_gap": "GAP-PNU-013",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "snippet"
+    },
+    {
+      "paper_id": "serpapi-b927186b8a",
+      "title": "Daylight and Occupant Satisfaction in Educational High-Rise Office Building: An Online Survey and Comprehensive Case Study",
+      "abstract": "… Key performance metrics such as Spatial Daylight Autonomy (sDA), Useful Daylight … Spatial Daylight Autonomy (sDA) quantifies the percentage of the floor area that receives a …",
+      "doi": "",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-14019-7_80",
+      "authors": [
+        "E Demirci",
+        "FŞ Yılmaz"
+      ],
+      "year": 2025,
+      "source_gap": "GAP-PNU-013",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "snippet"
+    },
+    {
+      "paper_id": "serpapi-087f6ba122",
+      "title": "Non-visual effects of light on melatonin, alertness and cognitive performance: can blue-enriched light keep us alert?",
+      "abstract": "Light exposure can cascade numerous effects on the human circadian process via the non-imaging forming system, whose spectral relevance is highest in the short-wavelength range. Here we investigated if commercially available compact fluorescent lamps with different colour temperatures can impact on alertness and cognitive performance.",
+      "doi": "",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0016429",
+      "authors": [
+        "SL Chellappa",
+        "R Steiner",
+        "P Blattner",
+        "P Oelhafen"
+      ],
+      "year": 2011,
+      "source_gap": "GAP-PNU-014",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "pubmed"
+    },
+    {
+      "paper_id": "serpapi-38309f5e34",
+      "title": "Non-visual light responses in humans: melanopsin and cone involvement",
+      "abstract": "Signals from cones are recombined in postreceptoral channels [luminance, L + M; red-green, L − M; blue-yellow, S − (L + M)]. The melanopsin-containing retinal ganglion cells are also active at daytime light levels and recent psychophysical results suggest that melanopsin contributes to conscious vision in humans. Here, we measured BOLD fMRI responses to spectral modulations that separately targeted the postreceptoral cone channels and melanopsin. Responses to spatially uniform (27.5° field size, central 5° obscured) flicker at 0.5, 1, 2, 4, 8, 16, 32, and 64 Hz were recorded from areas V1, V2/V3, motion-sensitive area MT, and the lateral occipital complex. In V1 and V2/V3, higher temporal sensitivity was observed to L + M + S (16 Hz) compared with L − M flicker (8 Hz), consistent with psychophysical findings. Area MT was most sensitive to rapid (32 Hz) flicker of either L + M + S or L − M. We found S cone responses only in areas V1 and V2/V3 (peak frequency: 4–8 Hz). In addition, we studied an L + M modulation and found responses that were effectively identical at all temporal frequencies to those recorded for the L + M + S modulation. Finally, we measured the cortical response to melanopsin-directed flicker and compared this response with control modulations that addressed stimulus imprecision and the possibility of stimulation of cones in the shadow of retinal blood vessels (penumbral cones). For our stimulus conditions, melanopsin flicker did not elicit a cortical response exceeding that of the control modulations. We note that failure to control for penumbral cone stimulation could be mistaken for a melanopsin response.SIGNIFICANCE STATEMENTThe retina contains cone photoreceptors and ganglion cells that contain the photopigment melanopsin. Cones provide brightness and color signals to visual cortex. Melanopsin influences circadian rhythm and the pupil, but its contribution to cortex and perception is less clear. We measured the response of human visual cortex with fMRI using spectral modulations tailored to stimulate the cones and melanopsin separately. We found that cortical responses to cone signals vary systematically across visual areas. Differences in temporal sensitivity for achromatic, red-green, and blue-yellow stimuli generally reflect the known perceptual properties of vision. We found that melanopsin signals do not produce a measurable response in visual cortex at temporal frequencies between 0.5 and 64 Hz at daytime light levels.",
+      "doi": "",
+      "url": "https://search.proquest.com/openview/d4b30e0a64aa0370916ecaeb2f6a77aa/1?pq-origsite=gscholar&cbl=51922",
+      "authors": [
+        "C Papamichael"
+      ],
+      "year": 2012,
+      "source_gap": "GAP-PNU-014",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "crossref"
+    },
+    {
+      "paper_id": "serpapi-c04953839c",
+      "title": "The influence of integrative lighting on sleep and cognitive functioning of shift workers during the morning shift in an assembly plant",
+      "abstract": "It is well known that exposure to light at the right time of the day is important to synchronise our circadian rhythm and enhance cognitive functioning. There is, however, a lack of field studies investigating which lighting characteristics are necessary to improve sleep and cognitive functioning. A controlled field study with 80 shift workers was set up, in which the impact of an integrative lighting (IL) scenario was investigated during the morning shift. Two groups were compared: a control group (no change in lighting settings) and a IL-group (exposed to a melanopic Equivalent Daylight Illuminance of 192 lux, i.e., bright light with a high fraction of short-wavelengths). Pre-post measurement of visual comfort, cognitive functioning (D2 task, go-nogo reaction time task) and sleep (MotionWatch8) were performed. The IL-settings ameliorated sleep efficiency and sleep latency during morning shift and enhanced alertness (not inhibition) compared to standard lighting conditions. Changing lighting settings in an industrial setting should be considered as it seems worthwhile for employees' sleep and cognitive performance.",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0003687021002659",
+      "authors": [
+        "E Van de Putte",
+        "S Kindt",
+        "P Bracke",
+        "M Stevens"
+      ],
+      "year": 2022,
+      "source_gap": "GAP-PNU-014",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "semantic_scholar"
+    },
+    {
+      "paper_id": "serpapi-9762577a1c",
+      "title": "The effect of blue-enriched white light on cognitive performances and sleepiness of night-shift workers: A field study",
+      "abstract": "Night-shift works are basically accompanied by reduced cognitive performance, sleepiness, and higher possibility for human error and related incidents. It is therefore crucial to improve individuals' performance and alertness in sensitive places like industries' control room with the ultimate goal of increasing efficiency and reducing the number of possible incidents. Previous research has indicated that blue light is a critical cue for entraining circadian rhythm. As a result, the present study was an attempt to investigate whether blue-enriched white light illumination was a practical strategy to decrease sleepiness and improve cognitive performance during night shifts.",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S003193841730135X",
+      "authors": [
+        "M Motamedzadeh",
+        "R Golmohammadi",
+        "R Kazemi"
+      ],
+      "year": 2017,
+      "source_gap": "GAP-PNU-014",
       "triage_decision": "ACCEPT",
       "abstract_source": "pubmed"
     }

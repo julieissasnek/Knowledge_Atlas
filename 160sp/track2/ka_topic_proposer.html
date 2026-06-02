@@ -49,13 +49,13 @@
   Track 2 &middot; Task 3 &mdash; Four-Scraper Harvest &amp; Three-Stage Triage<br/>
   <strong>Topic:</strong> Daylight &amp; Cognition / Built Environment<br/>
   <strong>Student:</strong> Julie Issasnek &nbsp;|&nbsp;
-  <strong>Date:</strong> 2026-06-01
+  <strong>Generated:</strong> 2026-06-02
 </p>
 <p class="live-note">
   &dagger; All funnel counts are computed live from the
   <code>article_references</code> SQLite table via
   <code>article_db.get_prisma_counts()</code> &mdash; no hardcoded values.
-  Regenerate this page with <code>python prisma_export.py</code>.
+  Regenerate with <code>python prisma_export.py</code>.
 </p>
 
 <h2>PRISMA-Style Identification &amp; Screening Flow</h2>
@@ -63,49 +63,49 @@
 <div class="funnel">
 
   <div class="funnel-box">
-    <div class="n" id="n-identified">70</div>
+    <div class="n">63</div>
     <div class="label">Records <strong>identified</strong> via four-scraper harvest layer<br/>
-      (SerpAPI &middot; scholarly &middot; paper-scraper &middot; 14 gap queries &times; 5 results)</div>
+      (SerpAPI &middot; scholarly &middot; paper-scraper &middot; 14 gap queries)</div>
   </div>
 
   <div class="arrow">&darr;</div>
 
   <div class="funnel-box">
-    <div class="n" id="n-screened">69</div>
+    <div class="n">63</div>
     <div class="label">Records <strong>screened</strong> after DOI deduplication</div>
-    <div class="excluded">1 duplicate removed</div>
+    <div class="excluded">0 duplicates removed</div>
   </div>
 
   <div class="arrow">&darr;</div>
 
   <div class="funnel-box">
-    <div class="n" id="n-abstract">67</div>
+    <div class="n">60</div>
     <div class="label">Records with abstract retrieved<br/>
       (semantic_scholar &rarr; crossref &rarr; pubmed &rarr; openalex fallback chain)</div>
-    <div class="excluded">2 records flagged MISSING_ABSTRACT &mdash; no abstract from any source</div>
+    <div class="excluded">0 records flagged MISSING_ABSTRACT</div>
   </div>
 
   <div class="arrow">&darr; &nbsp; &darr; &nbsp; &darr;</div>
 
   <div style="display:flex;gap:1rem;width:100%;max-width:580px;justify-content:center">
     <div class="funnel-box accept" style="flex:1;width:auto;max-width:none">
-      <div class="n" id="n-accept">10</div>
+      <div class="n">38</div>
       <div class="label"><strong>ACCEPT</strong><br/>Strong domain signals (&ge;2)</div>
     </div>
     <div class="funnel-box edge" style="flex:1;width:auto;max-width:none">
-      <div class="n" id="n-edge">4</div>
+      <div class="n">15</div>
       <div class="label"><strong>EDGE CASE</strong><br/>Partial relevance</div>
     </div>
     <div class="funnel-box reject" style="flex:1;width:auto;max-width:none">
-      <div class="n" id="n-reject">53</div>
-      <div class="label"><strong>REJECT</strong><br/>Topic mismatch or metadata fail</div>
+      <div class="n">10</div>
+      <div class="label"><strong>REJECT</strong><br/>Topic mismatch</div>
     </div>
   </div>
 
   <div class="arrow">&darr;</div>
 
   <div class="funnel-box accept" style="max-width:280px">
-    <div class="n" id="n-pdf">7</div>
+    <div class="n">0</div>
     <div class="label">PDFs <strong>retrieved</strong> (Stage 3)<br/>
       <small>Unpaywall &rarr; scidownl (last resort)</small></div>
   </div>
@@ -116,27 +116,27 @@
 
 <div class="summary-grid">
   <div class="summary-card" style="background:#d4edda">
-    <div class="count" style="color:#155724">10</div>
+    <div class="count" style="color:#155724">38</div>
     <div class="label">ACCEPT</div>
   </div>
   <div class="summary-card" style="background:#fff3cd">
-    <div class="count" style="color:#856404">4</div>
+    <div class="count" style="color:#856404">15</div>
     <div class="label">EDGE CASE</div>
   </div>
   <div class="summary-card" style="background:#f8d7da">
-    <div class="count" style="color:#721c24">2</div>
+    <div class="count" style="color:#721c24">10</div>
     <div class="label">REJECT</div>
   </div>
   <div class="summary-card" style="background:#e2e3e5">
-    <div class="count" style="color:#383d41">2</div>
+    <div class="count" style="color:#383d41">0</div>
     <div class="label">MISSING ABSTRACT</div>
   </div>
   <div class="summary-card" style="background:#cce5ff">
-    <div class="count" style="color:#004085">1</div>
+    <div class="count" style="color:#004085">0</div>
     <div class="label">DUPLICATE</div>
   </div>
   <div class="summary-card" style="background:#e8f4f8">
-    <div class="count" style="color:#0f3460">7</div>
+    <div class="count" style="color:#0f3460">0</div>
     <div class="label">PDFs RETRIEVED</div>
   </div>
 </div>
@@ -153,62 +153,14 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>GAP-PNU-001</td>
-      <td>Effect of daylight exposure on sustained attention in open-plan offices&hellip;</td>
-      <td><code>10.1016/j.buildenv.2023.110241</code></td>
-      <td>semantic_scholar</td>
-      <td><span class="badge badge-accept">ACCEPT</span></td>
-    </tr>
-    <tr>
-      <td>GAP-PNU-001</td>
-      <td>Daylighting quality metrics and worker cognitive performance&hellip;</td>
-      <td><code>10.1177/1477153523098312</code></td>
-      <td>semantic_scholar</td>
-      <td><span class="badge badge-accept">ACCEPT</span></td>
-    </tr>
-    <tr>
-      <td>GAP-PNU-002</td>
-      <td>Biophilic classroom design and student cognitive engagement&hellip;</td>
-      <td><code>10.3390/ijerph20054312</code></td>
-      <td>crossref</td>
-      <td><span class="badge badge-accept">ACCEPT</span></td>
-    </tr>
-    <tr>
-      <td>GAP-PNU-003</td>
-      <td>The effect of correlated colour temperature on reading fluency&hellip;</td>
-      <td><code>10.1016/j.leaqua.2022.101552</code></td>
-      <td>pubmed</td>
-      <td><span class="badge badge-accept">ACCEPT</span></td>
-    </tr>
-    <tr>
-      <td>GAP-PNU-004</td>
-      <td>Window-to-floor ratio and glare probability in knowledge-worker offices&hellip;</td>
-      <td><code>10.1016/j.enbuild.2021.111489</code></td>
-      <td>openalex</td>
-      <td><span class="badge badge-accept">ACCEPT</span></td>
-    </tr>
-    <tr>
-      <td>GAP-PNU-011</td>
-      <td>Validation of daylighting simulation against post-occupancy&hellip;</td>
-      <td><code>10.1016/j.solener.2021.05.031</code></td>
-      <td>semantic_scholar</td>
-      <td><span class="badge badge-edge">EDGE CASE</span></td>
-    </tr>
-    <tr>
-      <td>GAP-PNU-001</td>
-      <td>Light and productivity at work: a systematic review&hellip;</td>
-      <td>(not found)</td>
-      <td>none</td>
-      <td><span class="badge badge-missing">MISSING ABSTRACT</span></td>
-    </tr>
-    <tr>
-      <td>GAP-PNU-001</td>
-      <td>Daylighting quality metrics and worker cognitive performance&hellip; (2nd submission)</td>
-      <td><code>10.1177/1477153523098312</code></td>
-      <td>&mdash;</td>
-      <td><span class="badge badge-dup">DUPLICATE</span></td>
-    </tr>
+    <tr><td>GAP-PNU-001</td><td>Experimental Investigation of Multisensory Office Environments: Effects …</td><td><code>(not found)</code></td><td>openalex</td><td><span class="badge badge-accept">ACCEPT</span></td></tr>
+    <tr><td>GAP-PNU-001</td><td>Exploring the impact of external shading system on cognitive task perfor…</td><td><code>(not found)</code></td><td>semantic_scholar</td><td><span class="badge badge-accept">ACCEPT</span></td></tr>
+    <tr><td>GAP-PNU-001</td><td>The impact of nonvisual effects of daylight on building occupants: Impli…</td><td><code>(not found)</code></td><td>openalex</td><td><span class="badge badge-accept">ACCEPT</span></td></tr>
+    <tr><td>GAP-PNU-001</td><td>… of Indoor Thermal–Humidity and Lighting Environments on Cognitive Perf…</td><td><code>(not found)</code></td><td>snippet</td><td><span class="badge badge-accept">ACCEPT</span></td></tr>
+    <tr><td>GAP-PNU-002</td><td>Biophilic classroom environments on stress and cognitive performance: A …</td><td><code>(not found)</code></td><td>crossref</td><td><span class="badge badge-accept">ACCEPT</span></td></tr>
+    <tr><td>GAP-PNU-002</td><td>Enhancing cognitive performance and physiological benefit in workspaces …</td><td><code>(not found)</code></td><td>crossref</td><td><span class="badge badge-accept">ACCEPT</span></td></tr>
+    <tr><td>GAP-PNU-002</td><td>Physiological and cognitive performance of exposure to biophilic indoor …</td><td><code>(not found)</code></td><td>pubmed</td><td><span class="badge badge-accept">ACCEPT</span></td></tr>
+    <tr><td>GAP-PNU-002</td><td>Protective and restorative effects of biophilic design in high school in…</td><td><code>(not found)</code></td><td>crossref</td><td><span class="badge badge-accept">ACCEPT</span></td></tr>
   </tbody>
 </table>
 
@@ -218,60 +170,33 @@
   &rarr; <code>query_results.json</code>
   &rarr; <strong><code>harvest_layer.py</code></strong>
     (SerpAPI &middot; scholarly &middot; paper-scraper &mdash; scidownl reserved for Stage 3)
-  &rarr; <strong><code>article_references.db</code></strong>
+  &rarr; <code>article_references.db</code>
   &rarr; <strong><code>triage_engine.py</code></strong>
     (Stage&nbsp;1: metadata &middot; Stage&nbsp;2: abstract+classify &middot; Stage&nbsp;3: PDF gate)
   &rarr; <strong><code>prisma_export.py</code></strong>
-    (live PRISMA counts from DB &rarr; this page)
+    (live PRISMA counts from DB)
   &rarr; <code>af_handoff.json</code> (Article Finder boundary)
 </p>
 
 <h2>Decision Logic</h2>
 <pre style="background:#f0f0f0;padding:1rem;border-radius:4px;font-size:.85rem;line-height:1.5">
-Stage 1 (metadata-only — no network calls)
-    title &lt; 5 chars?           &rarr; stage1_status = fail  → final_decision = REJECT
-    year outside [1990-2030]?  &rarr; stage1_status = fail  → final_decision = REJECT
-    ALL-CAPS title?            &rarr; stage1_status = fail  → final_decision = REJECT
+Stage 1 (metadata-only — no network)
+    title &lt; 5 chars?          &rarr; REJECT
+    year outside [1990-2030]? &rarr; REJECT
+    ALL-CAPS title?           &rarr; REJECT
 
-Stage 2 (abstract enrichment + heuristic classifier)
-    DOI already seen in session?          &rarr; DUPLICATE
-    abstract &lt; 20 words after fallback?   &rarr; MISSING_ABSTRACT
-    strong domain signals &ge; 2?          &rarr; ACCEPT
-    strong &ge; 1  OR  weak &ge; 3?        &rarr; EDGE_CASE
-    otherwise                             &rarr; REJECT
+Stage 2 (abstract + heuristic classifier)
+    DOI already seen?         &rarr; DUPLICATE
+    abstract &lt; 20 words?      &rarr; MISSING_ABSTRACT
+    strong domain signals &ge;2? &rarr; ACCEPT
+    strong &ge;1 OR weak &ge;3?    &rarr; EDGE_CASE
+    otherwise                 &rarr; REJECT
 
-Stage 3 (PDF acquisition — ACCEPT + EDGE_CASE only)
-    scidownl (Sci-Hub) is ONLY invoked here, never in the harvest stage.
-    Acquisition order:
-      1. Unpaywall open-access PDF URL
-      2. Direct URL download (if URL ends in .pdf)
-      3. scidownl last resort
+Stage 3 (PDF — only for ACCEPT + EDGE_CASE)
+    Unpaywall open-access URL &rarr; download
+    Direct URL (.pdf)         &rarr; download
+    scidownl (Sci-Hub)        &rarr; last resort
 </pre>
-
-<script>
-  // Live counts loader: if prisma_counts.json exists alongside this page,
-  // update the funnel numbers dynamically.
-  (async () => {
-    try {
-      const resp = await fetch("prisma_counts.json");
-      if (!resp.ok) return;
-      const c = await resp.json();
-      const set = (id, val) => {
-        const el = document.getElementById(id);
-        if (el && val != null) el.textContent = val;
-      };
-      set("n-identified", c.identified);
-      set("n-screened",   c.screened);
-      set("n-abstract",   c.with_abstract);
-      set("n-accept",     c.accept);
-      set("n-edge",       c.edge_case);
-      set("n-reject",     c.reject);
-      set("n-pdf",        c.pdfs_retrieved);
-    } catch (_) {
-      // prisma_counts.json not available — static numbers remain
-    }
-  })();
-</script>
 
 </body>
 </html>

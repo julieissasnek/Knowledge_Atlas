@@ -1,0 +1,12 @@
+{
+  "identified": 63,
+  "duplicates_removed": 0,
+  "screened": 63,
+  "with_abstract": 60,
+  "missing_abstract": 0,
+  "accept": 38,
+  "edge_case": 15,
+  "reject": 10,
+  "pdfs_retrieved": 0,
+  "generated_at": "2026-06-02T05:12:48.555773+00:00"
+}
