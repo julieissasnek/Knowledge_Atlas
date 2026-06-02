@@ -44,6 +44,9 @@ def _build_local_classifier_backend():
         title: str = ""
         abstract: str = ""
         keywords: tuple[str, ...] = ()
+        doi: str = ""
+        filename: str = ""
+        pdf_path: str = ""
         first_page_text: str = ""
 
     @dataclass(frozen=True)

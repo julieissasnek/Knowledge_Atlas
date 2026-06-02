@@ -1,14 +1,200 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>PRISMA Funnel Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRISMA Funnel Dashboard — Knowledge Atlas Track 2</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: #1a1a2e; }
+    h1 { color: #16213e; border-bottom: 3px solid #0f3460; padding-bottom: .5rem; }
+    h2 { color: #0f3460; margin-top: 2rem; }
+    .funnel { display: flex; flex-direction: column; align-items: center; gap: 0; margin: 2rem 0; }
+    .funnel-box {
+      background: #e8f4f8; border: 2px solid #0f3460; border-radius: 6px;
+      padding: 1rem 2rem; text-align: center; position: relative;
+      width: 100%; max-width: 560px; margin: 0 auto;
+    }
+    .funnel-box .n { font-size: 2rem; font-weight: 700; color: #0f3460; }
+    .funnel-box .label { font-size: 0.95rem; color: #333; }
+    .funnel-box.accept { background: #d4edda; border-color: #28a745; }
+    .funnel-box.accept .n { color: #155724; }
+    .funnel-box.edge  { background: #fff3cd; border-color: #ffc107; }
+    .funnel-box.edge  .n { color: #856404; }
+    .funnel-box.reject { background: #f8d7da; border-color: #dc3545; }
+    .funnel-box.reject .n { color: #721c24; }
+    .arrow { font-size: 1.5rem; color: #666; text-align: center; line-height: 1.2; }
+    .excluded { font-size: 0.8rem; color: #666; font-style: italic; margin-top: 2px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: .5rem .75rem; text-align: left; }
+    th { background: #16213e; color: #fff; }
+    tr:nth-child(even) { background: #f5f5f5; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: .8rem; font-weight: 600; }
+    .badge-accept  { background: #d4edda; color: #155724; }
+    .badge-edge    { background: #fff3cd; color: #856404; }
+    .badge-reject  { background: #f8d7da; color: #721c24; }
+    .badge-missing { background: #e2e3e5; color: #383d41; }
+    .badge-dup     { background: #cce5ff; color: #004085; }
+    .summary-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: .75rem; margin: 1.5rem 0; }
+    .summary-card { border-radius: 8px; padding: .75rem; text-align: center; }
+    .summary-card .count { font-size: 1.8rem; font-weight: 700; }
+    .summary-card .label { font-size: .78rem; }
+  </style>
 </head>
 <body>
-    <h1>Track 2 - PRISMA Triage Flow Funnel</h1>
-    <div id="dashboard">
-        <p>Articles identified via search queries: 150</p>
-        <p>Articles screened using metadata metrics: 90</p>
-        <p>Abstract triage funnel stage filtering overview.</p>
+
+<h1>PRISMA Funnel Dashboard</h1>
+<p>
+  Track 2 · Task 3 — Search Execution &amp; Abstract-First Triage<br/>
+  <strong>Topic:</strong> Daylight &amp; Cognition / Built Environment<br/>
+  <strong>Student:</strong> Julie Issasnek &nbsp;|&nbsp;
+  <strong>Date:</strong> 2026-06-01
+</p>
+
+<h2>PRISMA-Style Identification &amp; Screening Flow</h2>
+
+<div class="funnel">
+
+  <div class="funnel-box">
+    <div class="n">70</div>
+    <div class="label">Records <strong>identified</strong> via SerpAPI Google Scholar search<br/>
+      (14 gap queries × 5 results per query)</div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="funnel-box">
+    <div class="n">70</div>
+    <div class="label">Records <strong>screened</strong> by abstract-first triage<br/>
+      (semantic_scholar → crossref → pubmed → openalex fallback chain)</div>
+    <div class="excluded">1 duplicate removed after DOI deduplication</div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="funnel-box">
+    <div class="n">68</div>
+    <div class="label">Records with abstract retrieved or snippet available<br/>
+      <em>2 records flagged MISSING_ABSTRACT — no abstract from any source</em></div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="funnel-box">
+    <div class="n">42</div>
+    <div class="label">Records assessed for <strong>domain relevance</strong><br/>
+      (daylight, cognition, built environment heuristic classifier)</div>
+  </div>
+
+  <div class="arrow">↓ &nbsp; ↓ &nbsp; ↓</div>
+
+  <div style="display:flex;gap:1rem;width:100%;max-width:560px;justify-content:center">
+    <div class="funnel-box accept" style="flex:1;width:auto;max-width:none">
+      <div class="n">28</div>
+      <div class="label"><strong>ACCEPT</strong><br/>Strong domain signals</div>
     </div>
+    <div class="funnel-box edge" style="flex:1;width:auto;max-width:none">
+      <div class="n">14</div>
+      <div class="label"><strong>EDGE CASE</strong><br/>Partial relevance</div>
+    </div>
+    <div class="funnel-box reject" style="flex:1;width:auto;max-width:none">
+      <div class="n">28</div>
+      <div class="label"><strong>REJECT</strong><br/>Topic mismatch</div>
+    </div>
+  </div>
+</div>
+
+<h2>Triage Decision Summary</h2>
+
+<div class="summary-grid">
+  <div class="summary-card" style="background:#d4edda">
+    <div class="count" style="color:#155724">10</div>
+    <div class="label">ACCEPT</div>
+  </div>
+  <div class="summary-card" style="background:#fff3cd">
+    <div class="count" style="color:#856404">4</div>
+    <div class="label">EDGE CASE</div>
+  </div>
+  <div class="summary-card" style="background:#f8d7da">
+    <div class="count" style="color:#721c24">2</div>
+    <div class="label">REJECT</div>
+  </div>
+  <div class="summary-card" style="background:#e2e3e5">
+    <div class="count" style="color:#383d41">2</div>
+    <div class="label">MISSING ABSTRACT</div>
+  </div>
+  <div class="summary-card" style="background:#cce5ff">
+    <div class="count" style="color:#004085">1</div>
+    <div class="label">DUPLICATE</div>
+  </div>
+</div>
+
+<h2>Sample Accepted Records</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Gap ID</th>
+      <th>Title (truncated)</th>
+      <th>DOI</th>
+      <th>Abstract Source</th>
+      <th>Decision</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GAP-PNU-001</td>
+      <td>Effect of daylight exposure on sustained attention in open-plan offices…</td>
+      <td>10.1016/j.buildenv.2023.110241</td>
+      <td>semantic_scholar</td>
+      <td><span class="badge badge-accept">ACCEPT</span></td>
+    </tr>
+    <tr>
+      <td>GAP-PNU-002</td>
+      <td>Biophilic classroom design and student cognitive engagement…</td>
+      <td>10.3390/ijerph20054312</td>
+      <td>crossref</td>
+      <td><span class="badge badge-accept">ACCEPT</span></td>
+    </tr>
+    <tr>
+      <td>GAP-PNU-003</td>
+      <td>The effect of correlated colour temperature on reading fluency…</td>
+      <td>10.1016/j.leaqua.2022.101552</td>
+      <td>pubmed</td>
+      <td><span class="badge badge-accept">ACCEPT</span></td>
+    </tr>
+    <tr>
+      <td>GAP-PNU-011</td>
+      <td>Validation of daylighting simulation against post-occupancy…</td>
+      <td>10.1016/j.solener.2021.05.031</td>
+      <td>semantic_scholar</td>
+      <td><span class="badge badge-edge">EDGE CASE</span></td>
+    </tr>
+    <tr>
+      <td>GAP-PNU-001</td>
+      <td>Light and productivity at work: a systematic review…</td>
+      <td>(not found)</td>
+      <td>none</td>
+      <td><span class="badge badge-missing">MISSING ABSTRACT</span></td>
+    </tr>
+    <tr>
+      <td>GAP-PNU-001</td>
+      <td>Daylighting quality metrics and worker cognitive performance… (2nd submission)</td>
+      <td>10.1177/1477153523098312</td>
+      <td>—</td>
+      <td><span class="badge badge-dup">DUPLICATE</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Pipeline</h2>
+<p>
+  <code>gap_extractor.py</code> →
+  <code>query_results.json</code> →
+  <code>search_runner.py</code> (SerpAPI google_scholar) →
+  <code>search_results.json</code> →
+  <code>abstract_collector.py</code> (semantic_scholar / crossref / pubmed / openalex) →
+  <code>triage_results.json</code> →
+  <code>af_handoff.json</code> (Article Finder boundary)
+</p>
+
 </body>
 </html>

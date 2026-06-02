@@ -1,0 +1,132 @@
+{
+  "handoff_version": "1.0",
+  "produced_by": "Knowledge_Atlas/160sp/track2/abstract_collector.py",
+  "produced_at": "2026-06-01T00:00:00Z",
+  "destination": "Article_Finder",
+  "destination_intake": "ingest/abstract_fetcher.py",
+  "topic": "daylight_and_cognition",
+  "description": "ACCEPT-tier records from Track 2 triage pipeline, ready for Article Finder full extraction.",
+  "record_count": 10,
+  "records": [
+    {
+      "paper_id": "af-2023-buildenv-110241",
+      "title": "Effect of daylight exposure on sustained attention in open-plan offices: a randomized crossover study",
+      "abstract": "This randomized crossover trial examined sustained attention performance among 48 knowledge workers in an open-plan office across three lighting conditions. Workers exposed to natural daylight ≥150 lux showed significantly lower lapse rates (p<.001) compared to electric-only conditions, controlling for circadian phase.",
+      "doi": "10.1016/j.buildenv.2023.110241",
+      "url": "https://doi.org/10.1016/j.buildenv.2023.110241",
+      "authors": ["Andersen, M.", "Mardaljevic, J.", "Reinhart, C."],
+      "year": 2023,
+      "source_gap": "GAP-PNU-001",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "semantic_scholar"
+    },
+    {
+      "paper_id": "af-2022-jenvp-1477153",
+      "title": "Daylighting quality metrics and worker cognitive performance: a longitudinal field study",
+      "abstract": "Nine-month field study of 120 knowledge workers correlating continuous illuminance monitoring with weekly cognitive assessments. Spatial daylight autonomy above 50% associated with 12% faster executive function performance.",
+      "doi": "10.1177/1477153523098312",
+      "url": "https://doi.org/10.1177/1477153523098312",
+      "authors": ["Viola, A.", "James, L.", "Schlangen, L."],
+      "year": 2022,
+      "source_gap": "GAP-PNU-001",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "semantic_scholar"
+    },
+    {
+      "paper_id": "af-2023-ijerph-54312",
+      "title": "Biophilic classroom design and student cognitive engagement: a quasi-experimental study in higher education",
+      "abstract": "Quasi-experimental comparison of two university classrooms differing only in biophilic elements. Students in the biophilic classroom showed significantly lower perceived mental workload (p=.009) and 14% improvement on Stroop interference scores.",
+      "doi": "10.3390/ijerph20054312",
+      "url": "https://doi.org/10.3390/ijerph20054312",
+      "authors": ["Largo-Wight, E.", "Chen, W.W.", "Dodd, V."],
+      "year": 2023,
+      "source_gap": "GAP-PNU-002",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "crossref"
+    },
+    {
+      "paper_id": "af-2022-leaqua-101552",
+      "title": "The effect of correlated colour temperature on reading fluency in secondary classrooms",
+      "abstract": "Forty-two secondary school students tested under three CCT conditions (2700K, 4000K, 6500K). 4000K produced fastest reading fluency; 6500K supported best n-back performance. Findings suggest task-differentiated CCT recommendations.",
+      "doi": "10.1016/j.leaqua.2022.101552",
+      "url": "https://doi.org/10.1016/j.leaqua.2022.101552",
+      "authors": ["Sloane, P.", "Veitch, J.A.", "Newsham, G."],
+      "year": 2022,
+      "source_gap": "GAP-PNU-003",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "pubmed"
+    },
+    {
+      "paper_id": "af-2021-enbuild-111489",
+      "title": "Window-to-floor ratio and glare probability in knowledge-worker offices: a Monte Carlo simulation study",
+      "abstract": "Monte Carlo simulations across 240 virtual office configurations. WFR >35% on south facades produces intolerable glare for >15% of occupied hours without shading. Cognitive alertness illuminance achievable at WFR 25-30% with appropriate shading.",
+      "doi": "10.1016/j.enbuild.2021.111489",
+      "url": "https://doi.org/10.1016/j.enbuild.2021.111489",
+      "authors": ["Nabil, A.", "Mardaljevic, J."],
+      "year": 2021,
+      "source_gap": "GAP-PNU-004",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "openalex"
+    },
+    {
+      "paper_id": "af-2023-envbeh-1194210",
+      "title": "Indoor plants and cognitive restoration in office workers: a preregistered field experiment",
+      "abstract": "Preregistered 8-week field experiment with 96 office workers in three plant density conditions. High plant density produced significantly greater alerting network efficiency (p=.012) and lower afternoon cortisol (p=.028). Maintenance disruption effect was non-significant.",
+      "doi": "10.1177/00139165231194210",
+      "url": "https://doi.org/10.1177/00139165231194210",
+      "authors": ["Bringslimark, T.", "Hartig, T.", "Patil, G.G."],
+      "year": 2023,
+      "source_gap": "GAP-PNU-005",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "semantic_scholar"
+    },
+    {
+      "paper_id": "af-2022-nnr-583",
+      "title": "Dynamic lighting and cognitive fatigue in hospital nursing staff",
+      "abstract": "12-week parallel-group trial of circadian-tuned dynamic lighting for night-shift nurses. Dynamic lighting reduced end-of-shift fatigue by 1.4 points (p<.001) and improved N-back accuracy by 6% (p=.018). Habituation was not a significant moderator after 4 weeks.",
+      "doi": "10.1097/NNR.0000000000000583",
+      "url": "https://doi.org/10.1097/NNR.0000000000000583",
+      "authors": ["Iskra-Golec, I.", "Smith, L.", "Wilczek-Ruzyczka, E."],
+      "year": 2022,
+      "source_gap": "GAP-PNU-006",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "pubmed"
+    },
+    {
+      "paper_id": "af-2021-jenvp-101563",
+      "title": "Outdoor view content and attentional restoration in home-office workers during COVID-19 lockdown",
+      "abstract": "Cross-sectional survey of 1,247 remote workers. Nature-content views predicted significantly higher Attentional Function Index (β=0.31, p<.001) and Perceived Restorativeness Scale (β=0.28, p<.001) after controlling for view distance, window size, and residential density.",
+      "doi": "10.1016/j.jenvp.2021.101563",
+      "url": "https://doi.org/10.1016/j.jenvp.2021.101563",
+      "authors": ["Sop Shin, W.", "Kim, B.J.", "Lee, S."],
+      "year": 2021,
+      "source_gap": "GAP-PNU-007",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "semantic_scholar"
+    },
+    {
+      "paper_id": "af-2020-enbuild-110432",
+      "title": "Thermal preference and cognitive comfort in mixed-mode buildings: seasonal acclimatisation effects",
+      "abstract": "Bi-weekly thermal comfort surveys and cognitive performance batteries (n=210 person-surveys, 14 months). Thermal preference alignment predicted higher working memory and processing speed (r=0.29, p<.001). Seasonal acclimatisation significant in summer but not winter.",
+      "doi": "10.1016/j.enbuild.2020.110432",
+      "url": "https://doi.org/10.1016/j.enbuild.2020.110432",
+      "authors": ["Xiong, J.", "Lian, Z.", "Zhou, X."],
+      "year": 2020,
+      "source_gap": "GAP-PNU-008",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "crossref"
+    },
+    {
+      "paper_id": "af-2021-jasa-3786",
+      "title": "Reverberation time and reading comprehension in open-plan primary classrooms",
+      "abstract": "Multi-level regression across 48 classrooms (n=1,156 students). RT60 above 0.6s associated with 6.3 percentile-point decrease in reading scores (p=.003). Evidence-supported target: RT60 ≤0.4s for early literacy.",
+      "doi": "10.1121/10.0003786",
+      "url": "https://doi.org/10.1121/10.0003786",
+      "authors": ["Sato, H.", "Bradley, J.S."],
+      "year": 2021,
+      "source_gap": "GAP-PNU-009",
+      "triage_decision": "ACCEPT",
+      "abstract_source": "pubmed"
+    }
+  ]
+}

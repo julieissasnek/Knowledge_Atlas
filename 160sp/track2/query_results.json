@@ -1,72 +1,72 @@
 [
   {
-    "gap_id": "GAP-PNU-005",
-    "ai_citation_query": "What are the explicit empirical interaction mechanics, boundaries, and validation criteria when mapping item preference against environmental confounds inside target fields? Longitudinal validation verification query?",
-    "boolean_query": "\"Thermal Preference\" AND \"Soundscape Habitat\" AND \"Biophilic Design\""
-  },
-  {
-    "gap_id": "GAP-PNU-010",
-    "ai_citation_query": "What are the explicit empirical interaction mechanics, boundaries, and validation criteria when mapping item preference against environmental confounds inside target fields? Longitudinal validation verification query?",
-    "boolean_query": "\"Thermal Preference\" AND \"Soundscape Habitat\" AND \"Biophilic Design\""
-  },
-  {
-    "gap_id": "GAP-PNU-004",
-    "ai_citation_query": "What are the explicit empirical interaction mechanics, boundaries, and validation criteria when mapping item preference against environmental confounds inside target fields? Longitudinal validation verification query?",
-    "boolean_query": "\"Thermal Preference\" AND \"Soundscape Habitat\" AND \"Biophilic Design\""
-  },
-  {
-    "gap_id": "GAP-PNU-009",
-    "ai_citation_query": "What are the explicit empirical interaction mechanics, boundaries, and validation criteria when mapping item preference against environmental confounds inside target fields? Longitudinal validation verification query?",
-    "boolean_query": "\"Thermal Preference\" AND \"Soundscape Habitat\" AND \"Biophilic Design\""
-  },
-  {
-    "gap_id": "GAP-PNU-014",
-    "ai_citation_query": "What are the explicit empirical interaction mechanics, boundaries, and validation criteria when mapping item preference against environmental confounds inside target fields? Longitudinal validation verification query?",
-    "boolean_query": "\"Thermal Preference\" AND \"Soundscape Habitat\" AND \"Biophilic Design\""
-  },
-  {
-    "gap_id": "GAP-PNU-003",
-    "ai_citation_query": "What are the explicit empirical interaction mechanics, boundaries, and validation criteria when mapping item preference against environmental confounds inside target fields? Longitudinal validation verification query?",
-    "boolean_query": "\"Thermal Preference\" AND \"Soundscape Habitat\" AND \"Biophilic Design\""
-  },
-  {
-    "gap_id": "GAP-PNU-008",
-    "ai_citation_query": "What are the explicit empirical interaction mechanics, boundaries, and validation criteria when mapping item preference against environmental confounds inside target fields? Longitudinal validation verification query?",
-    "boolean_query": "\"Thermal Preference\" AND \"Soundscape Habitat\" AND \"Biophilic Design\""
-  },
-  {
-    "gap_id": "GAP-PNU-013",
-    "ai_citation_query": "What are the explicit empirical interaction mechanics, boundaries, and validation criteria when mapping item preference against environmental confounds inside target fields? Longitudinal validation verification query?",
-    "boolean_query": "\"Thermal Preference\" AND \"Soundscape Habitat\" AND \"Biophilic Design\""
+    "gap_id": "GAP-PNU-001",
+    "ai_citation_query": "What are the empirically validated thresholds at which natural daylight exposure improves sustained attention in open-plan offices, controlling for circadian disruption effects? What longitudinal evidence exists for causal mechanisms?",
+    "boolean_query": "\"daylight exposure\" AND \"sustained attention\" AND (\"open-plan\" OR \"open plan\")"
   },
   {
     "gap_id": "GAP-PNU-002",
-    "ai_citation_query": "What are the explicit empirical interaction mechanics, boundaries, and validation criteria when mapping item preference against environmental confounds inside target fields? Longitudinal validation verification query?",
-    "boolean_query": "\"Thermal Preference\" AND \"Soundscape Habitat\" AND \"Biophilic Design\""
+    "ai_citation_query": "What direct empirical evidence links biophilic design elements to cognitive performance outcomes in university classrooms, independent of ambient soundscape noise? Which outcome measures are most sensitive to biophilic interventions?",
+    "boolean_query": "\"biophilic design\" AND \"cognitive performance\" AND (\"classroom\" OR \"learning environment\")"
   },
   {
-    "gap_id": "GAP-PNU-007",
-    "ai_citation_query": "What are the explicit empirical interaction mechanics, boundaries, and validation criteria when mapping item preference against environmental confounds inside target fields? Longitudinal validation verification query?",
-    "boolean_query": "\"Thermal Preference\" AND \"Soundscape Habitat\" AND \"Biophilic Design\""
+    "gap_id": "GAP-PNU-003",
+    "ai_citation_query": "How does correlated colour temperature independently affect reading comprehension and working memory in secondary school classrooms when thermal comfort is held constant? What CCT range produces peak cognitive outcomes?",
+    "boolean_query": "\"colour temperature\" AND (\"reading comprehension\" OR \"working memory\") AND \"classroom\""
   },
   {
-    "gap_id": "GAP-PNU-012",
-    "ai_citation_query": "What are the explicit empirical interaction mechanics, boundaries, and validation criteria when mapping item preference against environmental confounds inside target fields? Longitudinal validation verification query?",
-    "boolean_query": "\"Thermal Preference\" AND \"Soundscape Habitat\" AND \"Biophilic Design\""
+    "gap_id": "GAP-PNU-004",
+    "ai_citation_query": "What is the empirically supported optimal window-to-floor ratio for knowledge workers that maximises cognitive alertness while controlling for glare-induced visual discomfort? Are there interaction effects with façade orientation?",
+    "boolean_query": "\"window-to-floor ratio\" AND (\"glare\" OR \"visual discomfort\") AND \"cognitive\" AND \"office\""
   },
   {
-    "gap_id": "GAP-PNU-001",
-    "ai_citation_query": "What are the explicit empirical interaction mechanics, boundaries, and validation criteria when mapping item preference against environmental confounds inside target fields? Longitudinal validation verification query?",
-    "boolean_query": "\"Thermal Preference\" AND \"Soundscape Habitat\" AND \"Biophilic Design\""
+    "gap_id": "GAP-PNU-005",
+    "ai_citation_query": "Does empirical evidence support a dose-response relationship between indoor plant density and self-reported stress or cognitive restoration in corporate workplaces, independent of maintenance disruption? What plant species or densities are validated?",
+    "boolean_query": "\"indoor plants\" AND (\"stress reduction\" OR \"cognitive restoration\") AND (\"workplace\" OR \"office\")"
   },
   {
     "gap_id": "GAP-PNU-006",
-    "ai_citation_query": "What are the explicit empirical interaction mechanics, boundaries, and validation criteria when mapping item preference against environmental confounds inside target fields? Longitudinal validation verification query?",
-    "boolean_query": "\"Thermal Preference\" AND \"Soundscape Habitat\" AND \"Biophilic Design\""
+    "ai_citation_query": "What rigorous studies examine whether dynamic lighting control reduces nursing staff cognitive fatigue in hospital wards after controlling for occupant habituation to lighting changes? Are circadian and task-lighting effects separable?",
+    "boolean_query": "\"dynamic lighting\" AND (\"cognitive fatigue\" OR \"alertness\") AND (\"hospital\" OR \"healthcare\")"
+  },
+  {
+    "gap_id": "GAP-PNU-007",
+    "ai_citation_query": "How does quantified outdoor view access from a home office window affect attentional restoration and productivity, controlling for the content and distance of the view? What objective or validated subjective measures are used?",
+    "boolean_query": "\"view from window\" AND (\"attention restoration\" OR \"productivity\") AND (\"home office\" OR \"remote work\")"
+  },
+  {
+    "gap_id": "GAP-PNU-008",
+    "ai_citation_query": "What empirical mechanisms explain why thermal preference self-regulation improves occupant cognitive comfort in mixed-mode buildings after accounting for seasonal acclimatisation effects? What are the boundary conditions?",
+    "boolean_query": "\"thermal preference\" AND \"cognitive comfort\" AND (\"mixed-mode\" OR \"natural ventilation\")"
+  },
+  {
+    "gap_id": "GAP-PNU-009",
+    "ai_citation_query": "What is the empirically supported reverberation time target for elementary school open-plan classrooms that optimises reading and numeracy outcomes while controlling for background noise and speech intelligibility masking?",
+    "boolean_query": "\"reverberation time\" AND (\"speech intelligibility\" OR \"reading\") AND \"open-plan\" AND \"school\""
+  },
+  {
+    "gap_id": "GAP-PNU-010",
+    "ai_citation_query": "Does empirical evidence demonstrate that green roof and living wall systems independently reduce occupant stress and improve cognitive well-being in dense urban residential settings beyond their documented thermal load reduction effects?",
+    "boolean_query": "\"green roof\" OR \"living wall\" AND (\"stress\" OR \"well-being\") AND (\"urban\" OR \"residential\")"
   },
   {
     "gap_id": "GAP-PNU-011",
-    "ai_citation_query": "What are the explicit empirical interaction mechanics, boundaries, and validation criteria when mapping item preference against environmental confounds inside target fields? Longitudinal validation verification query?",
-    "boolean_query": "\"Thermal Preference\" AND \"Soundscape Habitat\" AND \"Biophilic Design\""
+    "ai_citation_query": "How accurately do current daylighting simulation tools predict occupant-measured illuminance and cognitive alertness outcomes in post-occupancy evaluations, and where does occupant behaviour variability introduce the largest prediction gaps?",
+    "boolean_query": "\"daylighting simulation\" AND (\"post-occupancy\" OR \"occupant behaviour\") AND (\"accuracy\" OR \"validation\")"
+  },
+  {
+    "gap_id": "GAP-PNU-012",
+    "ai_citation_query": "What empirical studies isolate the cognitive and affective benefits of personal control over workstation lighting in shared open-plan offices from confounding peer influence and social norm effects on lighting settings?",
+    "boolean_query": "\"personal lighting control\" AND (\"cognition\" OR \"mood\" OR \"productivity\") AND \"open-plan\""
+  },
+  {
+    "gap_id": "GAP-PNU-013",
+    "ai_citation_query": "Are spatial daylight autonomy metrics in green building certification schemes predictive of actual occupant cognitive performance outcomes, or does temporal distribution mismatch between rated hours and occupancy invalidate the metric?",
+    "boolean_query": "\"spatial daylight autonomy\" AND (\"cognitive\" OR \"occupant satisfaction\") AND (\"certification\" OR \"LEED\" OR \"BREEAM\")"
+  },
+  {
+    "gap_id": "GAP-PNU-014",
+    "ai_citation_query": "What direct evidence quantifies how melanopsin-mediated non-visual light responses affect shift worker cognitive performance and error rates in industrial settings, after controlling for individual chronotype variation and sleep debt?",
+    "boolean_query": "\"melanopsin\" AND (\"non-visual\" OR \"circadian\") AND (\"shift work\" OR \"shift-work\") AND \"cognitive\""
   }
 ]

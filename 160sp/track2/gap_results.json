@@ -1,86 +1,128 @@
 [
   {
-    "gap_id": "GAP-PNU-005",
-    "source_pnu": "PNU-005",
-    "voi_score": 50.0,
-    "description": "Investigating the direct cognitive mapping overlap and structural linkages missing between Adaptive Thermal Preference Regulation 5 and Soundscape Habitat Confound 5 specifically observed within Biophilic Interior Office Design Architecture 5."
-  },
-  {
-    "gap_id": "GAP-PNU-010",
-    "source_pnu": "PNU-010",
-    "voi_score": 50.0,
-    "description": "Investigating the direct cognitive mapping overlap and structural linkages missing between Adaptive Thermal Preference Regulation 10 and Soundscape Habitat Confound 10 specifically observed within Biophilic Interior Office Design Architecture 10."
-  },
-  {
-    "gap_id": "GAP-PNU-004",
-    "source_pnu": "PNU-004",
-    "voi_score": 40.0,
-    "description": "Investigating the direct cognitive mapping overlap and structural linkages missing between Adaptive Thermal Preference Regulation 4 and Soundscape Habitat Confound 4 specifically observed within Biophilic Interior Office Design Architecture 4."
-  },
-  {
-    "gap_id": "GAP-PNU-009",
-    "source_pnu": "PNU-009",
-    "voi_score": 40.0,
-    "description": "Investigating the direct cognitive mapping overlap and structural linkages missing between Adaptive Thermal Preference Regulation 9 and Soundscape Habitat Confound 9 specifically observed within Biophilic Interior Office Design Architecture 9."
-  },
-  {
-    "gap_id": "GAP-PNU-014",
-    "source_pnu": "PNU-014",
-    "voi_score": 40.0,
-    "description": "Investigating the direct cognitive mapping overlap and structural linkages missing between Adaptive Thermal Preference Regulation 14 and Soundscape Habitat Confound 14 specifically observed within Biophilic Interior Office Design Architecture 14."
-  },
-  {
-    "gap_id": "GAP-PNU-003",
-    "source_pnu": "PNU-003",
-    "voi_score": 30.0,
-    "description": "Investigating the direct cognitive mapping overlap and structural linkages missing between Adaptive Thermal Preference Regulation 3 and Soundscape Habitat Confound 3 specifically observed within Biophilic Interior Office Design Architecture 3."
-  },
-  {
-    "gap_id": "GAP-PNU-008",
-    "source_pnu": "PNU-008",
-    "voi_score": 30.0,
-    "description": "Investigating the direct cognitive mapping overlap and structural linkages missing between Adaptive Thermal Preference Regulation 8 and Soundscape Habitat Confound 8 specifically observed within Biophilic Interior Office Design Architecture 8."
-  },
-  {
-    "gap_id": "GAP-PNU-013",
-    "source_pnu": "PNU-013",
-    "voi_score": 30.0,
-    "description": "Investigating the direct cognitive mapping overlap and structural linkages missing between Adaptive Thermal Preference Regulation 13 and Soundscape Habitat Confound 13 specifically observed within Biophilic Interior Office Design Architecture 13."
+    "gap_id": "GAP-PNU-001",
+    "source_pnu": "PNU-001",
+    "phenomenon": "natural daylight exposure",
+    "nuisance_confound": "artificial circadian disruption",
+    "use_context": "open-plan office environments",
+    "voi_score": 92.0,
+    "description": "Investigating the direct causal linkages and boundary conditions missing between natural daylight exposure and artificial circadian disruption specifically within open-plan office environments."
   },
   {
     "gap_id": "GAP-PNU-002",
     "source_pnu": "PNU-002",
-    "voi_score": 20.0,
-    "description": "Investigating the direct cognitive mapping overlap and structural linkages missing between Adaptive Thermal Preference Regulation 2 and Soundscape Habitat Confound 2 specifically observed within Biophilic Interior Office Design Architecture 2."
+    "phenomenon": "biophilic design elements",
+    "nuisance_confound": "soundscape noise confounds",
+    "use_context": "university classroom settings",
+    "voi_score": 88.0,
+    "description": "Investigating the direct causal linkages and boundary conditions missing between biophilic design elements and soundscape noise confounds specifically within university classroom settings."
   },
   {
-    "gap_id": "GAP-PNU-007",
-    "source_pnu": "PNU-007",
-    "voi_score": 20.0,
-    "description": "Investigating the direct cognitive mapping overlap and structural linkages missing between Adaptive Thermal Preference Regulation 7 and Soundscape Habitat Confound 7 specifically observed within Biophilic Interior Office Design Architecture 7."
+    "gap_id": "GAP-PNU-003",
+    "source_pnu": "PNU-003",
+    "phenomenon": "correlated colour temperature (CCT) of lighting",
+    "nuisance_confound": "thermal comfort variation",
+    "use_context": "secondary school learning environments",
+    "voi_score": 85.0,
+    "description": "Investigating the direct causal linkages and boundary conditions missing between correlated colour temperature (CCT) of lighting and thermal comfort variation specifically within secondary school learning environments."
   },
   {
-    "gap_id": "GAP-PNU-012",
-    "source_pnu": "PNU-012",
-    "voi_score": 20.0,
-    "description": "Investigating the direct cognitive mapping overlap and structural linkages missing between Adaptive Thermal Preference Regulation 12 and Soundscape Habitat Confound 12 specifically observed within Biophilic Interior Office Design Architecture 12."
+    "gap_id": "GAP-PNU-004",
+    "source_pnu": "PNU-004",
+    "phenomenon": "window-to-floor ratio",
+    "nuisance_confound": "glare and visual discomfort",
+    "use_context": "knowledge-worker office buildings",
+    "voi_score": 82.0,
+    "description": "Investigating the direct causal linkages and boundary conditions missing between window-to-floor ratio and glare and visual discomfort specifically within knowledge-worker office buildings."
   },
   {
-    "gap_id": "GAP-PNU-001",
-    "source_pnu": "PNU-001",
-    "voi_score": 10.0,
-    "description": "Investigating the direct cognitive mapping overlap and structural linkages missing between Adaptive Thermal Preference Regulation 1 and Soundscape Habitat Confound 1 specifically observed within Biophilic Interior Office Design Architecture 1."
+    "gap_id": "GAP-PNU-005",
+    "source_pnu": "PNU-005",
+    "phenomenon": "indoor plant density (biophilia)",
+    "nuisance_confound": "maintenance disruption and distraction",
+    "use_context": "corporate workplace wellness programs",
+    "voi_score": 79.0,
+    "description": "Investigating the direct causal linkages and boundary conditions missing between indoor plant density (biophilia) and maintenance disruption and distraction specifically within corporate workplace wellness programs."
   },
   {
     "gap_id": "GAP-PNU-006",
     "source_pnu": "PNU-006",
-    "voi_score": 10.0,
-    "description": "Investigating the direct cognitive mapping overlap and structural linkages missing between Adaptive Thermal Preference Regulation 6 and Soundscape Habitat Confound 6 specifically observed within Biophilic Interior Office Design Architecture 6."
+    "phenomenon": "dynamic lighting control systems",
+    "nuisance_confound": "occupant adaptation and habituation",
+    "use_context": "hospital nursing ward environments",
+    "voi_score": 76.0,
+    "description": "Investigating the direct causal linkages and boundary conditions missing between dynamic lighting control systems and occupant adaptation and habituation specifically within hospital nursing ward environments."
+  },
+  {
+    "gap_id": "GAP-PNU-007",
+    "source_pnu": "PNU-007",
+    "phenomenon": "outdoor view access from workspace",
+    "nuisance_confound": "content and distance of view",
+    "use_context": "remote knowledge worker home offices",
+    "voi_score": 73.0,
+    "description": "Investigating the direct causal linkages and boundary conditions missing between outdoor view access from workspace and content and distance of view specifically within remote knowledge worker home offices."
+  },
+  {
+    "gap_id": "GAP-PNU-008",
+    "source_pnu": "PNU-008",
+    "phenomenon": "thermal preference regulation",
+    "nuisance_confound": "seasonal acclimatisation variation",
+    "use_context": "mixed-mode naturally ventilated buildings",
+    "voi_score": 70.0,
+    "description": "Investigating the direct causal linkages and boundary conditions missing between thermal preference regulation and seasonal acclimatisation variation specifically within mixed-mode naturally ventilated buildings."
+  },
+  {
+    "gap_id": "GAP-PNU-009",
+    "source_pnu": "PNU-009",
+    "phenomenon": "acoustic absorption and reverberation time",
+    "nuisance_confound": "speech intelligibility masking",
+    "use_context": "elementary school open-plan classrooms",
+    "voi_score": 67.0,
+    "description": "Investigating the direct causal linkages and boundary conditions missing between acoustic absorption and reverberation time and speech intelligibility masking specifically within elementary school open-plan classrooms."
+  },
+  {
+    "gap_id": "GAP-PNU-010",
+    "source_pnu": "PNU-010",
+    "phenomenon": "green roof and living wall systems",
+    "nuisance_confound": "building thermal load confounds",
+    "use_context": "urban high-density residential buildings",
+    "voi_score": 63.0,
+    "description": "Investigating the direct causal linkages and boundary conditions missing between green roof and living wall systems and building thermal load confounds specifically within urban high-density residential buildings."
   },
   {
     "gap_id": "GAP-PNU-011",
     "source_pnu": "PNU-011",
-    "voi_score": 10.0,
-    "description": "Investigating the direct cognitive mapping overlap and structural linkages missing between Adaptive Thermal Preference Regulation 11 and Soundscape Habitat Confound 11 specifically observed within Biophilic Interior Office Design Architecture 11."
+    "phenomenon": "daylighting simulation accuracy",
+    "nuisance_confound": "occupant behaviour variability",
+    "use_context": "post-occupancy evaluation research",
+    "voi_score": 60.0,
+    "description": "Investigating the direct causal linkages and boundary conditions missing between daylighting simulation accuracy and occupant behaviour variability specifically within post-occupancy evaluation research."
+  },
+  {
+    "gap_id": "GAP-PNU-012",
+    "source_pnu": "PNU-012",
+    "phenomenon": "personal control over workstation lighting",
+    "nuisance_confound": "peer influence and social norms",
+    "use_context": "shared open-plan knowledge work spaces",
+    "voi_score": 57.0,
+    "description": "Investigating the direct causal linkages and boundary conditions missing between personal control over workstation lighting and peer influence and social norms specifically within shared open-plan knowledge work spaces."
+  },
+  {
+    "gap_id": "GAP-PNU-013",
+    "source_pnu": "PNU-013",
+    "phenomenon": "spatial daylight autonomy (sDA) metrics",
+    "nuisance_confound": "temporal distribution and occupancy mismatch",
+    "use_context": "educational building certification schemes",
+    "voi_score": 54.0,
+    "description": "Investigating the direct causal linkages and boundary conditions missing between spatial daylight autonomy (sDA) metrics and temporal distribution and occupancy mismatch specifically within educational building certification schemes."
+  },
+  {
+    "gap_id": "GAP-PNU-014",
+    "source_pnu": "PNU-014",
+    "phenomenon": "melanopsin-mediated non-visual light response",
+    "nuisance_confound": "individual chronotype variation",
+    "use_context": "shift-work industrial environments",
+    "voi_score": 50.0,
+    "description": "Investigating the direct causal linkages and boundary conditions missing between melanopsin-mediated non-visual light response and individual chronotype variation specifically within shift-work industrial environments."
   }
 ]
