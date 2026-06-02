@@ -340,28 +340,112 @@ def _heuristic_classify(title: str, abstract: str, snippet: str) -> str:
     return DECISION_REJECT
 
 
+def _load_corpus_dois(db_path: str) -> set[str]:
+    """
+    Pre-load ALL DOIs already processed in this corpus so that any paper
+    arriving via the search harvest that already exists is correctly marked
+    DUPLICATE in the PRISMA funnel — not re-classified.
+
+    Three sources, in order of authority:
+      1. article_references rows already assigned a final_decision
+         (previous pipeline runs against the same DB)
+      2. Knowledge Atlas `articles` table — papers already submitted through
+         the contribute page and accepted/rejected there
+      3. af_handoff.json from a prior run (belt-and-suspenders fallback)
+    """
+    import json as _json
+    from pathlib import Path as _Path
+
+    seen: set[str] = set()
+
+    # Source 1: previously decided rows in article_references
+    try:
+        with get_connection(db_path) as conn:
+            rows = conn.execute(
+                """SELECT doi FROM article_references
+                   WHERE doi IS NOT NULL AND doi != ''
+                     AND final_decision IS NOT NULL"""
+            ).fetchall()
+        for row in rows:
+            seen.add(row["doi"].strip().lower())
+    except Exception:
+        pass
+
+    # Source 2: Knowledge Atlas articles table (papers already through
+    # the contribute page pipeline — same SQLite file used by ka_article_endpoints.py)
+    # Try common locations; fail silently if not present.
+    ka_db_candidates = [
+        _Path(db_path).parent.parent.parent / "ka.db",
+        _Path(db_path).parent.parent.parent / "atlas.db",
+        _Path(db_path).parent.parent.parent / "knowledge_atlas.db",
+    ]
+    for ka_db in ka_db_candidates:
+        if ka_db.exists():
+            try:
+                import sqlite3 as _sq3
+                conn2 = _sq3.connect(str(ka_db))
+                conn2.row_factory = _sq3.Row
+                rows2 = conn2.execute(
+                    "SELECT doi FROM articles WHERE doi IS NOT NULL AND doi != ''"
+                ).fetchall()
+                conn2.close()
+                for row in rows2:
+                    seen.add(row["doi"].strip().lower())
+                print(f"  [stage2] Loaded {len(rows2)} DOIs from KA articles table ({ka_db.name})")
+            except Exception:
+                pass
+            break
+
+    # Source 3: af_handoff.json fallback
+    handoff = _Path(db_path).parent / "af_handoff.json"
+    if handoff.exists():
+        try:
+            data = _json.loads(handoff.read_text(encoding="utf-8"))
+            for rec in data.get("records", []):
+                d = (rec.get("doi") or "").strip().lower()
+                if d:
+                    seen.add(d)
+        except Exception:
+            pass
+
+    return seen
+
+
 def run_stage2(db_path: str = DEFAULT_DB, *, delay: float = 0.5) -> dict:
     """
     Fetch abstracts and classify all records that passed Stage 1.
 
-    Duplicate detection: if the same DOI appears more than once within
-    this session, subsequent records are tagged DUPLICATE.
+    Duplicate detection — two layers:
+      1. Cross-corpus: pre-load all DOIs already processed in any prior run
+         or already present in the KA articles table.  A search hit matching
+         any of these is DUPLICATE before abstract fetch even begins.
+      2. In-session: track DOIs seen during this Stage 2 pass so that a DOI
+         returned by multiple gap queries in the same run is caught.
+
+    Both layers write final_decision = DUPLICATE so the PRISMA funnel
+    "duplicates removed" count is correct across runs, not just within one run.
     """
     records   = get_pending_stage2(db_path)
     counts    = {
         DECISION_ACCEPT: 0, DECISION_EDGE: 0, DECISION_REJECT: 0,
         DECISION_MISSING: 0, DECISION_DUPLICATE: 0,
     }
-    seen_dois: set[str] = set()
+
+    # ── Layer 1: pre-load entire existing corpus DOI set ─────────────────────
+    seen_dois: set[str] = _load_corpus_dois(db_path)
+    print(f"  [stage2] Corpus DOI index: {len(seen_dois)} known DOIs pre-loaded")
 
     for i, rec in enumerate(records, 1):
         title   = rec.get("title", "") or ""
         doi     = rec.get("doi", "") or ""
         snippet = rec.get("snippet", "") or ""
+        doi_key = doi.strip().lower()
         print(f"  [stage2 {i:3d}/{len(records)}] {title[:60]}...")
 
-        # Duplicate check
-        if doi and doi in seen_dois:
+        # ── Layer 1 + 2 duplicate check ───────────────────────────────────────
+        # Fires for: (a) DOIs already in corpus from prior runs or KA articles
+        #            (b) same DOI seen twice in this session
+        if doi_key and doi_key in seen_dois:
             update_stage2(rec["paper_id"], status=DECISION_DUPLICATE, db_path=db_path)
             set_final_decision(rec["paper_id"], DECISION_DUPLICATE, db_path=db_path)
             counts[DECISION_DUPLICATE] += 1
@@ -381,8 +465,8 @@ def run_stage2(db_path: str = DEFAULT_DB, *, delay: float = 0.5) -> dict:
         set_final_decision(rec["paper_id"], decision, db_path=db_path)
         counts[decision] = counts.get(decision, 0) + 1
 
-        if doi:
-            seen_dois.add(doi)
+        if doi_key:
+            seen_dois.add(doi_key)  # normalised lowercase for consistent matching
 
         if delay:
             time.sleep(delay)
