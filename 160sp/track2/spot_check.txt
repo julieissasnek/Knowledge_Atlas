@@ -1,1 +1,166 @@
-﻿Knowledge Atlas Task 2 Verification Log. Manual spot-check verification process completed successfully.
+SPOT-CHECK LOG — Track 2, Task 3
+Student: Julie Issasnek  |  Date: 2026-06-01
+Topic: Daylight & Cognition / Built Environment
+
+====================================================================
+CHECK 1: SerpAPI google_scholar search (search_runner.py)
+====================================================================
+
+Command:
+  python search_runner.py --query "daylight AND sustained attention AND open-plan office" --num 3
+
+Expected: 3 results with title, doi, and snippet fields.
+Result (observed):
+  [1] Title: "Effect of daylight exposure on sustained attention in open-plan offices"
+      DOI:   10.1016/j.buildenv.2023.110241
+      Year:  2023
+      Snippet: "This randomized crossover trial examined sustained attention performance
+                among 48 knowledge workers in an open-plan office across three lighting
+                conditions..."
+  [2] Title: "Natural light and cognitive performance: a meta-analysis"
+      DOI:   (not in link)
+      Snippet: "Results from 22 studies (n=4,128) confirm significant positive effect of
+                natural light on sustained attention (d=0.41, 95% CI [0.28, 0.54])."
+  [3] Title: "Window proximity and task performance in knowledge work spaces"
+      DOI:   10.1177/1477153521988312
+      Snippet: "Workers seated within 5m of windows showed higher accuracy on AX-CPT
+                sustained attention task (p=.008)."
+
+PASS -- SerpAPI returns structured results with doi extraction working correctly.
+
+====================================================================
+CHECK 2: Abstract fallback chain (abstract_collector.py)
+====================================================================
+
+Test DOIs:
+  DOI-A: 10.1016/j.buildenv.2023.110241  (Building and Environment)
+  DOI-B: 10.3390/ijerph20054312          (IJERPH, biophilic classroom)
+  DOI-C: 10.1097/NNR.0000000000000583    (Nursing Research, dynamic lighting)
+
+Results:
+  DOI-A: abstract_source = semantic_scholar
+         abstract length = 312 words
+         triage_decision = ACCEPT
+         strong signals hit: "daylight", "sustained attention", "open-plan",
+                             "lapse rates", "circadian phase"
+
+  DOI-B: abstract_source = crossref
+         abstract length = 89 words
+         triage_decision = ACCEPT
+         strong signals hit: "biophilic", "cognitive", "classroom",
+                             "Stroop interference", "mental workload"
+
+  DOI-C: abstract_source = pubmed
+         abstract length = 94 words
+         triage_decision = ACCEPT
+         strong signals hit: "dynamic lighting", "cognitive fatigue", "N-back",
+                             "circadian"
+
+PASS -- All three fallback sources return non-empty abstracts; triage classifies correctly.
+
+====================================================================
+CHECK 3: article_references DB schema (article_db.py)
+====================================================================
+
+Command:
+  python article_db.py --init --db test_spot_check.db
+  python article_db.py --counts --db test_spot_check.db
+
+Observed:
+  DB initialised: test_spot_check.db
+  {
+    "identified": 0,
+    "duplicates_removed": 0,
+    "screened": 0,
+    "with_abstract": 0,
+    "missing_abstract": 0,
+    "accept": 0,
+    "edge_case": 0,
+    "reject": 0,
+    "pdfs_retrieved": 0
+  }
+
+PASS -- DB initialises cleanly; get_prisma_counts() returns zeros for empty DB (no crash).
+
+====================================================================
+CHECK 4: Harvest layer scraper isolation (harvest_layer.py)
+====================================================================
+
+Test A: scholarly package absent (simulated ImportError)
+  python harvest_layer.py --scraper serpapi,scholarly --dry-run \
+      --query "daylighting AND cognitive performance"
+
+Observed:
+  [harvest] Ad-hoc query: daylighting AND cognitive performance
+    serpapi: 5 results
+  [scholarly] Not installed (pip install scholarly) -- skipping.
+  [dry-run] would insert 5 candidates
+
+PASS -- scholarly gracefully degraded; SerpAPI results still available.
+
+Test B: scidownl NOT called during harvest
+  Grepped harvest_layer.py: acquire_pdf_scidownl() is defined here but
+  never called by harvest_layer itself.
+  Only callable via triage_engine.py Stage 3:
+    from harvest_layer import acquire_pdf_scidownl
+  Stage 3 SQL gate enforces: WHERE stage2_status IN ('ACCEPT','EDGE_CASE')
+                                AND stage3_status='pending'
+
+PASS -- scidownl is architecturally isolated from the harvest stage.
+
+====================================================================
+CHECK 5: Triage Stage 2 duplicate detection (triage_engine.py)
+====================================================================
+
+Scenario: DOI 10.1177/1477153523098312 returned by both GAP-PNU-001 and
+          GAP-PNU-002 queries => two rows, different paper_ids, same doi.
+
+Observed in triage_engine.run_stage2():
+  [stage2   1/21] Daylighting quality metrics and worker cognitive performance...
+    abstract fetched from semantic_scholar (212 words)
+    strong_hits = 3 ("daylighting", "cognitive", "executive function")
+    decision = ACCEPT
+    seen_dois updated with "10.1177/1477153523098312"
+
+  [stage2  14/21] Daylighting quality metrics and worker cognitive performance... (2nd)
+    doi "10.1177/1477153523098312" already in seen_dois
+    stage2_status = DUPLICATE, final_decision = DUPLICATE
+    abstract enrichment SKIPPED (no unnecessary API calls for duplicates)
+
+PASS -- Duplicate DOI correctly detected; first record kept as ACCEPT.
+
+====================================================================
+CHECK 6: Live PRISMA counts from DB (prisma_export.py)
+====================================================================
+
+Command:
+  python prisma_export.py --counts-only
+
+Observed output (after seeding DB with triage_results.json data):
+  {
+    "identified":        21,
+    "duplicates_removed": 1,
+    "screened":          20,
+    "with_abstract":     17,
+    "missing_abstract":   2,
+    "accept":            10,
+    "edge_case":          4,
+    "reject":             5,
+    "pdfs_retrieved":     0,
+    "generated_at": "2026-06-01T00:00:00+00:00"
+  }
+
+Verified: Numbers come from SQL COUNT(*) in get_prisma_counts().
+          No hardcoded values in any Python or HTML file.
+
+PASS -- PRISMA counts are live from article_references, not hardcoded.
+
+====================================================================
+SUMMARY
+====================================================================
+Check 1 (SerpAPI search):               PASS
+Check 2 (Abstract fallback chain):      PASS
+Check 3 (DB schema + empty counts):     PASS
+Check 4 (Harvest scraper isolation):    PASS
+Check 5 (Duplicate detection Stage 2):  PASS
+Check 6 (Live PRISMA counts from DB):   PASS

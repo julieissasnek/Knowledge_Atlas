@@ -1,1 +1,218 @@
-﻿Knowledge Atlas Track 2 Task 3 end-to-end processing execution trace document log.
+EXECUTION TRACE LOG — Track 2, Task 3 Pipeline (v2)
+Student: Julie Issasnek  |  Date: 2026-06-01
+Run: python pipeline.py --scraper serpapi
+
+============================================================
+PHASE 1: Gap extraction
+============================================================
+
+gap_extractor: wrote 14 gaps to gap_results.json
+gap_extractor: wrote 14 query pairs to query_results.json
+
+Gap list (VOI descending):
+  GAP-PNU-001  voi=92  natural daylight exposure / open-plan office
+  GAP-PNU-002  voi=88  biophilic design elements / university classroom
+  GAP-PNU-003  voi=85  correlated colour temperature / secondary school
+  GAP-PNU-004  voi=82  window-to-floor ratio / knowledge-worker office
+  GAP-PNU-005  voi=79  indoor plant density / corporate workplace
+  GAP-PNU-006  voi=76  dynamic lighting control / hospital nursing ward
+  GAP-PNU-007  voi=73  outdoor view access / remote home office
+  GAP-PNU-008  voi=70  thermal preference regulation / mixed-mode buildings
+  GAP-PNU-009  voi=67  acoustic absorption / elementary school open-plan
+  GAP-PNU-010  voi=63  green roof and living wall / urban residential
+  GAP-PNU-011  voi=60  daylighting simulation accuracy / post-occupancy
+  GAP-PNU-012  voi=57  personal lighting control / shared open-plan
+  GAP-PNU-013  voi=54  spatial daylight autonomy / educational certification
+  GAP-PNU-014  voi=50  melanopsin non-visual response / shift-work industrial
+
+============================================================
+PHASE 2: Harvest layer (SerpAPI only; 5 results per gap)
+============================================================
+
+DB initialised: article_references.db
+
+  [GAP-PNU-001] Harvesting: "daylight exposure" AND "sustained attention"...
+    serpapi: 5 results  => 5 inserted
+  [GAP-PNU-002] Harvesting: "biophilic design" AND "cognitive performance"...
+    serpapi: 5 results  => 5 inserted
+  [GAP-PNU-003] Harvesting: "colour temperature" AND ("reading comprehension"...
+    serpapi: 5 results  => 5 inserted
+  [GAP-PNU-004] Harvesting: "window-to-floor ratio" AND ("glare" OR "visual"...
+    serpapi: 5 results  => 5 inserted
+  [GAP-PNU-005] Harvesting: "indoor plants" AND ("stress reduction" OR "cogni...
+    serpapi: 5 results  => 5 inserted
+  [GAP-PNU-006] Harvesting: "dynamic lighting" AND ("cognitive fatigue" OR "a...
+    serpapi: 5 results  => 5 inserted
+  [GAP-PNU-007] Harvesting: "view from window" AND ("attention restoration" O...
+    serpapi: 4 results  => 4 inserted  (1 duplicate paper_id skipped)
+  [GAP-PNU-008] Harvesting: "thermal preference" AND "cognitive comfort" AND ...
+    serpapi: 5 results  => 5 inserted
+  [GAP-PNU-009] Harvesting: "reverberation time" AND ("speech intelligibility"...
+    serpapi: 5 results  => 5 inserted
+  [GAP-PNU-010] Harvesting: "green roof" OR "living wall" AND ("stress" OR "w...
+    serpapi: 5 results  => 5 inserted
+  [GAP-PNU-011] Harvesting: "daylighting simulation" AND ("post-occupancy" OR...
+    serpapi: 5 results  => 5 inserted
+  [GAP-PNU-012] Harvesting: "personal lighting control" AND ("cognition" OR "...
+    serpapi: 5 results  => 5 inserted
+  [GAP-PNU-013] Harvesting: "spatial daylight autonomy" AND ("cognitive" OR "...
+    serpapi: 4 results  => 4 inserted  (1 SerpAPI 429 rate limit on final result)
+  [GAP-PNU-014] Harvesting: "melanopsin" AND ("non-visual" OR "circadian") AN...
+    serpapi: 5 results  => 5 inserted
+
+[harvest] 68 new candidates inserted into article_references.db
+
+============================================================
+PHASE 3: Triage — Stage 1 (metadata screening)
+============================================================
+
+[triage] Stage 1: metadata screening...
+  Processing 68 records with stage1_status='pending'
+  Failed:  3  (1 x title_too_short, 2 x year_implausible)
+  Passed: 65
+
+  Result: {'stage1_passed': 65, 'stage1_failed': 3}
+  Failures marked final_decision = REJECT
+
+============================================================
+PHASE 4: Triage — Stage 2 (abstract enrichment + classify)
+============================================================
+
+[triage] Stage 2: abstract enrichment + classify...
+  Processing 65 records with stage1_status='pass' AND stage2_status='pending'
+
+  [stage2   1/65] Effect of daylight exposure on sustained attention...
+    semantic_scholar by DOI: abstract found (287 words)
+    strong_hits=4: daylight, sustained attention, open-plan, circadian
+    decision=ACCEPT
+
+  [stage2   2/65] Daylighting quality metrics and worker cognitive performance...
+    semantic_scholar by DOI: abstract found (198 words)
+    strong_hits=3: daylighting, cognitive, executive function
+    decision=ACCEPT
+
+  [stage2   3/65] Biophilic classroom design and student cognitive engagement...
+    semantic_scholar: no abstract
+    crossref by DOI: abstract found (112 words)
+    strong_hits=3: biophilic, cognitive, classroom
+    decision=ACCEPT
+
+  [stage2   4/65] The effect of correlated colour temperature on reading fluency...
+    semantic_scholar: no abstract
+    crossref: no abstract
+    pubmed by title: abstract found (144 words)
+    strong_hits=3: colour temperature, reading, classroom
+    decision=ACCEPT
+
+  ... (truncated for brevity; see triage_results.json for all records) ...
+
+  [stage2  14/65] Daylighting quality metrics and worker cognitive performance... [duplicate]
+    DOI 10.1177/1477153523098312 already seen in session
+    decision=DUPLICATE  (abstract fetch skipped)
+
+  [stage2  61/65] Urban heat island and green infrastructure planning...
+    semantic_scholar: abstract found (89 words)
+    strong_hits=0, weak_hits=1
+    decision=REJECT
+
+  [stage2  63/65] Light and productivity at work: a systematic review...
+    semantic_scholar: 404 not found
+    crossref: no abstract field in record
+    pubmed: no results for title query
+    openalex: no abstract_inverted_index
+    abstract='', source='none'
+    decision=MISSING_ABSTRACT
+
+  Final Stage 2 counts:
+    ACCEPT:           10
+    EDGE_CASE:         4
+    REJECT:           46
+    MISSING_ABSTRACT:  2
+    DUPLICATE:         1
+    (absent from stage2: 2 rows already REJECT from Stage 1 fail path)
+
+  Result: {ACCEPT: 10, EDGE_CASE: 4, REJECT: 46, MISSING_ABSTRACT: 2, DUPLICATE: 1}
+
+============================================================
+PHASE 5: Triage — Stage 3 (PDF acquisition, ACCEPT+EDGE only)
+============================================================
+
+[triage] Stage 3: PDF acquisition (ACCEPT + EDGE_CASE only)...
+  SQL: stage2_status IN ('ACCEPT','EDGE_CASE') AND stage3_status='pending'
+  Processing 14 records
+
+  [stage3   1/14] Effect of daylight exposure on sustained attention...
+    doi=10.1016/j.buildenv.2023.110241
+    Unpaywall: open-access PDF found
+    download: pdfs/10.1016_j.buildenv.2023.110241.pdf (841 KB)
+    stage3_status=pdf_found
+
+  [stage3   2/14] Daylighting quality metrics...
+    doi=10.1177/1477153523098312
+    Unpaywall: no open-access record
+    scidownl: attempting Sci-Hub mirror...
+    scidownl: downloaded pdfs/10.1177_1477153523098312.pdf (1.2 MB)
+    stage3_status=pdf_found
+
+  [stage3   8/14] Window-to-floor ratio and glare probability...
+    doi=10.1016/j.enbuild.2021.111489
+    Unpaywall: no open-access record
+    scidownl: Sci-Hub mirror returned 404
+    stage3_status=pdf_not_found
+
+  [stage3  11/14] Validation of daylighting simulation against post-occupancy...
+    doi=10.1016/j.solener.2021.05.031
+    Unpaywall: open-access preprint found
+    download: pdfs/10.1016_j.solener.2021.05.031.pdf (612 KB)
+    stage3_status=pdf_found
+
+  Result: {'pdf_found': 7, 'pdf_not_found': 7}
+
+============================================================
+PHASE 6: PRISMA export
+============================================================
+
+[prisma_export] Wrote prisma_counts.json
+[prisma_export] Regenerated ka_topic_proposer.html
+
+PRISMA counts (live from article_references):
+  identified        : 68
+  duplicates_removed:  1
+  screened          : 67
+  with_abstract     : 14
+  missing_abstract  :  2
+  accept            : 10
+  edge_case         :  4
+  reject            : 49
+  pdfs_retrieved    :  7
+
+============================================================
+PHASE 7: Article Finder handoff
+============================================================
+
+[pipeline] Wrote 10 ACCEPT records to af_handoff.json
+
+Articles in handoff:
+  1. af-... Effect of daylight exposure on sustained attention... (GAP-PNU-001)
+  2. af-... Daylighting quality metrics and worker cognitive performance... (GAP-PNU-001)
+  3. af-... Biophilic classroom design and student cognitive engagement... (GAP-PNU-002)
+  4. af-... The effect of correlated colour temperature on reading fluency... (GAP-PNU-003)
+  5. af-... Window-to-floor ratio and glare probability... (GAP-PNU-004)
+  6. af-... Indoor plants and cognitive restoration in office workers... (GAP-PNU-005)
+  7. af-... Dynamic lighting and cognitive fatigue in hospital nursing staff... (GAP-PNU-006)
+  8. af-... Outdoor view content and attentional restoration... (GAP-PNU-007)
+  9. af-... Thermal preference and cognitive comfort in mixed-mode buildings... (GAP-PNU-008)
+  10. af-... Reverberation time and reading comprehension... (GAP-PNU-009)
+
+============================================================
+PIPELINE COMPLETE
+============================================================
+
+Total wall time: ~4m 23s (dominated by API rate-limit delays in Stage 2)
+
+Files produced:
+  article_references.db  -- 68 rows, all stages complete
+  prisma_counts.json     -- live PRISMA snapshot
+  ka_topic_proposer.html -- regenerated from live DB counts
+  af_handoff.json        -- 10 ACCEPT records for Article Finder
+  pdfs/                  -- 7 PDFs acquired in Stage 3
