@@ -21,7 +21,7 @@ import requests
 
 SERP_API_KEY = os.environ.get(
     "SERP_API_KEY",
-    "5263dbb7a48b42fb18fb48da509fd29322810760f0e03a1fae37daa1d30f71e0",
+    "498d66d7c2e1f54cb51465b49ab223e60e9243c744278e1aaa7e0fefc5bbe706",
 )
 SERP_API_URL = "https://serpapi.com/search"
 DEFAULT_QUERY_FILE = "query_results.json"
