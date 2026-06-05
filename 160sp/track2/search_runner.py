@@ -1,116 +1,85 @@
 """
-search_runner.py — Search Google Scholar via SerpAPI and return articles
-with DOI and abstract for each knowledge gap query.
+search_runner.py — Thin CLI wrapper around harvest_layer.scrape_serpapi().
 
-Usage:
-    python search_runner.py                        # reads query_results.json
-    python search_runner.py --query "daylight cognition"
-    python search_runner.py --help
+This is the ad-hoc / spot-check entry point for the SerpAPI channel.
+For bulk pipeline runs use harvest_layer.py or pipeline.py instead.
+
+The SerpAPI implementation lives exclusively in harvest_layer.py so there
+is exactly one place to update if the API changes.
+
+Usage
+-----
+  # Ad-hoc query → stdout JSON
+  python search_runner.py --query "daylight AND sustained attention"
+
+  # Ad-hoc query → also insert into article_references DB
+  python search_runner.py --query "daylight AND sustained attention" --db article_references.db
+
+  # Run all 14 gap queries → stdout summary (use harvest_layer.py for DB writes)
+  python search_runner.py --input query_results.json --num 5
+
+  # Vary result count
+  python search_runner.py --query "biophilic design cognition" --num 3
 """
 from __future__ import annotations
 
 import argparse
 import json
-import os
 import sys
 import time
 from pathlib import Path
 from typing import Optional
 
-import requests
+# Import the canonical SerpAPI implementation from harvest_layer.
+# search_runner.py must NOT re-implement SerpAPI logic — that belongs
+# in harvest_layer.py only.
+from harvest_layer import scrape_serpapi
 
-SERP_API_KEY = os.environ.get(
-    "SERP_API_KEY",
-    "498d66d7c2e1f54cb51465b49ab223e60e9243c744278e1aaa7e0fefc5bbe706",
-)
-SERP_API_URL = "https://serpapi.com/search"
 DEFAULT_QUERY_FILE = "query_results.json"
-DEFAULT_OUT_FILE = "search_results.json"
 
+
+# ── Public helper (used by spot_check.txt demonstrations) ─────────────────────
 
 def search_google_scholar(
     query: str,
     *,
     num_results: int = 10,
-    api_key: str = SERP_API_KEY,
 ) -> list[dict]:
-    """Run a single Google Scholar search and return normalised article records."""
-    params = {
-        "engine": "google_scholar",
-        "q": query,
-        "api_key": api_key,
-        "num": num_results,
-        "hl": "en",
-    }
-    resp = requests.get(SERP_API_URL, params=params, timeout=30)
-    resp.raise_for_status()
-    data = resp.json()
+    """
+    Public thin wrapper kept for backward compatibility and spot-check scripts.
 
-    results: list[dict] = []
-    for item in data.get("organic_results", []):
-        pub_info = item.get("publication_info", {})
-        summary = pub_info.get("summary", "")
-
-        link = item.get("link", "") or ""
-        doi = _extract_doi(link, item)
-
-        results.append(
-            {
-                "title": item.get("title", ""),
-                "abstract": item.get("snippet", ""),
-                "doi": doi,
-                "url": link,
-                "authors": _parse_authors(pub_info),
-                "year": _extract_year(summary),
-                "cited_by": (item.get("inline_links") or {})
-                .get("cited_by", {})
-                .get("total"),
-                "source": "google_scholar",
-                "result_id": item.get("result_id", ""),
-            }
-        )
-    return results
+    Returns normalised candidate dicts with the correct 'snippet' field name.
+    (Earlier versions of this file mis-labelled the field 'abstract' — SerpAPI
+    returns 30–50 word snippets, not full abstracts.  Full abstracts are fetched
+    in Triage Stage 2 via the abstract enrichment fallback chain.)
+    """
+    return scrape_serpapi(query, num=num_results)
 
 
-def _extract_doi(link: str, item: dict) -> str:
-    if "doi.org/" in link:
-        return link.split("doi.org/", 1)[1].split("?")[0].strip()
-    resources = item.get("resources", [])
-    for res in resources:
-        href = (res.get("link") or "")
-        if "doi.org/" in href:
-            return href.split("doi.org/", 1)[1].split("?")[0].strip()
-    return ""
-
-
-def _parse_authors(pub_info: dict) -> list[str]:
-    authors = pub_info.get("authors", [])
-    if isinstance(authors, list):
-        return [a.get("name", a) if isinstance(a, dict) else str(a) for a in authors]
-    summary = pub_info.get("summary", "")
-    if " - " in summary:
-        return [a.strip() for a in summary.split(" - ")[0].split(",")]
-    return []
-
-
-def _extract_year(text: str) -> Optional[int]:
-    import re
-    m = re.search(r"\b(19|20)\d{2}\b", text)
-    return int(m.group()) if m else None
-
+# ── Batch runner (query_results.json → stdout summary) ────────────────────────
 
 def run_from_query_file(
     query_file: str = DEFAULT_QUERY_FILE,
-    out_file: str = DEFAULT_OUT_FILE,
     *,
     results_per_gap: int = 5,
     delay: float = 1.0,
+    db_path: Optional[str] = None,
 ) -> list[dict]:
-    """Load gap queries from query_results.json and run SerpAPI for each."""
+    """
+    Load gap queries from query_results.json and run SerpAPI for each.
+
+    If db_path is provided, each candidate is also written to article_references
+    via upsert_candidate().  This path is used when search_runner is acting as
+    the harvest entry point rather than just a reporting tool.
+    """
     path = Path(query_file)
     if not path.exists():
-        print(f"[search_runner] {query_file} not found — nothing to search.", file=sys.stderr)
+        print(f"[search_runner] {query_file} not found.", file=sys.stderr)
         return []
+
+    if db_path:
+        from article_db import init_db, upsert_candidate
+        init_db(db_path)
 
     queries = json.loads(path.read_text(encoding="utf-8"))
     all_results: list[dict] = []
@@ -118,65 +87,92 @@ def run_from_query_file(
     for entry in queries:
         gap_id = entry.get("gap_id", "UNKNOWN")
         query_text = (
-            entry.get("boolean_query")
-            or entry.get("ai_citation_query")
-            or ""
+            entry.get("boolean_query") or entry.get("ai_citation_query") or ""
         ).strip()
         if not query_text:
             continue
 
-        print(f"  [{gap_id}] Searching: {query_text[:80]}...")
+        print(f"  [{gap_id}] {query_text[:80]}...")
         try:
-            articles = search_google_scholar(query_text, num_results=results_per_gap)
+            articles = scrape_serpapi(query_text, num=results_per_gap, gap_id=gap_id)
         except Exception as exc:
-            print(f"  [{gap_id}] Search failed: {exc}", file=sys.stderr)
+            print(f"  [{gap_id}] SerpAPI error: {exc}", file=sys.stderr)
             articles = []
 
-        for art in articles:
-            art["gap_id"] = gap_id
-        all_results.extend(articles)
+        print(f"    → {len(articles)} results", end="")
 
+        if db_path and articles:
+            from article_db import upsert_candidate
+            inserted = sum(1 for a in articles if upsert_candidate(a, db_path=db_path))
+            print(f"  ({inserted} inserted into DB)", end="")
+        print()
+
+        all_results.extend(articles)
         if delay:
             time.sleep(delay)
 
-    Path(out_file).write_text(
-        json.dumps(all_results, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
-    print(f"[search_runner] Saved {len(all_results)} articles to {out_file}")
+    print(f"[search_runner] Total: {len(all_results)} SerpAPI results")
     return all_results
 
 
+# ── CLI ────────────────────────────────────────────────────────────────────────
+
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Search Google Scholar via SerpAPI for knowledge-gap queries.",
+        description="Search Google Scholar via SerpAPI (delegates to harvest_layer.scrape_serpapi).",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
+Notes:
+  'snippet' (30-50 words) is what SerpAPI returns — NOT a full abstract.
+  Full abstracts are fetched in Triage Stage 2 via the enrichment fallback chain.
+
+  For bulk DB population use harvest_layer.py or pipeline.py directly.
+
 Examples:
-  python search_runner.py
-  python search_runner.py --query "daylight AND cognition AND classroom"
-  python search_runner.py --input gap_queries.json --output results.json
+  python search_runner.py --query "daylight AND sustained attention" --num 3
+  python search_runner.py --input query_results.json --num 5
+  python search_runner.py --query "biophilic design" --db article_references.db
         """,
     )
-    parser.add_argument("--query", "-q", help="Single ad-hoc search query")
+    parser.add_argument("--query", "-q", help="Single ad-hoc search query (→ stdout JSON)")
     parser.add_argument(
         "--input", "-i", default=DEFAULT_QUERY_FILE,
         help=f"Gap query file (default: {DEFAULT_QUERY_FILE})"
     )
     parser.add_argument(
-        "--output", "-o", default=DEFAULT_OUT_FILE,
-        help=f"Output file (default: {DEFAULT_OUT_FILE})"
-    )
-    parser.add_argument(
         "--num", "-n", type=int, default=5,
         help="Results per query (default: 5)"
+    )
+    parser.add_argument(
+        "--db", default=None,
+        help="Optional: also write results to this article_references DB path"
     )
     args = parser.parse_args()
 
     if args.query:
-        results = search_google_scholar(args.query, num_results=args.num)
+        results = scrape_serpapi(args.query, num=args.num)
+        if args.db:
+            from article_db import init_db, upsert_candidate
+            init_db(args.db)
+            inserted = sum(1 for r in results if upsert_candidate(r, db_path=args.db))
+            print(f"[search_runner] Inserted {inserted}/{len(results)} into {args.db}",
+                  file=sys.stderr)
         print(json.dumps(results, indent=2, ensure_ascii=False))
     else:
-        run_from_query_file(args.input, args.output, results_per_gap=args.num)
+        results = run_from_query_file(
+            args.input,
+            results_per_gap=args.num,
+            db_path=args.db,
+        )
+        # Print a summary table, not the full JSON blob
+        print(f"\n{'GAP':14} {'TITLE':60} {'DOI':30} {'YEAR':6}")
+        print("-" * 114)
+        for r in results:
+            title = (r.get("title") or "")[:58]
+            doi   = (r.get("doi")   or "(none)")[:28]
+            year  = str(r.get("year") or "")
+            gap   = r.get("gap_id", "")
+            print(f"{gap:14} {title:60} {doi:30} {year:6}")
 
 
 if __name__ == "__main__":

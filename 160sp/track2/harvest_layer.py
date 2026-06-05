@@ -332,9 +332,9 @@ def harvest_all_queries(
 
     for entry in queries:
         gap_id = entry.get("gap_id", "UNKNOWN")
-        query_text = (
-            entry.get("boolean_query") or entry.get("ai_citation_query") or ""
-        ).strip()
+        boolean_query  = (entry.get("boolean_query")    or "").strip()
+        ai_query       = (entry.get("ai_citation_query") or "").strip()
+        query_text     = boolean_query or ai_query
         if not query_text:
             continue
 
@@ -343,7 +343,14 @@ def harvest_all_queries(
 
         if "serpapi" in scrapers:
             results = scrape_serpapi(query_text, num=results_per_gap, gap_id=gap_id)
-            print(f"    serpapi: {len(results)} results")
+            print(f"    serpapi: {len(results)} results", end="")
+            # Zero-result fallback: if boolean query yielded nothing and an
+            # ai_citation_query is available, retry with that broader query.
+            if len(results) == 0 and boolean_query and ai_query:
+                print("  (0 results; retrying with ai_citation_query)", end="")
+                results = scrape_serpapi(ai_query, num=results_per_gap, gap_id=gap_id)
+                print(f"  {len(results)} results on retry", end="")
+            print()
             all_candidates.extend(results)
             time.sleep(delay)
 

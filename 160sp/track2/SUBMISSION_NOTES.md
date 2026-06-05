@@ -1,5 +1,54 @@
 # Track 2 Submission Notes — Julie Issasnek
 
+## Dependency Contract
+
+### Task 3 Pipeline (harvest_layer, triage_engine, pipeline, article_db, search_runner, gap_extractor, prisma_export)
+
+The Task 3 pipeline is **fully standalone** — it has no `atlas_shared` dependency.
+
+| Package | Required? | Purpose |
+|---------|-----------|---------|
+| `requests` | **Required** — `pip install requests` | SerpAPI + abstract enrichment HTTP calls |
+| `scholarly` | Optional — `pip install scholarly` | Google Scholar fallback scraper (degrades gracefully if absent) |
+| `paperscraper` | Optional — `pip install paperscraper` | PubMed + arXiv preprint channel (degrades gracefully if absent) |
+| `scidownl` | Optional — `pip install scidownl` | Sci-Hub PDF last resort in Stage 3 (degrades gracefully if absent) |
+| `pytest` | Test only — `pip install pytest` | Run `test_track2_task3.py` |
+
+Quick install for a clean environment:
+```bash
+pip install requests pytest
+# optional scrapers:
+pip install scholarly paperscraper scidownl
+```
+
+### Task 1 (`ka_article_endpoints.py`)
+
+| Package | Required? | Purpose |
+|---------|-----------|---------|
+| `fastapi` | **Required** — `pip install fastapi` | HTTP endpoint framework |
+| `httpx` | **Required** — `pip install httpx` | FastAPI TestClient |
+| `pytest` | **Required** — `pip install pytest` | Test runner |
+| `atlas_shared` | **Optional** — see resolution order below | Real classifier backend |
+
+`atlas_shared` resolution order (highest priority first):
+1. `pip install atlas_shared` (requires internal access — not on PyPI)
+2. `KA_ATLAS_SHARED_SRC=/path/to/atlas_shared/src python test_task1.py`
+3. No action required — code automatically falls back to `LocalClassificationEvidence` when `atlas_shared` is not importable
+
+**The Task 1 tests pass in a clean environment with no `atlas_shared` installed.** The `LocalClassificationEvidence` fallback is the verified path.
+
+## Article Eater Handoff Boundary
+
+The `af_handoff.json` artifact is a **documented local substitute** for full Article Eater integration.
+
+The pipeline writes ACCEPT-tier records in AF intake format and the file is readable by `Article_Finder/ingest/abstract_fetcher.py`.  This has been tested locally.
+
+Real AE integration would additionally require: mounting or configuring the AE inbox path (`Article_Eater_PostQuinean_v1_recovery/scripts/course_scaffolding.py`), calling `probe-collection-pdf` per PDF to verify against the AE `pdf_corpus_inventory`, and confirming AE consumes the handoff artifact into its processing queue.  Until those steps are verified against a running AE instance, `af_handoff.json` should be treated as a staged artifact, not a completed ingestion.
+
+See `TRACK2_DELIVERABLE_MAP.md` for the full deliverable surface and `VOI_COMPARISON.md` for the honest VOI comparison.
+
+---
+
 ## Task 1 Diagnosis & Fix
 
 The contribute page was missing a working classifier pipeline: when a user submitted a PDF via

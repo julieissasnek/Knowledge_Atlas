@@ -37,7 +37,7 @@
   {
     "gap_id": "GAP-PNU-008",
     "ai_citation_query": "What empirical mechanisms explain why thermal preference self-regulation improves occupant cognitive comfort in mixed-mode buildings after accounting for seasonal acclimatisation effects? What are the boundary conditions?",
-    "boolean_query": "\"thermal preference\" AND \"cognitive comfort\" AND (\"mixed-mode\" OR \"natural ventilation\")"
+    "boolean_query": "\"thermal comfort\" AND (\"personal control\" OR \"adaptive comfort\") AND (\"cognitive\" OR \"productivity\") AND (\"office\" OR \"workplace\")"
   },
   {
     "gap_id": "GAP-PNU-009",
