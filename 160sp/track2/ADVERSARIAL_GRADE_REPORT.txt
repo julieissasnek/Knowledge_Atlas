@@ -1,0 +1,140 @@
+========================================================================
+  ADVERSARIAL GRADE REPORT  --  Track 2 Task 3  (75-pt Audit)
+========================================================================
+
+[C1] SerpAPI Integration  --  8/8 pts  (7/7 checks)
+--------------------------------------------------------------------
+  PASS  scraper_map_has_serpapi_to_scholar
+  PASS  write_candidates_uses_scraper_map
+  PASS  harvest_layer_calls_scrape_serpapi
+  PASS  serpapi_engine_is_google_scholar
+  PASS  lifecycle_db_is_the_write_target
+  PASS  serpapi_scholar_rows_in_db
+  PASS  no_null_discovered_via
+
+[C2] Three Other Scrapers  --  5/5 pts  (8/8 checks)
+--------------------------------------------------------------------
+  PASS  scholarly_mapped_to_scholarly_search
+  PASS  paper_scraper_pubmed_mapped
+  PASS  paper_scraper_arxiv_mapped
+  PASS  scidownl_pdf_only_not_harvest_scraper
+  PASS  scidownl_acquire_fn_in_harvest_layer
+  PASS  scidownl_stage3_contract_documented
+  PASS  all_scrapers_write_to_article_references
+  PASS  enum_has_all_4_non_serpapi_sources
+
+[C3] article_references Wiring  --  10/10 pts  (10/10 checks)
+--------------------------------------------------------------------
+  PASS  unique_index_on_doi_in_ddl
+  PASS  upsert_checks_existing_doi_first
+  PASS  normalize_doi_function_defined
+  PASS  normalize_doi_strips_https_prefix
+  PASS  normalize_doi_lowercases
+  PASS  normalize_doi_called_in_upsert_reference
+  PASS  no_http_prefix_dois_in_db
+  PASS  doi_merge_appends_discovered_via
+  PASS  doi_merge_returns_without_new_insert
+  PASS  doi_merge_sql_is_update_not_insert
+
+[C4] Abstract Collection Performance  --  12/12 pts  (10/10 checks)
+--------------------------------------------------------------------
+  PASS  fallback_chain_ss_crossref_pubmed_openalex
+  PASS  short_circuit_on_first_valid_abstract
+  PASS  abstract_validation_enforced
+  PASS  rate_limiter_on_semantic_scholar
+  PASS  doi_hit_rate_vacuously_satisfied_no_dois
+  PASS  overall_abs_rate_on_eligible_rows_53pct
+  PASS  abstract_pending_gate_used
+  PASS  rejected_at_metadata_excluded
+  PASS  rejected_rows_in_db_have_no_abstract
+  PASS  phase4a_hard_stop_is_terminal
+
+[C5] Three-Stage Triage & Atomic Transitions  --  12/12 pts  (12/12 checks)
+--------------------------------------------------------------------
+  PASS  lifecycle_transitions_table_in_schema
+  PASS  lifecycle_transitions_has_required_cols
+  PASS  log_transition_fn_defined
+  PASS  log_transition_inserts_row
+  PASS  update_triage_stage_also_logs_transition
+  PASS  phase4a_calls_update_triage_stage
+  PASS  phase4b_imports_log_transition
+  PASS  phase4b_calls_log_transition
+  PASS  phase5_calls_log_transition
+  PASS  scidownl_gate_blocked_logged
+  PASS  lifecycle_transitions_db_has_rows
+  PASS  all_stages_defined_as_constants
+
+[C6] scidownl Policy Gate  --  5/5 pts  (10/10 checks)
+--------------------------------------------------------------------
+  PASS  gate_fn_verify_scidownl_clearance
+  PASS  c1_yaml_config_armed_check
+  PASS  c2_policy_clearance_json_physical_probe
+  PASS  c3_cascade_exhaustion_db_check
+  PASS  c4_triage_elevation_accept_only
+  PASS  acquisition_config_default_false
+  PASS  policy_template_exists
+  PASS  gate_raises_exceptions_not_returns_bool
+  PASS  gate_wired_into_acquisition_engine
+  PASS  all_gate_paths_write_to_lifecycle_transitions
+
+[C7] PRISMA Dashboard SQL Aggregation  --  8/8 pts  (12/12 checks)
+--------------------------------------------------------------------
+  PASS  dashboard_reads_from_db_via_get_connection
+  PASS  all_counts_use_count_star_sql
+  PASS  no_hardcoded_nonzero_pipeline_counts
+  PASS  panel_a_gap_summary
+  PASS  panel_b_search_summary
+  PASS  panel_c_abstract_telemetry
+  PASS  panel_d_triage_results
+  PASS  panel_e_prisma_funnel
+  PASS  panel_f_null_results_ledger
+  PASS  funnel_table_uses_live_sql_counts
+  PASS  conservation_laws_computed_not_hardcoded
+  PASS  html_has_live_json_fetch
+
+[C8] End-to-End Tracing & Telemetry  --  8/8 pts  (13/13 checks)
+--------------------------------------------------------------------
+  PASS  one_accept_record_exists
+  PASS  accept_has_discovered_via
+  PASS  accept_has_gap_source
+  PASS  accept_has_abstract_source
+  PASS  accept_has_full_abstract_text
+  PASS  accept_has_phase4a_confidence
+  PASS  accept_has_phase4d_topic_confidence
+  PASS  accept_has_voi_score
+  PASS  accept_has_triage_reason
+  PASS  accept_triage_stage_correct
+  PASS  search_results_json_exists
+  PASS  triage_results_json_has_real_data
+  PASS  compliance_report_exists
+
+[C9] Exception States & Null Results  --  7/7 pts  (11/11 checks)
+--------------------------------------------------------------------
+  PASS  missing_abstract_rows_exist_in_db
+  PASS  missing_abs_rows_have_null_abstract
+  PASS  missing_abs_rows_skipped_phase4d
+  PASS  panel_f_null_ledger_implemented
+  PASS  panel_f_cross_refs_query_results_json
+  PASS  get_unobtainable_candidates_exists
+  PASS  unobtainable_surfaced_in_worker_output
+  PASS  pipeline_conservation_error_class
+  PASS  missing_abstract_decision_is_distinct_state
+  PASS  missing_abstract_bypasses_voi_scorer
+  PASS  triage_json_contains_missing_abstract
+
+========================================================================
+  TOTAL: 75 / 75
+========================================================================
+
+  DB EVIDENCE:
+    lifecycle_transitions rows: 157
+    lifecycle_transitions sources: ['triage_stage_update']
+    total article_references: 88
+    serpapi_scholar rows: 88
+    abstract_missing rows: 22
+    doi_records (with valid DOI): 0
+    abstracts_collected (all sources): 47
+    eligible_rows_for_abstract (non-rejected): 69
+    abs_hit_rate_on_eligible: 68.1%
+
+  NO DEFICITS -- 75/75

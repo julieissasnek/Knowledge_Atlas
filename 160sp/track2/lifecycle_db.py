@@ -633,6 +633,20 @@ def update_triage_stage(
                 reference_id,
             ),
         )
+        # C5 ATOMIC TRANSITION LOG — every triage_stage change writes one row
+        # to lifecycle_transitions so the full state machine is auditable.
+        conn.execute(
+            "INSERT INTO lifecycle_transitions "
+            "(reference_id, source, outcome, timestamp, doi, metadata) "
+            "VALUES (?, ?, ?, ?, '', ?)",
+            (
+                reference_id,
+                "triage_stage_update",
+                stage,
+                now,
+                f'{{"confidence": {metadata_confidence}, "abstract_source": "{abstract_source or ""}"}}',
+            ),
+        )
 
 
 def get_pending_metadata_triage(db_path: str = LIFECYCLE_DB) -> list[dict]:

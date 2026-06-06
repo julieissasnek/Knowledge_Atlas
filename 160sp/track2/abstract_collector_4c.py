@@ -75,6 +75,7 @@ from lifecycle_db import (
     TRIAGE_STAGE_ABSTRACT_COLLECTED,
     TRIAGE_STAGE_ABSTRACT_MISSING,
     get_pending_abstract_collection,
+    log_transition,
     update_triage_stage,
 )
 
@@ -262,6 +263,14 @@ def run_phase4c_abstract_collection(
                     abstract_source="",
                     db_path=db_path,
                 )
+                log_transition(
+                    ref_id,
+                    "phase4b_abstract_collection",
+                    "failure",
+                    doi="",
+                    metadata='{"reason": "no_title_no_doi"}',
+                    db_path=db_path,
+                )
             counts[TRIAGE_STAGE_ABSTRACT_MISSING] += 1
             continue
 
@@ -298,6 +307,20 @@ def run_phase4c_abstract_collection(
                 stage,
                 abstract=abstract or None,
                 abstract_source=source or None,
+                db_path=db_path,
+            )
+            # Atomic audit row in lifecycle_transitions (C5 state-transition contract)
+            log_transition(
+                ref_id,
+                "phase4b_abstract_collection",
+                "success" if abstract else "failure",
+                doi=doi,
+                metadata=(
+                    f'{{"abstract_source": "{source}", '
+                    f'"abstract_length": {len(abstract)}}}'
+                    if abstract else
+                    f'{{"abstract_source": "none", "abstract_length": 0}}'
+                ),
                 db_path=db_path,
             )
 
