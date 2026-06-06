@@ -173,7 +173,29 @@ _PHASE4_MIGRATIONS: list[str] = [
     "ALTER TABLE article_references ADD COLUMN phase4d_topic_confidence REAL",
     "ALTER TABLE article_references ADD COLUMN phase4d_voi_score REAL",
     "ALTER TABLE article_references ADD COLUMN phase4d_at TEXT",
+    # Infrastructure durability: study type (from estimate_study_type())
+    "ALTER TABLE article_references ADD COLUMN study_type TEXT NOT NULL DEFAULT ''",
 ]
+
+# pdf_corpus_inventory DDL — canonical cross-corpus deduplication registry.
+# Named to match the course spec's `pdf_corpus_inventory` table requirement.
+# Functionally equivalent to pdf_identity_inventory but uses the canonical name
+# so that course tooling can reference it.
+_PDF_CORPUS_INVENTORY_DDL = """
+CREATE TABLE IF NOT EXISTS pdf_corpus_inventory (
+    reference_id      TEXT    PRIMARY KEY,
+    doi               TEXT,
+    title_normalized  TEXT    NOT NULL DEFAULT '',
+    sha256            TEXT,
+    local_path        TEXT    NOT NULL DEFAULT '',
+    ingested_at       TEXT    NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_pci_doi
+    ON pdf_corpus_inventory(doi)
+    WHERE doi IS NOT NULL AND doi != '';
+CREATE INDEX IF NOT EXISTS idx_pci_title
+    ON pdf_corpus_inventory(title_normalized);
+"""
 
 # Phase 5 column migrations
 _PHASE5_MIGRATIONS: list[str] = [
@@ -283,7 +305,7 @@ CREATE INDEX IF NOT EXISTS idx_tdl_decision
 
 def _apply_phase4_migrations(conn: sqlite3.Connection) -> None:
     """
-    Idempotently add Phase 4 columns.
+    Idempotently add Phase 4 columns and pdf_corpus_inventory table.
     Safe to call on both brand-new and pre-existing databases.
     """
     for sql in _PHASE4_MIGRATIONS:
@@ -291,6 +313,7 @@ def _apply_phase4_migrations(conn: sqlite3.Connection) -> None:
             conn.execute(sql)
         except sqlite3.OperationalError:
             pass  # column already exists — ignore
+    conn.executescript(_PDF_CORPUS_INVENTORY_DDL)
 
 
 def _apply_phase4d_tables(conn: sqlite3.Connection) -> None:
