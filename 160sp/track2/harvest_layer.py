@@ -37,6 +37,14 @@ import requests
 
 from article_db import DEFAULT_DB, init_db, upsert_candidate
 
+# ── Phase 3: lifecycle DB bridge (optional — degrades if lifecycle_db absent) ──
+try:
+    import lifecycle_db as _lifecycle_db  # type: ignore
+    _LIFECYCLE_AVAILABLE = True
+except ImportError:
+    _lifecycle_db = None  # type: ignore
+    _LIFECYCLE_AVAILABLE = False
+
 # ── Config ────────────────────────────────────────────────────────────────────
 
 SERP_API_KEY = os.environ.get(
@@ -312,12 +320,17 @@ def harvest_all_queries(
     delay: float = 1.0,
     scrapers: Optional[list[str]] = None,
     dry_run: bool = False,
+    discovery_run_id: str = "",
+    write_lifecycle: bool = True,
 ) -> int:
     """
     Load gap queries from query_results.json and run each enabled scraper.
 
     All candidates are written to article_references immediately.
-    Returns total number of new rows inserted.
+    If write_lifecycle=True (default) and lifecycle_db is importable, candidates
+    are also written to pipeline_lifecycle_full.db via lifecycle_db.write_candidates_to_lifecycle().
+
+    Returns total number of new rows inserted into article_references.
     """
     if scrapers is None:
         scrapers = ["serpapi", "scholarly", "paper_scraper"]
@@ -329,6 +342,7 @@ def harvest_all_queries(
 
     queries = json.loads(qpath.read_text(encoding="utf-8"))
     total_inserted = 0
+    lifecycle_counts_total: dict[str, int] = {}
 
     for entry in queries:
         gap_id = entry.get("gap_id", "UNKNOWN")
@@ -368,12 +382,32 @@ def harvest_all_queries(
         if dry_run:
             print(f"    [dry-run] would insert {len(all_candidates)} candidates")
         else:
+            # ── Write to article_references (article_db) ──────────────────────
             for cand in all_candidates:
                 if upsert_candidate(cand, db_path=db_path):
                     total_inserted += 1
 
+            # ── Phase 3: mirror to pipeline_lifecycle_full.db ─────────────────
+            if write_lifecycle and _LIFECYCLE_AVAILABLE and all_candidates:
+                lc_counts = _lifecycle_db.write_candidates_to_lifecycle(
+                    all_candidates,
+                    discovery_run_id=discovery_run_id or gap_id,
+                )
+                for k, v in lc_counts.items():
+                    lifecycle_counts_total[k] = lifecycle_counts_total.get(k, 0) + v
+
     if not dry_run:
         print(f"[harvest] {total_inserted} new candidates inserted into {db_path}")
+        if write_lifecycle and _LIFECYCLE_AVAILABLE and lifecycle_counts_total:
+            inserted_lc  = lifecycle_counts_total.get("inserted", 0)
+            merged_lc    = lifecycle_counts_total.get("doi_merge", 0)
+            skipped_lc   = lifecycle_counts_total.get("skipped", 0) + lifecycle_counts_total.get("error", 0)
+            print(
+                f"[lifecycle] pipeline_lifecycle_full.db — "
+                f"inserted={inserted_lc}, doi_merge={merged_lc}, skipped/err={skipped_lc}"
+            )
+        elif write_lifecycle and not _LIFECYCLE_AVAILABLE:
+            print("[lifecycle] lifecycle_db not importable — skipped (install lifecycle_db.py alongside harvest_layer.py)")
     return total_inserted
 
 

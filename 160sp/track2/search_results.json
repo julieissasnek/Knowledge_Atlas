@@ -1,0 +1,1553 @@
+{
+  "generated_at": "2026-06-06T01:04:51.988134+00:00",
+  "total_results": 88,
+  "gaps_covered": 14,
+  "engine": "serpapi/google_scholar",
+  "results": [
+    {
+      "gap_id": "GAP-PNU-001",
+      "paper_id": "serpapi-ed77f658de",
+      "title": "Experimental Investigation of Multisensory Office Environments: Effects of Daylight Timing, Natural Scent, and Outdoor View on Cognitive Performance",
+      "doi": "",
+      "url": "https://search.proquest.com/openview/e64ea95bb5ea6d3fa6b0445c0a531b06/1?pq-origsite=gscholar&cbl=18750&diss=y",
+      "authors": [
+        "SHF Al Marzouqi"
+      ],
+      "year": 2026,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… generalizability of the results to other workplace environments, including open-plan … Daylight timing refers to the time-of-day conditions under which natural daylight exposure …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:09.879581+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-001",
+      "paper_id": "serpapi-8260e2a4a3",
+      "title": "Exploring the impact of external shading system on cognitive task performance, alertness and visual comfort in a daylit workplace environment",
+      "doi": "",
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/1420326X19864414",
+      "authors": [
+        "F Leccese",
+        "G Salvadori",
+        "M Öner"
+      ],
+      "year": 2020,
+      "venue": "",
+      "cited_by": 36,
+      "snippet": "… a user on colour-naming task requiring sustained attention, while no differential effects were … of daylit workplaces to avoid excessive daylight exposure by using external shading, which …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:09.924213+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-001",
+      "paper_id": "serpapi-ea9bcfdaf3",
+      "title": "The impact of nonvisual effects of daylight on building occupants: Implications on lighting standards and human centric lighting design",
+      "doi": "",
+      "url": "https://figshare.swinburne.edu.au/articles/thesis/The_impact_of_nonvisual_effects_of_daylight_on_building_occupants_Implications_on_lighting_standards_and_human_centric_lighting_design/26402764",
+      "authors": [
+        "A Lo"
+      ],
+      "year": 2024,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "This research tested people's physiological and psychological responses to daylight. Daylight was measured at eye level using the newly developed non-visual light measurement unit. …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:09.946253+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-001",
+      "paper_id": "serpapi-730675d5c2",
+      "title": "… of Indoor Thermal–Humidity and Lighting Environments on Cognitive Performance and Work Efficiency of Knowledge Workers in Open-Plan Offices: An Empirical …",
+      "doi": "",
+      "url": "https://creativeng.org/article/view/723",
+      "authors": [
+        "L Weber",
+        "J Fische",
+        "G Ferrari"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… on working memory, executive control, and sustained attention, and their work efficiency directly … To facilitate communication and collaboration while optimizing spatial costs, open-plan …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:09.973415+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-001",
+      "paper_id": "serpapi-65a884a9ac",
+      "title": "… ARCHITECTURAL LIGHTING DESIGN TO ENHANCE INDIVIDUALS'WELLBEING INDICATORS IN WINDOWLESS, OPEN-PLAN WORKPLACE IN TROPICAL …",
+      "doi": "",
+      "url": "http://psasir.upm.edu.my/id/eprint/76307/1/FRSB%202018%2011%20-%20IR.pdf",
+      "authors": [
+        "A RATNAKALA",
+        "P SITHRAVEL"
+      ],
+      "year": 2018,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… Located at coordinates 309'N, 10142'E (www.timeanddate.com), Kuala Lumpur has sunshine throughout the year (see Figure 1.1), with an average daylight exposure of ±12 hours, ie, …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:09.998949+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-002",
+      "paper_id": "serpapi-5016646f83",
+      "title": "Biophilic classroom environments on stress and cognitive performance: A randomized crossover study in virtual reality (VR)",
+      "doi": "",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0291355",
+      "authors": [
+        "J You",
+        "X Wen",
+        "L Liu",
+        "J Yin",
+        "JS Ji"
+      ],
+      "year": 2023,
+      "venue": "",
+      "cited_by": 45,
+      "snippet": "… In this study, a single-user system for biophilic design was adopted where only one participant … This suggests that a multi-user system for biophilic design in the Metaverse needs further …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:12.546241+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-002",
+      "paper_id": "serpapi-a9af7af282",
+      "title": "Enhancing cognitive performance and physiological benefit in workspaces through patterns of biophilic design: a restorative approach",
+      "doi": "",
+      "url": "https://www.mdpi.com/2075-5309/14/10/3293",
+      "authors": [
+        "P Zhang",
+        "Z Yu",
+        "G Hou",
+        "P Shu",
+        "Y Bo",
+        "Y Shi",
+        "R Nie"
+      ],
+      "year": 2024,
+      "venue": "",
+      "cited_by": 19,
+      "snippet": "… classroom without biophilic design. The inconsistency may be attributed to differences in experimental procedures. In terms of physiological measures, although they compared pre/post …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:12.592074+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-002",
+      "paper_id": "serpapi-e29093441d",
+      "title": "Physiological and cognitive performance of exposure to biophilic indoor environment",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132318300064",
+      "authors": [
+        "J Yin",
+        "S Zhu",
+        "P MacNaughton",
+        "JG Allen"
+      ],
+      "year": 2018,
+      "venue": "",
+      "cited_by": 556,
+      "snippet": "… Biophilic design, which incorporates natural elements into the built environment, has … Twenty-eight participants spent time in an indoor environment featuring biophilic design elements …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:12.617373+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-002",
+      "paper_id": "serpapi-71b43c1793",
+      "title": "Protective and restorative effects of biophilic design in high school indoor environments on stress and cognitive function",
+      "doi": "",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1155/ina/8696488",
+      "authors": [
+        "L Mengqi",
+        "Y Jie",
+        "X Leiqing"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": 14,
+      "snippet": "… Studies have further shown that biophilic design in indoor … found to significantly improve cognitive performance, lower … and classroom environments with and without biophilic design …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:12.639455+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-002",
+      "paper_id": "serpapi-315b7aa47d",
+      "title": "Impact of biophilic design on college student perception of mental health and environmental benefits: A dose-response study",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132324011600",
+      "authors": [
+        "K Li",
+        "A Perrault",
+        "WA DeYoung",
+        "E Cameron"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": 12,
+      "snippet": "We examined a dose-response relationship of plants placed in a university classroom with college students’ self-reported cognitive performance, mental and psychosomatic health, …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:12.663745+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-002",
+      "paper_id": "serpapi-baca831bde",
+      "title": "The Impact of Biophilic Design in School Common Areas on Perceptual and Physiological Responses",
+      "doi": "",
+      "url": "https://www.mdpi.com/2075-5309/16/10/1940",
+      "authors": [
+        "JY Kim",
+        "SJ Park"
+      ],
+      "year": 2026,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… learning spaces that move beyond traditional classroom-centered layouts to foster … cognitive performance and prefrontal cortex activity in workspaces featuring complex biophilic design …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:56:49.438470+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-002",
+      "paper_id": "serpapi-211430652e",
+      "title": "Bracing Biophilia: When biophilic design promotes pupil's attentional performance, perceived restorativeness and affiliation with Nature",
+      "doi": "",
+      "url": "https://link.springer.com/article/10.1007/s10668-021-01903-1",
+      "authors": [
+        "G Barbiero",
+        "R Berto",
+        "A Venturella"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": 68,
+      "snippet": "… to create the Nature-based Innovative Learning Environment (ILE), which might support … learning environment with two Nature-based environments made according to biophilic design …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:56:49.448708+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-003",
+      "paper_id": "serpapi-15de0b0eae",
+      "title": "Effects of correlated colour temperature of LED light on visual sensation, perception, and cognitive performance in a classroom lighting environment",
+      "doi": "",
+      "url": "https://www.mdpi.com/2071-1050/12/10/4051",
+      "authors": [
+        "W Yang",
+        "JY Jeon"
+      ],
+      "year": 2020,
+      "venue": "",
+      "cited_by": 136,
+      "snippet": "… colour temperature of lighting have received little attention in the field. This study investigated the effects of correlated colour temperature … glare sensation and the working memory test. …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:14.602271+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-003",
+      "paper_id": "serpapi-285dd5e735",
+      "title": "Effect of correlated colour temperature on students' alertness, reading speed and comprehension",
+      "doi": "",
+      "url": "https://etheses.whiterose.ac.uk/id/eprint/36395/",
+      "authors": [
+        "AAM Alkhabra"
+      ],
+      "year": 2024,
+      "venue": "",
+      "cited_by": 1,
+      "snippet": "… that variations in correlated colour temperature (CCT), can … relation to students' reading comprehension and speed. The … respondents, while the 5000K classroom was selected by only …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:14.645524+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-003",
+      "paper_id": "serpapi-4a98487c5b",
+      "title": "Cold and warm coloured classrooms. Effects on students' attention and memory measured through psychological and neurophysiological responses",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132321001360",
+      "authors": [
+        "C Llinares",
+        "JL Higuera-Trujillo",
+        "J Serra"
+      ],
+      "year": 2021,
+      "venue": "",
+      "cited_by": 146,
+      "snippet": "… that the colour hue of classroom walls influences student … that warm and cold hue coloured classroom walls have on the … colour settings in a virtual classroom. Their performance was …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:14.675665+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-003",
+      "paper_id": "serpapi-78292edecc",
+      "title": "Exploring the effects of background colours of digital materials on learners' comprehension in higher education",
+      "doi": "",
+      "url": "https://etheses.whiterose.ac.uk/id/eprint/35091/",
+      "authors": [
+        "Z Gong"
+      ],
+      "year": 2023,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… images will enter the working memory and be organized into … to be brought into working memory to think actively about it … learner's working memory, but the working memory capacity is …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:14.698021+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-003",
+      "paper_id": "serpapi-48476d405b",
+      "title": "The Impact of Artificial Light Distribution and Surface Colour on Students' Cognitive Functions and Perception",
+      "doi": "",
+      "url": "https://www.diva-portal.org/smash/record.jsf?pid=diva2:1894890",
+      "authors": [
+        "EJ Rohde"
+      ],
+      "year": 2024,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… primarily examined regarding colour temperature, illuminance, … , executive functions, and working memory as well as their … in the middle of the classroom and aligned to the centre of …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:14.719591+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-003",
+      "paper_id": "serpapi-0fe81f89d2",
+      "title": "Effects of Colour Temperature in Classroom Lighting on Primary School Students' Cognitive Outcomes: A Multidimensional Approach for Architectural and …",
+      "doi": "",
+      "url": "https://www.mdpi.com/2075-5309/15/16/2964",
+      "authors": [
+        "B Gao",
+        "Y Fu",
+        "J Gao",
+        "W Gao"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": 2,
+      "snippet": "… colour temperature in modulating attention, working memory, … effect of lighting on working memory tasks, suggesting that … adjustment ranges of classroom lighting systems are typically …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:56:53.967723+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-003",
+      "paper_id": "serpapi-5faa0269eb",
+      "title": "Effects of Colour on Learning Environment and Memory: Review of Colour Perceptions and Theories",
+      "doi": "",
+      "url": "https://www.researchgate.net/profile/Sule-Muhammad/publication/375718243_Contribution_of_social_studies_to_the_education_of_children_with_special_needs_in_Nigeria/links/6557e256b86a1d521bf01248/Contribution-of-social-studies-to-the-education-of-children-with-special-needs-in-Nigeria.pdf#page=181",
+      "authors": [
+        "U Mamman",
+        "TA Ibrahim"
+      ],
+      "year": null,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… and explain the importance of colour in the classroom. … individuals no matter the colour temperature or preference. … Information processing systems of working memory have their …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:56:54.033811+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-004",
+      "paper_id": "serpapi-b94847933f",
+      "title": "Window Orientation, Glare, and Visual Comfort in Offices",
+      "doi": "",
+      "url": "https://solarlits.com/jd/13-167",
+      "authors": [
+        "M Karimimoshaver",
+        "F Derakhshan"
+      ],
+      "year": 2026,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… between glare and visual comfort in office environments in relation to daylight conditions in office … in 14 office rooms with window orientations. The results show that users' perceptions of …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:16.874414+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-004",
+      "paper_id": "serpapi-dac73f0214",
+      "title": "Integrating monitors into circadian lighting strategies for offices",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352710225012884",
+      "authors": [
+        "AT Dianagri",
+        "O Gocer",
+        "W Hu"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": 4,
+      "snippet": "In the evolving world of office environments, where occupants typically spend over 90% of their time indoors, enhancing office lighting becomes critical to maintaining well-being [[1],[2],[3…",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:16.898438+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-004",
+      "paper_id": "serpapi-f429f90191",
+      "title": "Energy saving potential and visual comfort of task light usage for offices in Malaysia",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0378778816320035",
+      "authors": [
+        "GH Lim",
+        "N Keumala",
+        "NA Ghafar"
+      ],
+      "year": 2017,
+      "venue": "",
+      "cited_by": 41,
+      "snippet": "In the wake of the recent green building aspiration in Malaysia, this article explores the energy saving potential and user behaviour towards task lights in two office spaces in Malaysia; …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:16.920262+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-004",
+      "paper_id": "serpapi-3c44668373",
+      "title": "A Performance-Based Methodology for Retrofitting Buildings Guided by Visual Comfort",
+      "doi": "",
+      "url": "https://www.mdpi.com/2071-1050/18/5/2467",
+      "authors": [
+        "G Caccia",
+        "M Cavaglià",
+        "A Speroni",
+        "L Palmero Iglesias"
+      ],
+      "year": 2026,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… in office and commercial spaces indicate that glare from … improve memory and cognitive performance by 10% to 25%. … building floors reporting the window-to-floor ratio of the analyzed …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:16.939445+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-004",
+      "paper_id": "serpapi-15fc7dcc33",
+      "title": "The impact of evaluated daylight to the total light ratio on the comfort level in office buildings",
+      "doi": "",
+      "url": "https://www.mdpi.com/2075-5309/12/12/2161?utm_campaign=releaseissue_buildingsutm_medium=emailutm_source=releaseissueutm_term=titlelink217",
+      "authors": [
+        "M Fakhari",
+        "R Fayaz",
+        "R Lollini"
+      ],
+      "year": 2022,
+      "venue": "",
+      "cited_by": 11,
+      "snippet": "… glare and visual discomfort. Different illuminance values and light properties are also known to influence cognitive … ratio (WWR) and the window-to-floor ratio (WFR) except for building E, …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:16.958146+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-005",
+      "paper_id": "serpapi-0868b20723",
+      "title": "Affective and cognitive restoration: comparing the restorative role of indoor plants and guided meditation",
+      "doi": "",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/00140139.2021.2003873",
+      "authors": [
+        "P Archary",
+        "A Thatcher"
+      ],
+      "year": 2022,
+      "venue": "",
+      "cited_by": 33,
+      "snippet": "… It is possible that the limited exposure to indoor plants in an indoor office was insufficient to induce significant changes in cognitive functioning as assessed by the backward digit-span …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:19.290719+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-005",
+      "paper_id": "serpapi-a44f628596",
+      "title": "Exploring the Effects of Indoor Plants on Executive Function",
+      "doi": "",
+      "url": "https://digitalcollections.lipscomb.edu/psy_graduate/5/",
+      "authors": [
+        "JD Romero Silva",
+        "AJ Heritage"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… earlier, indoor plants when in a work setting have been shown to positively impact satisfaction with the workplace, … Some evidence shows that indoor plants can make students feel more …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:19.335715+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-005",
+      "paper_id": "serpapi-f3120d7982",
+      "title": "Do indoor plants improve performance outcomes?: using the attention restoration theory",
+      "doi": "",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-96068-5_65",
+      "authors": [
+        "K Adamson",
+        "A Thatcher"
+      ],
+      "year": 2018,
+      "venue": "",
+      "cited_by": 17,
+      "snippet": "… in an office context produced restorative effects that enable employees to perform better. This study was one of the first attempts to empirically investigate the effect of indoor plants on …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:19.361162+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-005",
+      "paper_id": "serpapi-8099b8ad5e",
+      "title": "Indoor Plants, Burnout Mitigation and the Wellness of Healthcare Workers",
+      "doi": "",
+      "url": "https://ecommons.cornell.edu/bitstreams/929d7bc4-77ed-4f99-82cc-d5c16784c347/download",
+      "authors": [
+        "C Green"
+      ],
+      "year": 2023,
+      "venue": "",
+      "cited_by": 1,
+      "snippet": "… Interviews found that participants associated indoor plants … , cognitive restoration, mindfulness, and cohesive workspaces. The addition of indoor plants appeared to enhance workplace …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:19.381639+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-005",
+      "paper_id": "serpapi-5a69651437",
+      "title": "Do indoor plants improve performance and well-being in offices? Divergent results from laboratory and field studies",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0272494419307509",
+      "authors": [
+        "A Thatcher",
+        "K Adamson",
+        "L Bloch",
+        "A Kalantzis"
+      ],
+      "year": 2020,
+      "venue": "",
+      "cited_by": 68,
+      "snippet": "… the psychological benefits of indoor plants. However, these … In the laboratory study, the condition with indoor plants … with varying lengths of exposure to indoor plants (6 weeks in Study 2 …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:19.404381+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-005",
+      "paper_id": "serpapi-7fd77ea9c2",
+      "title": "The restorative effects of working individually in a vegetated office space: A crossover controlled experimental study in real-life workplace setting",
+      "doi": "",
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/10519815251323994",
+      "authors": [
+        "G Zhang",
+        "T Li",
+        "Y Cui",
+        "TH Ren"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": 3,
+      "snippet": "… in perceived stress with indoor plants, evident in perceived stress reduction, while males … the gender differences in stress reduction when working with indoor plants, which underscores …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:57:06.884336+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-006",
+      "paper_id": "serpapi-a7a343eed1",
+      "title": "Effect of dynamic light application on cognitive performance and well-being of intensive care nurses",
+      "doi": "",
+      "url": "https://aacnjournals.org/ajcconline/article-abstract/27/3/245/4207",
+      "authors": [
+        "KS Simons",
+        "ERK Boeijen",
+        "MC Mertens",
+        "P Rood"
+      ],
+      "year": 2018,
+      "venue": "",
+      "cited_by": 18,
+      "snippet": "… teaching hospital with a 16-bed mixed medical-surgical ICU, has a dynamic lighting system. … Although we did not find beneficial effects of exposure to bright light on alertness or well-…",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:27.270853+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-006",
+      "paper_id": "serpapi-595f577e6a",
+      "title": "Dynamic lighting in a Pediatric ICU: Effects on staff visual comfort and circadian biomarkers",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132325013095",
+      "authors": [
+        "MT Aguilar-Carrasco",
+        "J Fernández-Agüera"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": 1,
+      "snippet": "… Establishing optimal thresholds is crucial in shift-based workspaces—like hospital intensive … levels oriented to the needs of ICU healthcare staff and their visual comfort, as determined …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:27.322671+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-006",
+      "paper_id": "serpapi-74bb4afd62",
+      "title": "Lighting for Well-Being: A Human-Building Interaction Approach for Enhancing Intensive Care Environments",
+      "doi": "",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-16863-4_1",
+      "authors": [
+        "V Garcia-Hansen",
+        "F Rodriguez",
+        "R Ong",
+        "I Linders"
+      ],
+      "year": 2026,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… performance and alertness. Balancing these competing needs makes hospital lighting design … Implementing dynamic lighting strategies that vary both intensity and colour temperature …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:27.346772+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-006",
+      "paper_id": "serpapi-8308099386",
+      "title": "The impact of dynamic lighting on sleep timing and duration for hospitalised patients",
+      "doi": "",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jsr.70041",
+      "authors": [
+        "AS Dunn",
+        "BR Fastman",
+        "A Weinberg"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": 4,
+      "snippet": "… how novel dynamic lighting affects sleep timing and duration compared to standard hospital lighting… and increased perceived morning and evening alertness. These results suggest that …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:27.368997+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-006",
+      "paper_id": "serpapi-00ff217d64",
+      "title": "Lighting for Well-Being: A Human-Building Interaction Approach for Enhancing Intensive Care",
+      "doi": "",
+      "url": "https://books.google.com/books?hl=en&lr=&id=IZXWEQAAQBAJ&oi=fnd&pg=PA3&dq=%22dynamic+lighting%22+AND+(%22cognitive+fatigue%22+OR+%22alertness%22)+AND+(%22hospital%22+OR+%22healthcare%22)&ots=-AqRh82Hpv&sig=2hwsNbA047cOrmWZcvaFF7ZQX_M",
+      "authors": [
+        "V Garcia-Hansen",
+        "F Rodriguez",
+        "R Ong"
+      ],
+      "year": null,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… performance and alertness. Balancing these competing needs makes hospital lighting design … Implementing dynamic lighting strategies that vary both intensity and colour temperature …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:27.391342+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-006",
+      "paper_id": "serpapi-7cf22015d5",
+      "title": "Diurnal effects of dynamic lighting on alertness, cognition, and mood of mentally fatigued individuals in a daylight deprived environment",
+      "doi": "",
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/14771535221138589",
+      "authors": [
+        "Y Li",
+        "W Fang",
+        "B Guo",
+        "H Qiu"
+      ],
+      "year": 2024,
+      "venue": "",
+      "cited_by": 21,
+      "snippet": "… We hypothesized that DL would render more benefits by increasing alertness and positive mood, thereby improving cognitive performance, and promoting the allocation of attentional …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:57:12.623744+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-006",
+      "paper_id": "serpapi-d1203142d0",
+      "title": "An architectural solution to a biological problem: a systematic review of lighting designs in healthcare environments",
+      "doi": "",
+      "url": "https://www.mdpi.com/2076-3417/14/7/2945",
+      "authors": [
+        "SN Hosseini",
+        "JC Walton",
+        "I SheikhAnsari",
+        "N Kreidler"
+      ],
+      "year": 2024,
+      "venue": "",
+      "cited_by": 25,
+      "snippet": "… as reducing fatigue, heightened alertness in healthcare providers, and … their satisfaction with the dynamic lighting environment, this … In a similar study, dynamic lighting interventions were …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:57:12.707824+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-007",
+      "paper_id": "serpapi-c6a59cbd93",
+      "title": "An Analysis of the Workplace Environment and Its Impact on Employee Health, Satisfaction, and Productivity in Jordan.",
+      "doi": "",
+      "url": "https://cspub-fce-submission.org/index.php/fce/article/view/249",
+      "authors": [
+        "J Mahasneh",
+        "H Ali",
+        "RA Saad"
+      ],
+      "year": 2024,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "The purpose of this research is to investigate the impact of indoor environmental quality, behavioral, and functional factors on employee productivity and satisfaction in both open and …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:29.522519+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-007",
+      "paper_id": "serpapi-9379562abb",
+      "title": "Adaptive Design of the Built Environment to Mitigate the Transmission Risk of COVID-19",
+      "doi": "",
+      "url": "https://www.academia.edu/download/65095673/Adaptive_Design_of_the_Built_Environment_to_Mitigate_the_Transmission_Risk_of_COVID_19.pdf",
+      "authors": [
+        "ZAD Shangi",
+        "MI Ahmad",
+        "S Ahmed"
+      ],
+      "year": 2020,
+      "venue": "",
+      "cited_by": 6,
+      "snippet": "… View from window to the exterior helps to ease up the mind and can be aided in … and it can affect overall the productivity. In a word, a productive home office can be set up by allocating a …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:29.561876+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-007",
+      "paper_id": "serpapi-6053ce76e2",
+      "title": "The public office-a symbiosis in urban area",
+      "doi": "",
+      "url": "https://gupea.ub.gu.se/items/713520e4-498c-4571-ae11-903d27d470cd",
+      "authors": [
+        "W Chung"
+      ],
+      "year": 2009,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… good air quality and beautiful view from window didn’t affect … in this case, only by productivity. Under this system, people … In the furniture market, home office collection can be found in …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:29.587891+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-007",
+      "paper_id": "serpapi-8e4c798a71",
+      "title": "GEO 511 Master Thesis",
+      "doi": "",
+      "url": "",
+      "authors": [
+        "TD Roethenbaugh"
+      ],
+      "year": 2023,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:29.607287+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-008",
+      "paper_id": "serpapi-27f25c635e",
+      "title": "Measurement and interpretation of thermal comfort in a highly adaptive mixed-mode building",
+      "doi": "",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/00038628.2013.868782",
+      "authors": [
+        "K Healey"
+      ],
+      "year": 2014,
+      "venue": "",
+      "cited_by": 15,
+      "snippet": "… far more than was predicted during design phase, and in the interviews noted that they preferred natural ventilation in general. Cognitive tolerance is likely to play a role in users’ overall …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T19:00:04.647412+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-008",
+      "paper_id": "serpapi-2a3e45d6dd",
+      "title": "Thermal comfort in a mixed-mode building: Are occupants more adaptive?",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0378778819313179",
+      "authors": [
+        "J Kim",
+        "F Tartarini",
+        "T Parkinson",
+        "P Cooper"
+      ],
+      "year": 2019,
+      "venue": "",
+      "cited_by": 112,
+      "snippet": "… mixed-mode building - air-conditioning (AC) and natural ventilation (NV) - affect indoor thermal environmental conditions and occupant perceptions of thermal comfort. Longitudinal field …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T19:00:04.652693+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-008",
+      "paper_id": "serpapi-f1048ced4a",
+      "title": "Cognitive performance under dynamic supply air modulation: dual-objective balancing of thermal comfort and work productivity",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352710225029912",
+      "authors": [
+        "W Zhang",
+        "W Zhang",
+        "Y Xuan"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": 2,
+      "snippet": "… for ventilation control that balances both comfort and cognitive performance. Results show temperature … Natural wind-like airflow suits high-cognitive-load scenarios, low-frequency …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T19:00:04.680584+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-008",
+      "paper_id": "serpapi-c2570cd8cb",
+      "title": "Students' thermal comfort and cognitive performance in fan-assisted naturally ventilated classrooms in tropical Singapore",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132324005316",
+      "authors": [
+        "C Cen",
+        "S Cheng",
+        "E Tan",
+        "NH Wong"
+      ],
+      "year": 2024,
+      "venue": "",
+      "cited_by": 30,
+      "snippet": "… under various thermal conditions and thermal sensations, … ' thermal comfort in fan-assisted naturally ventilated classrooms. … impact of classroom thermal condition on students' cognitive …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T19:00:04.718771+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-008",
+      "paper_id": "serpapi-2c9c1ec1ae",
+      "title": "Effect of elevated air temperature and air velocity on thermal comfort and cognitive performance in the tropics",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132323002305",
+      "authors": [
+        "C Cen",
+        "S Cheng",
+        "NH Wong"
+      ],
+      "year": 2023,
+      "venue": "",
+      "cited_by": 59,
+      "snippet": "… , thermal comfort surveys, wearable devices, cognitive … ' thermal comfort, physiological responses, cognitive performance, … The results showed that thermal comfort can be maintained …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T19:00:04.761021+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-008",
+      "paper_id": "serpapi-69cc1c868f",
+      "title": "Personal control of correlated color temperature of light: Effects on thermal comfort, visual comfort, and cognitive performance",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132323004079",
+      "authors": [
+        "W Luo",
+        "R Kramer",
+        "M Kompier",
+        "K Smolders"
+      ],
+      "year": 2023,
+      "venue": "",
+      "cited_by": 54,
+      "snippet": "… such as thermal comfort and cognitive performance remain … if personal control of CCT can, on top of visual comfort, enhance thermal comfort and cognitive performance in office …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T19:04:09.110458+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-008",
+      "paper_id": "serpapi-adb6897ca2",
+      "title": "The effects of personal control and perceived thermal comfort on occupant psychological health at the workplace",
+      "doi": "",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/00038628.2024.2348158",
+      "authors": [
+        "R Mansor",
+        "L Sheau-Ting"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": 12,
+      "snippet": "… ’s cognitive, relational and emotional responses to the office indoor environment characteristics. This is because psychological health outcomes are broadly described as cognitive …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T19:04:09.130859+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-008",
+      "paper_id": "serpapi-cd12e14e4b",
+      "title": "Dynamic environment, adaptive comfort, and cognitive performance",
+      "doi": "",
+      "url": "https://research-repository.griffith.edu.au/items/7ad29098-4541-4856-8aea-ba4fa521c02f",
+      "authors": [
+        "R de Dear",
+        "F Zhang"
+      ],
+      "year": 2018,
+      "venue": "",
+      "cited_by": 9,
+      "snippet": "… from the thermal comfort requirements of occupants towards their cognitive performance. … commercial office space lease agreements under the mistaken belief that they will maximise …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T19:04:09.176100+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-008",
+      "paper_id": "serpapi-bc09a2416a",
+      "title": "The impact of personal environmental control on the performance of thermal systems: Building energy consumption, occupant thermal comfort, and productivity",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S037877882300782X",
+      "authors": [
+        "K Xie",
+        "M Lee",
+        "R Khalid",
+        "VG Zakka"
+      ],
+      "year": 2023,
+      "venue": "",
+      "cited_by": 22,
+      "snippet": "… to marginal improvement of thermal comfort, but the building … between the PEC and occupant productivity. As a pilot study … the occupants’ personal control of the thermal environment. …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T19:04:09.246514+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-008",
+      "paper_id": "serpapi-f6eb853638",
+      "title": "The Role of Measured Thermal Comfort on Sustained Attention and Working Memory",
+      "doi": "",
+      "url": "https://medsearchjournal.org/assets/files/thermal_comfort_attention_memory.pdf",
+      "authors": [
+        "MJA Mahinay"
+      ],
+      "year": null,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… role of objective thermal comfort on cognitive outcomes, with … a basis for building design, workplace practices, and policies … thermal comfort research shows that adaptive comfort models…",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T19:04:09.315247+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-009",
+      "paper_id": "serpapi-49fe362a43",
+      "title": "Investigation of the appropriate reverberation time for lower-grade elementary school classrooms using speech intelligibility tests",
+      "doi": "",
+      "url": "https://www.mdpi.com/2075-5309/12/6/808",
+      "authors": [
+        "AH Jo",
+        "CJ Park",
+        "CH Haan"
+      ],
+      "year": 2022,
+      "venue": "",
+      "cited_by": 13,
+      "snippet": "… reverberation time for lower-grade elementary school … Speech intelligibility tests were undertaken with 20 young … As a result, it was concluded that the reverberation time suitable for …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:36.045797+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-009",
+      "paper_id": "serpapi-38b799ee6b",
+      "title": "Initial study on the reverberation time standard for the Korean middle and high school classrooms using speech intelligibility tests",
+      "doi": "",
+      "url": "https://www.mdpi.com/2075-5309/11/8/354",
+      "authors": [
+        "CJ Park",
+        "CH Haan"
+      ],
+      "year": 2021,
+      "venue": "",
+      "cited_by": 23,
+      "snippet": "… speech intelligibility test scores were higher in the babble environment with impulsive noise when reverberation time … In this research, it was shown that reverberation time has a high …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:36.089597+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-009",
+      "paper_id": "serpapi-f4059b19e0",
+      "title": "SPEECH INTELLIGIBILITY MEASUREMENTS IN OPEN PLAN CLASSROOMS",
+      "doi": "",
+      "url": "https://andersonacoustics.co.uk/wp-content/uploads/2023/12/Speech-intelligibility-measurements-in-open-plan-classrooms-Institute-of-Acoustics-2006.pdf",
+      "authors": [
+        "B Shield"
+      ],
+      "year": null,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… reverberation time in open plan teaching areas of Tmf 0.8 seconds. For primary school classbases, the maximum Tmf value is 0.6 seconds. The mid frequency reverberation time Tmf is …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:36.113528+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-009",
+      "paper_id": "serpapi-5309a6c184",
+      "title": "Optimum Reverberation Time of Classrooms for Incomplete Hearing People Using Speech Intelligibility Tests",
+      "doi": "",
+      "url": "https://www.researchgate.net/profile/Chan-Haan/publication/378834988_Optimum_Reverberation_Time_of_Classrooms_for_Incomplete_Hearing_People_Using_Speech_Intelligibility_Tests/links/6600fca7a4857c7962764b5c/Optimum-Reverberation-Time-of-Classrooms-for-Incomplete-Hearing-People-Using-Speech-Intelligibility-Tests.pdf",
+      "authors": [
+        "CH Haan"
+      ],
+      "year": 2024,
+      "venue": "",
+      "cited_by": 1,
+      "snippet": "… This study derives the appropriate reverberation time of classrooms for both lower-grade elementary school pupils and elderly in Korea. A virtual sound field was created by computer …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:36.137164+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-009",
+      "paper_id": "serpapi-135fc0922d",
+      "title": "Evidence-based acoustic retrofit of open-plan design studios: Improving vocal effort, speech intelligibility, and privacy",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352710225017073",
+      "authors": [
+        "X Yang",
+        "J Zhang",
+        "S Wang",
+        "J Li",
+        "Y Zhang"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": 3,
+      "snippet": "… Open-plan design studios (OPDSs) are central to … Traditional acoustic metrics such as reverberation time (RT) often … competing requirements of speech intelligibility, vocal effort, and …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:36.159659+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-009",
+      "paper_id": "serpapi-b861b4a979",
+      "title": "Control of noise for speech intelligibility in open plan classrooms",
+      "doi": "",
+      "url": "https://andersonacoustics.co.uk/wp-content/uploads/2023/12/Control-of-noise-for-speech-intelligibility-in-open-plan-classrooms-Euronoise-Edinburgh-2009.pdf",
+      "authors": [
+        "E Greenland",
+        "B Shield",
+        "J Dockrell"
+      ],
+      "year": 2009,
+      "venue": "",
+      "cited_by": 3,
+      "snippet": "… Speech intelligibility in open plan classrooms cannot be assured from standard classroom design criteria (indoor ambient noise levels, reverberation time… for primary school classbases (…",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:57:45.368659+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-010",
+      "paper_id": "serpapi-4d38fee7f0",
+      "title": "Attenuating heat stress through green roof and green wall retrofit",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132318302944",
+      "authors": [
+        "RC Feitosa",
+        "SJ Wilkinson"
+      ],
+      "year": 2018,
+      "venue": "",
+      "cited_by": 142,
+      "snippet": "… Instead of considering only the temperature influence in heat stress, this research adopted … green roof and green wall retrofit offer a proven role in heat stress attenuation in residential …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:38.868055+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-010",
+      "paper_id": "serpapi-a0ec670a66",
+      "title": "The living walls as an approach for a healthy urban environment",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1876610211014792",
+      "authors": [
+        "S Sheweka",
+        "AN Magdy"
+      ],
+      "year": 2011,
+      "venue": "",
+      "cited_by": 209,
+      "snippet": "… of the living wall as a part of the sustainable strategy for the urban … living wall could also function for urban agriculture, urban … The use of green walls can reduce the climatic stress on …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:38.911892+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-010",
+      "paper_id": "serpapi-139b0a1478",
+      "title": "Perception of green roof users with their mental well-being",
+      "doi": "",
+      "url": "https://iopscience.iop.org/article/10.1088/1755-1315/1274/1/012036/meta",
+      "authors": [
+        "HA Rahman",
+        "NS Mohd Yusoff"
+      ],
+      "year": 2023,
+      "venue": "",
+      "cited_by": 7,
+      "snippet": "… adaptation and the improvement of mental health among the residents with the intensive green roof in green residential building at Nusajaya, Iskandar Malaysia. Given the vast scope of …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:38.936266+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-010",
+      "paper_id": "serpapi-1b619858de",
+      "title": "Small-scale experiments of seasonal heat stress attenuation through a combination of green roof and green walls",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0959652619343136",
+      "authors": [
+        "RC Feitosa",
+        "SJ Wilkinson"
+      ],
+      "year": 2020,
+      "venue": "",
+      "cited_by": 82,
+      "snippet": "… urban environments. This paper reports on the results of an original experiment in Sydney Australia in 2016 to evaluate seasonally the heat stress … in establishing heat stress levels in …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:38.958673+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-010",
+      "paper_id": "serpapi-8c21b979e8",
+      "title": "Living walls enhancing the urban realm: a review",
+      "doi": "",
+      "url": "https://link.springer.com/article/10.1007/s11356-022-19501-7",
+      "authors": [
+        "M Goel",
+        "B Jha",
+        "S Khan"
+      ],
+      "year": 2022,
+      "venue": "",
+      "cited_by": 40,
+      "snippet": "… examine the buffering effect of vertical greenery on stress levels with the help of virtual reality. … It was observed that participants’ stress levels did not increase when they walked through …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:38.980427+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-010",
+      "paper_id": "serpapi-062a1ca12e",
+      "title": "Green roofs and green walls and their impact on health promotion",
+      "doi": "",
+      "url": "https://www.scielosp.org/article/csp/2018.v34n7/e00003618/en/",
+      "authors": [
+        "RC Feitosa",
+        "S Wilkinson"
+      ],
+      "year": 2018,
+      "venue": "",
+      "cited_by": 11,
+      "snippet": "… cool the urban environment 8 8. Osmond PW, Irger M. Green roof retrofit and the urban heat … Another important point is the social well-being related to the aesthetic appearance, lending …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:57:59.026190+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-010",
+      "paper_id": "serpapi-d6a27b6ded",
+      "title": "Well-being, health and urban coherence-advancing vertical greening approach toward resilience: A design practice consideration",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0959652617331980",
+      "authors": [
+        "TY Ling",
+        "YC Chiang"
+      ],
+      "year": 2018,
+      "venue": "",
+      "cited_by": 106,
+      "snippet": "… for vertical greening contribute to the resilience of the urban core; (4) the outcome focuses … human's well-being and health, at the same time, being feasible for amelioration of our urban …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:57:59.097006+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-011",
+      "paper_id": "serpapi-25c0157d91",
+      "title": "The impact of occupancy patterns on artificial light energy demand-simulation and post-occupancy-evaluation",
+      "doi": "",
+      "url": "https://publications.ibpsa.org/conference/paper/?id=bs2021_30508",
+      "authors": [
+        "S Hammes",
+        "M Hauer",
+        "D Geisler-Moroder"
+      ],
+      "year": 2021,
+      "venue": "",
+      "cited_by": 12,
+      "snippet": "… according to wrong assumptions may significantly reduce the accuracy of simulations. … plugin in Rhinoceros® utilizing RADIANCE as a daylighting simulation engine. Honeybee[+] is an …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:41.463356+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-011",
+      "paper_id": "serpapi-3b20ebfabf",
+      "title": "Daylighting Performance Assessment: A Review of Methodologies",
+      "doi": "",
+      "url": "https://pathofscience.org/index.php/ps/article/view/3422",
+      "authors": [
+        "MI Ayoosu",
+        "AL Utsaha",
+        "KE Gabriel",
+        "AMM Vishigh"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": 9,
+      "snippet": "… , resources, and validation for accuracy. Field measurements … viable software for daylighting simulation includes DIAlux, … lates accurate data using the post-occupancy method [5, 25, …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:41.491546+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-011",
+      "paper_id": "serpapi-7d4f9c3008",
+      "title": "Daylighting, occupant behavior, and cultural context in Algerian collective housing: A post-occupancy evaluation in Annaba",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352710225013993",
+      "authors": [
+        "S Makhlouf",
+        "M Cheraitia",
+        "D Alkama"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": 4,
+      "snippet": "… This study fills this gap through a post-occupancy evaluation (POE) of eight multi-family residential buildings in the Wed El-Fourcha neighborhood of Annaba. The primary objective is to …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:41.511567+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-011",
+      "paper_id": "serpapi-4cdac688c8",
+      "title": "An investigation of the daylighting simulation techniques and sky modeling practices for occupant centric evaluations",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132316303626",
+      "authors": [
+        "M Inanici",
+        "A Hashemloo"
+      ],
+      "year": 2017,
+      "venue": "",
+      "cited_by": 59,
+      "snippet": "Occupant centric performance approaches in daylighting studies promote design decisions that support human visual comfort, productivity, and visual preferences, along with more …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:41.532145+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-011",
+      "paper_id": "serpapi-373fbd4fa2",
+      "title": "Assessing daylight performance in use: A comparison between long-term daylight measurements and simulations",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0378778822001608",
+      "authors": [
+        "E Brembilla",
+        "NC Drosou",
+        "J Mardaljevic"
+      ],
+      "year": 2022,
+      "venue": "",
+      "cited_by": 25,
+      "snippet": "… Among Post-Occupancy Evaluation (POE) studies that focused on the validation of daylight and … Whilst there was a sizeable body of evidence from validation studies indicating the likely …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:41.551851+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-012",
+      "paper_id": "serpapi-0fb9f01cd9",
+      "title": "A comparison of lighting control strategies for open offices",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132318307492",
+      "authors": [
+        "T Lashina",
+        "S van der Vleuten-Chraibi"
+      ],
+      "year": 2019,
+      "venue": "",
+      "cited_by": 23,
+      "snippet": "Providing environmental control to users in multi-user offices has long being considered not done. One of the reasons is it was believed that personal control in an open office would …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:43.654380+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-012",
+      "paper_id": "serpapi-fa6170d937",
+      "title": "Lighting in multi-user office environments: improving employee wellbeing through personal control",
+      "doi": "",
+      "url": "https://research.tue.nl/files/125218573/20190606_Vleuten_Chraibi.pdf",
+      "authors": [
+        "S van der Vleuten-Chraibi"
+      ],
+      "year": 2019,
+      "venue": "",
+      "cited_by": 2,
+      "snippet": "… how wellbeing in the modern open plan office can be improved, … the environmental satisfaction or the mood of the office users. … In this study, personal lighting control was evaluated in a …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:43.702332+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-012",
+      "paper_id": "serpapi-c9d7a8d97b",
+      "title": "The impact of lighting on office workers' well-being and work productivity",
+      "doi": "",
+      "url": "https://www.theseus.fi/handle/10024/885590",
+      "authors": [
+        "L Tupala"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": 2,
+      "snippet": "… open-plan offices has shown that how pleasant or comfortable workers find the lighting is correlated with their mood … that dynamic lighting and personal lighting control can enhance well-…",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:43.727318+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-012",
+      "paper_id": "serpapi-97e07c2e21",
+      "title": "Personalized dynamic design of networked lighting for energy-efficiency in open-plan offices",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0378778811001459",
+      "authors": [
+        "YJ Wen",
+        "AM Agogino"
+      ],
+      "year": 2011,
+      "venue": "",
+      "cited_by": 120,
+      "snippet": "… Open-plan offices constitute the majority of office stock, in which most office workers perform … ’ productivity. This paper presents a unique lighting optimization approach for open-plan …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:43.749406+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-012",
+      "paper_id": "serpapi-5aa311d5bd",
+      "title": "The impacts of real-time knowledge based personal lighting control on energy consumption, user satisfaction and task performance in offices",
+      "doi": "",
+      "url": "https://kilthub.cmu.edu/ndownloader/files/12258569",
+      "authors": [
+        "Y Gu"
+      ],
+      "year": 2011,
+      "venue": "",
+      "cited_by": 24,
+      "snippet": "… The visual environment plays a significant role in the health, mood and productivity of … Moore studied occupants’ manual control of general lighting in open-plan offices with daylight and …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:43.771472+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-012",
+      "paper_id": "serpapi-a036abfdaa",
+      "title": "Personal lighting control for open offices",
+      "doi": "",
+      "url": "https://research.tue.nl/files/24134169/lashpers2014.pdf",
+      "authors": [
+        "TA Lashina",
+        "S Chraibi",
+        "P Shrubsole"
+      ],
+      "year": 2014,
+      "venue": "",
+      "cited_by": 2,
+      "snippet": "… effect of the controls on the mood state of the participants. … Individual lighting control: task performance, mood, and … of locally addressable lighting in open plan office space. Proceedings …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:58:09.380081+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-012",
+      "paper_id": "serpapi-d673d56d47",
+      "title": "Personalized Environmental Control Systems for lighting and daylighting: a systematic review",
+      "doi": "",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6248840",
+      "authors": [
+        "MS Khanie",
+        "A Luna-Navarro",
+        "P de la Barra"
+      ],
+      "year": null,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… In open-plan offices, however, ownership is less clearly defined, and group dynamics play a … The personalized control in open-plan offices is not purely a technical issue but also a …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:58:09.392677+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-013",
+      "paper_id": "serpapi-1ca1bf6d2a",
+      "title": "Daylight and View Quality in Offices: Developing Multifactor Evolutionary Simulation Methods to Achieve Occupant Well-Being: A Case Study of Commercial Buildings …",
+      "doi": "",
+      "url": "https://search.proquest.com/openview/f100048c44b2edf5f72f6170758bd91f/1?pq-origsite=gscholar&cbl=2026366&diss=y",
+      "authors": [
+        "MSM Abdelrahman"
+      ],
+      "year": 2024,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… LEED and WELL Building Standard in their view quality credit. • Daylight quality was limited to glare, spatial daylight autonomy … This study applied LEED assessment criteria, which state …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:47.182184+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-013",
+      "paper_id": "serpapi-b927186b8a",
+      "title": "Daylight and Occupant Satisfaction in Educational High-Rise Office Building: An Online Survey and Comprehensive Case Study",
+      "doi": "",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-14019-7_80",
+      "authors": [
+        "E Demirci",
+        "FŞ Yılmaz"
+      ],
+      "year": 2025,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… Key performance metrics such as Spatial Daylight Autonomy (sDA), Useful Daylight … Spatial Daylight Autonomy (sDA) quantifies the percentage of the floor area that receives a …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:47.225381+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-013",
+      "paper_id": "serpapi-51f3690a3f",
+      "title": "A study on the evaluation methods of indoor light environment for occupant comfort and well-being",
+      "doi": "",
+      "url": "https://jgb.kglmeridian.com/view/journals/jgrb/18/4/article-p99.xml",
+      "authors": [
+        "KR Kim",
+        "KS Lee",
+        "J Lee"
+      ],
+      "year": 2023,
+      "venue": "",
+      "cited_by": 16,
+      "snippet": "… This study analyzed human sleep, well-being, and cognitive … Spatial daylight autonomy (sDA) is a measurement method … sustainable certification systems such as LEED and BREEAM …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:47.269455+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-013",
+      "paper_id": "serpapi-32ec97e0f5",
+      "title": "OPTIMIZING DAYLIGHT AND AESTHETICS IN ENERGY RENOVATIONS",
+      "doi": "",
+      "url": "https://odr.chalmers.se/server/api/core/bitstreams/3eafceb3-a3e3-4295-bd9b-6999064d5901/content",
+      "authors": [
+        "J Bååth"
+      ],
+      "year": null,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… , improve occupant satisfaction, and … certification systems like LEED. These sources clarify how metrics like daylight factor, useful daylight illuminance (UDI), spatial daylight autonomy (…",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:47.271286+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-013",
+      "paper_id": "serpapi-4e321cb635",
+      "title": "Effects of Urban Obstructions on Spatial Daylight Autonomy (sDA) and Daylight Glare Probability (DGP) in Tropical Mid-rise Housings",
+      "doi": "",
+      "url": "https://solarlits.com/jd/13-1",
+      "authors": [
+        "J Luthra"
+      ],
+      "year": 2026,
+      "venue": "",
+      "cited_by": null,
+      "snippet": "… Daylight performance was assessed using two metrics: Spatial Daylight Autonomy (sDA300/… a strong correlation between simulation metrics and occupant satisfaction (R²= 0.84, p < …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:58:15.844349+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-013",
+      "paper_id": "serpapi-fe2de572ac",
+      "title": "An explorative method to support design decisions based on carbon constraints and daylight sufficiency needs",
+      "doi": "",
+      "url": "https://arodes.hes-so.ch/record/15127?v=pdf",
+      "authors": [
+        "N Rezaei Oghazi"
+      ],
+      "year": 2024,
+      "venue": "",
+      "cited_by": 1,
+      "snippet": "… For instance, one study illustrates that enhancing spatial daylight autonomy (sDA) typically results in buildings with lower operational energy use, despite higher embodied impacts [52]. …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:58:15.854890+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-013",
+      "paper_id": "serpapi-4532ef77f3",
+      "title": "Dynamic daylight: Measuring the impacts of high performance daylighting system on occupant health, satisfaction, and productivity",
+      "doi": "",
+      "url": "https://www.researchgate.net/profile/Ihab-Elzeyadi/publication/320567363_Dynamic_Daylight_Measuring_the_impacts_of_high_performance_daylighting_systems_on_occupants_health_satisfaction_and_productivity/links/59ee643baca272029ddf6f69/Dynamic-Daylight-Measuring-the-impacts-of-high-performance-daylighting-systems-on-occupants-health-satisfaction-and-productivity.pdf",
+      "authors": [
+        "I Elzeyadi",
+        "S Gatland",
+        "B Abboushi"
+      ],
+      "year": 2017,
+      "venue": "",
+      "cited_by": 7,
+      "snippet": "… To evaluate visual comfort inside multiple LEED™ certified work environments, we measured lighting distribution metrics; spatial daylight autonomy (sDA300-50%), visual asymmetry, …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-04T18:58:15.914127+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-014",
+      "paper_id": "serpapi-087f6ba122",
+      "title": "Non-visual effects of light on melatonin, alertness and cognitive performance: can blue-enriched light keep us alert?",
+      "doi": "",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0016429",
+      "authors": [
+        "SL Chellappa",
+        "R Steiner",
+        "P Blattner",
+        "P Oelhafen"
+      ],
+      "year": 2011,
+      "venue": "",
+      "cited_by": 808,
+      "snippet": "… circadian rhythms, to alleviate jet lag and shift work symptoms, and to improve alertness and cognitive … irradiances, whereas melanopsin may be the primary circadian photopigment in …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:50.681167+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-014",
+      "paper_id": "serpapi-38309f5e34",
+      "title": "Non-visual light responses in humans: melanopsin and cone involvement",
+      "doi": "",
+      "url": "https://search.proquest.com/openview/d4b30e0a64aa0370916ecaeb2f6a77aa/1?pq-origsite=gscholar&cbl=51922",
+      "authors": [
+        "C Papamichael"
+      ],
+      "year": 2012,
+      "venue": "",
+      "cited_by": 1,
+      "snippet": "… Melanopsin containing intrinsically photosensitive retinal ganglion cells (ipRGCs) are primarily sensitive blue light (~480 nm) irradiance detectors that mediate non-visual … of melanopsin …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:50.720592+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-014",
+      "paper_id": "serpapi-c04953839c",
+      "title": "The influence of integrative lighting on sleep and cognitive functioning of shift workers during the morning shift in an assembly plant",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0003687021002659",
+      "authors": [
+        "E Van de Putte",
+        "S Kindt",
+        "P Bracke",
+        "M Stevens"
+      ],
+      "year": 2022,
+      "venue": "",
+      "cited_by": 31,
+      "snippet": "It is well known that exposure to light at the right time of the day is important to synchronise our circadian rhythm and enhance cognitive functioning. There is, however, a lack of field …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:50.744170+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-014",
+      "paper_id": "serpapi-9762577a1c",
+      "title": "The effect of blue-enriched white light on cognitive performances and sleepiness of night-shift workers: A field study",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S003193841730135X",
+      "authors": [
+        "M Motamedzadeh",
+        "R Golmohammadi",
+        "R Kazemi"
+      ],
+      "year": 2017,
+      "venue": "",
+      "cited_by": 142,
+      "snippet": "… circadian rhythm and enhanced cognitive performance. … Night-shift work is generally associated with reduced … Melanopsin is a photopigment found in intrinsically photosensitive retinal …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:50.766234+00:00"
+    },
+    {
+      "gap_id": "GAP-PNU-014",
+      "paper_id": "serpapi-059e903a76",
+      "title": "Non-visual Biological Mechanism",
+      "doi": "",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-030-17195-7_5",
+      "authors": [
+        "W van Bommel"
+      ],
+      "year": 2019,
+      "venue": "",
+      "cited_by": 1,
+      "snippet": "… , given by their photopigment melanopsin, is different from … or action spectrum for all non-visual effects of light. The … effects of light in jetlag or shift work situations. As an illustration, Fig. …",
+      "scraper_source": "serpapi",
+      "retrieved_at": "2026-06-02T05:08:50.786064+00:00"
+    }
+  ]
+}
