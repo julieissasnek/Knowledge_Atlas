@@ -1,4 +1,18 @@
 .DS_Store
+
+# ── Track 2 Task 3: never commit databases, generated JSON, or API keys ──────
+*.db
+*.db-wal
+*.db-shm
+160sp/track2/article_references.db
+160sp/track2/prisma_dashboard.json
+data/ka_payloads/pipeline_lifecycle_full.db
+atlas_triage.db
+
+# SerpAPI key — keep in SERP_API_KEY env var, never in source
+# If you accidentally create a file containing the literal key, list it here.
+.serp_api_key
+serp_key.txt
 *.~lock.*
 __pycache__/
 *.pyc

@@ -47,10 +47,7 @@ except ImportError:
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-SERP_API_KEY = os.environ.get(
-    "SERP_API_KEY",
-    "498d66d7c2e1f54cb51465b49ab223e60e9243c744278e1aaa7e0fefc5bbe706",
-)
+SERP_API_KEY = os.environ.get("SERP_API_KEY", "")
 SERP_API_URL = "https://serpapi.com/search"
 DEFAULT_QUERY_FILE = "query_results.json"
 HEADERS = {"User-Agent": "KA-HarvestLayer/1.0 (mailto:student@ucsd.edu)"}
